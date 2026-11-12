@@ -1,0 +1,22 @@
+# Virtual environment & Python cache
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Local SQLite database & temporary journals
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+
+# Large copyrighted course materials (adjust path to match your repo)
+data/raw_materials/
+
+# Environment variables & OS/IDE files
+.env
+.DS_Store
+.vscode/
+.idea/

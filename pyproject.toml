@@ -1,0 +1,49 @@
+[project]
+name = "study-system"
+version = "0.1.0"
+description = "Study session tool for content organization, exercises, quizes, flashcards and evaluations simulations."
+readme = "README.md"
+authors = [
+    { name = "F. Albano", email = "albanofilinto@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "rapidfuzz>=3.14.6",
+]
+
+[project.scripts]
+study-system = "study_system:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.7.0",
+    "ruff>=0.17.5",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+# Point Ruff to your root code source so it reliably identifies first-party imports
+src = ["src"] # Change to ["."] if packages live directly at root
+
+[tool.ruff.lint]
+# Select Pyflakes (F), pycodestyle (E, W), and isort (I)
+select = ["E", "F", "I"]
+
+[tool.ruff.lint.isort]
+# Explicitly identify your first-party packages (useful if src discovery needs help)
+# known-first-party = ["my_project_package"]
+
+# Combine "as" imports on a single line or keep them separate
+combine-as-imports = false
+
+# Force specific imports to the top of standard library or third-party blocks
+# extra-standard-library = ["custom_c_module"]
+
+# Split multiline imports into parentheses trailing-comma style
+split-on-trailing-comma = true

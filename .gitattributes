@@ -1,0 +1,14 @@
+# Auto-detect text files and normalize line endings to LF in the repo
+* text=auto eol=lf
+
+# Explicitly enforce LF on Python, JSON, TOML, and Markdown files
+*.py text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Treat SQLite databases as binary (in case any test DB is ever tracked)
+*.db binary
+*.sqlite3 binary
