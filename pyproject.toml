@@ -21,6 +21,7 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "pre-commit>=4.7.0",
+    "pytest>=9.2.0",
     "ruff>=0.17.5",
 ]
 
@@ -34,6 +35,7 @@ src = ["src"] # Change to ["."] if packages live directly at root
 [tool.ruff.lint]
 # Select Pyflakes (F), pycodestyle (E, W), and isort (I)
 select = ["E", "F", "I"]
+ignore = ["E501"]
 
 [tool.ruff.lint.isort]
 # Explicitly identify your first-party packages (useful if src discovery needs help)
@@ -47,3 +49,6 @@ combine-as-imports = false
 
 # Split multiline imports into parentheses trailing-comma style
 split-on-trailing-comma = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
