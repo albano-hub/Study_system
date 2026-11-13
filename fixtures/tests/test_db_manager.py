@@ -8,14 +8,14 @@ from study_system.db_manager import StudyBankDB
 
 
 @pytest.fixture
-def db(tmp_path: Path) -> StudyBankDB:
+def db(tmp_path: Path) -> StudyBankDB:  # type: ignore
     """
     Provide a fresh, isolated SQLite database in a
     temporary directory for each test.
     """
     db_file = tmp_path / "test_study_bank.db"
     with StudyBankDB(db_path=db_file) as database:
-        yield database
+        yield database  # type: ignore
 
 
 @pytest.fixture

@@ -178,7 +178,7 @@ class StudyBankDB:
                        VALUES (?, ?, ?, ?)""",
                     (subject, part, current_path, parent_id),
                 )
-                tag_id = int(cur.lastrowid)
+                tag_id = int(cur.lastrowid)  # type: ignore
             parent_id = tag_id
 
         assert tag_id is not None
