@@ -192,13 +192,17 @@ class StudyBankDB:
     def _find_semantic_match(
         prompt: str,
         existing_prompts: list[tuple[str, str]],
-        threshold: int = 85,
+        threshold: int = 92,
     ) -> dict[str, Any] | None:
         if not HAS_RAPIDFUZZ:
             return None
         prompt_lower = prompt.lower()
         for existing_id, existing_text in existing_prompts:
-            score = fuzz.token_set_ratio(prompt_lower, existing_text.lower())
+            set_score = fuzz.token_set_ratio(prompt_lower, existing_text.lower())
+            # if set_score < threshold: continue        # NOTE When database
+            #                   exceeds 1000 elements, for optimization uncomment
+            sort_score = fuzz.token_sort_ratio(prompt_lower, existing_text.lower())
+            score = sort_score * 0.5 + set_score * 0.5
             if score >= threshold:
                 return {
                     "existing_id": existing_id,
@@ -212,7 +216,7 @@ class StudyBankDB:
         json_path: str | Path,
         check_semantic: bool = True,
         force_similar: bool = False,
-        semantic_threshold: int = 85,
+        semantic_threshold: int = 92,
     ) -> dict[str, Any]:
         data = json.loads(Path(json_path).read_text(encoding="utf-8"))
         items = data if isinstance(data, list) else [data]
