@@ -15,6 +15,10 @@ try:
 except ImportError:
     HAS_RAPIDFUZZ = False
 
+# Aponta sempre para a raiz do repositório (subindo 2 níveis a partir de src/study_system/db_manager.py)
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_DB_PATH = PROJECT_ROOT / "data" / "db" / "study_bank.db"
+
 
 def generate_uuid() -> str:
     """
@@ -35,7 +39,7 @@ class StudyBankDB:
     and mastery metrics.
     """
 
-    def __init__(self, db_path: str | Path = "data/db/study_bank.db") -> None:
+    def __init__(self, db_path: str | Path = DEFAULT_DB_PATH) -> None:
         self.db_path = Path(db_path)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self.conn = sqlite3.connect(self.db_path)
