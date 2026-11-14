@@ -242,7 +242,7 @@ class StudyBankDB:
                     """,
                     (major, subject, part, full_path, parent_id, level),
                 )
-                tag_id = int(cur.lastrowid)
+                tag_id = int(cur.lastrowid)  # type: ignore
             tag_ids.append(tag_id)
             parent_id = tag_id
 
