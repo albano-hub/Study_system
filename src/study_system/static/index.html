@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>StudyBank</title>
+
+  <!-- Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+
+  <style>
+    html[data-theme="dark"], body[data-theme="dark"] {
+      --bg-canvas: #121215;
+      --bg-dot: #2F2F37;
+      --bg-card: #1C1C20;
+      --bg-pill-idle: #28282E;
+      --bg-pill-hover: #32323A;
+      --bg-pill-active: #E4E4E7;
+      --text-pill-active: #121215;
+      --bg-option-chosen: #32323B;
+      --border-chosen: #F4F4F5;
+      --text-primary: #F4F4F5;
+      --text-counter: #E4E4EA;
+      --text-secondary: #A1A1AA;
+      --text-muted: #71717A;
+      --border-subtle: #26262C;
+      --correct-fill: #16A34A;
+      --correct-border: #22C55E;
+      --wrong-border: #F87171;
+      --star-active: #D4D4D8;
+      --star-inactive: #3A3A42;
+      --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.44);
+    }
+
+    /* +4% Matrix Contrast & Crisp Non-Grey Selection Highlights in Light Mode */
+    html[data-theme="light"], body[data-theme="light"] {
+      --bg-canvas: #E3E3E8;
+      --bg-dot: #B6B6C2;
+      --bg-card: #F2F2F6;
+      --bg-pill-idle: #DDDDE5;
+      --bg-pill-hover: #D2D2DC;
+      --bg-pill-active: #1F1F26;
+      --text-pill-active: #F8F8FA;
+      --bg-option-chosen: #FFFFFF;
+      --border-chosen: #18181B;
+      --text-primary: #18181B;
+      --text-counter: #27272A;
+      --text-secondary: #52525B;
+      --text-muted: #71717A;
+      --border-subtle: #D4D4DC;
+      --correct-fill: #16A34A;
+      --correct-border: #16A34A;
+      --wrong-border: #E11D48;
+      --star-active: #27272A;
+      --star-inactive: #C8C8D2;
+      --shadow-card: 0 10px 28px rgba(0, 0, 0, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-canvas);
+      color: var(--text-primary);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+      transition: background-color 0.16s ease, color 0.16s ease;
+    }
+
+    /* Organic Non-Linear Wave Dot Matrix Canvas */
+    #dotMatrixCanvas {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Top Bar */
+    .topbar {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      border-bottom: 1px solid var(--border-subtle);
+      background: var(--bg-canvas);
+      flex-shrink: 0;
+    }
+
+    .brand {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      cursor: pointer;
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Flat, Borderless Tone-Contrast Pills */
+    .pill {
+      border-radius: 9999px;
+      border: 2px solid transparent;
+      background: var(--bg-pill-idle);
+      color: var(--text-primary);
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: none;
+      transition: background-color 0.14s ease, color 0.14s ease, border-color 0.14s ease, transform 0.08s ease;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 6px;
+    }
+
+    .pill:hover {
+      background: var(--bg-pill-hover);
+    }
+
+    .pill:active {
+      transform: scale(0.98);
+    }
+
+    .pill.active {
+      background: var(--bg-pill-active);
+      color: var(--text-pill-active);
+      border-color: transparent;
+      font-weight: 600;
+    }
+
+    .pill-sm {
+      padding: 6px 14px;
+      font-size: 12px;
+    }
+
+    /* Exit Session Button */
+    .exit-session-btn {
+      margin-right: 20px;
+      border: none;
+      background: var(--bg-pill-idle);
+      color: var(--text-primary);
+    }
+
+    .exit-session-btn:hover {
+      background: var(--bg-pill-active);
+      color: var(--text-pill-active);
+    }
+
+    .theme-icon {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    /* Main Workspace Layout */
+    .workspace {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: flex;
+      width: 100%;
+      min-height: 0;
+    }
+
+    /* Compact Left Context Sidebar */
+    .context-sidebar {
+      width: fit-content;
+      max-width: 240px;
+      padding: 20px 14px;
+      border-right: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .sidebar-pill {
+      border-radius: 9999px;
+      border: none;
+      background: var(--bg-pill-idle);
+      color: var(--text-secondary);
+      padding: 5px 12px;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 212px;
+    }
+
+    /* Centered Stage */
+    .stage {
+      flex: 1;
+      padding: 28px 28px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow-y: auto;
+      perspective: 1200px;
+    }
+
+    /* Auto-Resizing Solid Card */
+    .card {
+      width: 100%;
+      max-width: 640px;
+      height: auto;
+      margin: auto;
+      background: var(--bg-card);
+      border: none;
+      border-radius: 26px;
+      padding: 28px 32px 22px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      transform-style: preserve-3d;
+      transition: transform 0.26s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.22s ease;
+    }
+
+    /* Card Throw & Slide Animations */
+    .card.throw-left {
+      transform: translate3d(-115%, -14px, 0) rotate(-8deg);
+      opacity: 0;
+    }
+
+    .card.throw-right {
+      transform: translate3d(115%, -14px, 0) rotate(8deg);
+      opacity: 0;
+    }
+
+    .card.enter-from-right {
+      transform: translate3d(65%, 8px, 0) rotate(4deg);
+      opacity: 0;
+      transition: none;
+    }
+
+    .card.enter-from-left {
+      transform: translate3d(-65%, 8px, 0) rotate(-4deg);
+      opacity: 0;
+      transition: none;
+    }
+
+    /* 3D Flip Halfway States */
+    .card.flip-out {
+      transform: rotateY(90deg) scale(0.97);
+      transition: transform 0.15s ease-in;
+    }
+
+    .card.flip-in {
+      transform: rotateY(-90deg) scale(0.97);
+      transition: none;
+    }
+
+    /* Screen 1: Setup Sections */
+    .setup-section {
+      margin-bottom: 20px;
+    }
+
+    .setup-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 9px;
+    }
+
+    .setup-label {
+      font-size: 11.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+    }
+
+    .pill-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .size-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .start-btn {
+      width: 100%;
+      padding: 13px 24px;
+      font-size: 14.5px;
+      font-weight: 600;
+      margin-top: 6px;
+    }
+
+    /* Screen 2: 3-Column Header */
+    .card-top-meta {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .qtype-label {
+      justify-self: start;
+      font-size: 11.5px;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+
+    .progress-counter {
+      justify-self: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-counter);
+      letter-spacing: 0.02em;
+    }
+
+    .meta-right {
+      justify-self: end;
+      display: flex;
+      align-items: center;
+    }
+
+    .stars {
+      letter-spacing: 1.5px;
+      font-size: 12.5px;
+    }
+
+    .star-on { color: var(--star-active); }
+    .star-off { color: var(--star-inactive); }
+
+    /* Centered Question Prompt */
+    .prompt-body {
+      font-size: 18.5px;
+      font-weight: 500;
+      line-height: 1.48;
+      margin-bottom: 20px;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      color: var(--text-primary);
+      text-align: center;
+    }
+
+    /* Flashcard Direct Container */
+    .flashcard-surface {
+      cursor: pointer;
+      padding: 8px 4px;
+      user-select: none;
+      width: 100%;
+    }
+
+    .flashcard-text {
+      font-size: 16.5px;
+      font-weight: 500;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      color: var(--text-primary);
+      text-align: center;
+    }
+
+    .flip-hint {
+      text-align: center;
+      font-size: 11.5px;
+      color: var(--text-muted);
+      margin-top: 14px;
+    }
+
+    /* Flat Tone-Contrast Option Pills */
+    .options-stack {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 0 auto 14px;
+      width: 100%;
+    }
+
+    .option-pill {
+      width: fit-content;
+      min-width: 220px;
+      max-width: 88%;
+      min-height: 40px;
+      border-radius: 9999px;
+      border: 2px solid transparent;
+      background-color: var(--bg-pill-idle);
+      color: var(--text-primary);
+      padding: 10px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.35;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.12s ease, border-color 0.12s ease, transform 0.08s ease;
+    }
+
+    .option-pill:hover {
+      background-color: var(--bg-pill-hover);
+    }
+
+    .option-pill:active {
+      transform: scale(0.98);
+    }
+
+    /* State 2: Chosen Pre-Verify (Crisp non-grey surface + distinct border) */
+    .option-pill.state-chosen {
+      background-color: var(--bg-option-chosen);
+      border-color: var(--border-chosen);
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* State 3: Chosen & Correct (Solid green fill + crisp white text) */
+    .option-pill.state-chosen-correct {
+      background-color: var(--correct-fill);
+      border-color: var(--correct-fill);
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* State 4: Chosen & Wrong (Tone fill + Highlighted pastel red border) */
+    .option-pill.state-chosen-wrong {
+      background-color: var(--bg-pill-idle);
+      border-color: var(--wrong-border);
+      color: var(--text-primary);
+    }
+
+    /* State 5: Unchosen Correct (Tone fill + Highlighted green border) */
+    .option-pill.state-unchosen-correct {
+      background-color: var(--bg-pill-idle);
+      border-color: var(--correct-border);
+      color: var(--text-primary);
+    }
+
+    .verify-row {
+      display: flex;
+      justify-content: center;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+
+    .self-grade-row {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .explanation-box {
+      margin-top: 12px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      background: var(--bg-pill-idle);
+      font-size: 13px;
+      line-height: 1.45;
+      color: var(--text-secondary);
+      white-space: pre-wrap;
+      text-align: center;
+    }
+
+    /* Flat Tone-Contrast Navigation Buttons */
+    .nav-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 20px;
+      padding-top: 12px;
+    }
+
+    .nav-btn {
+      min-width: 124px;
+      border-radius: 9999px;
+      border: none;
+      background: var(--bg-pill-idle);
+      color: var(--text-primary);
+      padding: 9px 22px;
+      font-size: 13.5px;
+      font-weight: 500;
+      cursor: pointer;
+      box-shadow: none;
+      text-align: center;
+      transition: background-color 0.14s ease, color 0.14s ease, transform 0.08s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-pill-hover);
+    }
+
+    .nav-btn:active {
+      transform: scale(0.97);
+    }
+
+    .nav-btn.primary {
+      background: var(--bg-pill-active);
+      color: var(--text-pill-active);
+      font-weight: 600;
+    }
+
+    /* Tiny Tag Bubbles at the Bottom of the Card */
+    .card-bottom-tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .tag-bubble {
+      border-radius: 9999px;
+      padding: 2px 9px;
+      font-size: 10.5px;
+      color: var(--text-muted);
+      background: var(--bg-pill-idle);
+    }
+
+    /* Screen 3: Results-First End Screen */
+    .results-hero {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .progress-track {
+      width: 100%;
+      height: 9px;
+      border-radius: 9999px;
+      background: var(--bg-pill-idle);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--correct-fill);
+      border-radius: 9999px;
+      transition: width 0.3s ease;
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 22px;
+    }
+
+    .metric-box {
+      border-radius: 16px;
+      padding: 14px 10px;
+      text-align: center;
+      background: var(--bg-pill-idle);
+    }
+
+    .metric-val {
+      font-size: 24px;
+      font-weight: 700;
+      display: block;
+    }
+
+    .metric-lbl {
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      margin-top: 3px;
+    }
+
+    .breakdown-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .breakdown-item-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12.5px;
+      margin-bottom: 5px;
+      color: var(--text-secondary);
+    }
+
+    .end-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .hidden { display: none !important; }
+
+    /* DESKTOP +15% SCALE-UP */
+    @media (min-width: 769px) {
+      .card {
+        max-width: 740px;
+        padding: 34px 38px 26px;
+        border-radius: 30px;
+      }
+      .qtype-label {
+        font-size: 13px;
+      }
+      .progress-counter {
+        font-size: 15px;
+      }
+      .stars {
+        font-size: 14.5px;
+      }
+      .prompt-body {
+        font-size: 21.5px;
+        margin-bottom: 24px;
+      }
+      .flashcard-text {
+        font-size: 18.5px;
+      }
+      .option-pill {
+        min-width: 250px;
+        min-height: 44px;
+        padding: 11px 28px;
+        font-size: 15.5px;
+      }
+      .options-stack {
+        gap: 11px;
+      }
+      .nav-btn {
+        min-width: 140px;
+        padding: 10px 26px;
+        font-size: 15.5px;
+      }
+      .tag-bubble {
+        font-size: 11.5px;
+        padding: 3px 11px;
+      }
+      .explanation-box {
+        font-size: 14.5px;
+      }
+    }
+
+    /* MOBILE UNIFORM OPTIONS, AUTO-HEIGHT CONTAINERS & BOTTOM BREATHING ROOM */
+    @media (max-width: 768px) {
+      .topbar {
+        padding: 10px 16px;
+      }
+      .exit-session-btn {
+        margin-right: 12px;
+      }
+      .context-sidebar {
+        display: none;
+      }
+      .stage {
+        padding: 16px 20px calc(48px + env(safe-area-inset-bottom, 16px));
+        align-items: flex-start;
+      }
+      .card {
+        width: 100%;
+        max-width: calc(100vw - 40px);
+        height: auto;
+        margin: auto;
+        padding: 20px 18px 18px;
+        border-radius: 24px;
+      }
+      .prompt-body {
+        font-size: 16.5px;
+        line-height: 1.42;
+        margin-bottom: 16px;
+      }
+      .flashcard-text {
+        font-size: 15px;
+        line-height: 1.48;
+      }
+      .options-stack {
+        gap: 9px;
+        margin-bottom: 10px;
+      }
+      .option-pill {
+        width: 88%;
+        max-width: 340px;
+        min-width: 200px;
+        min-height: 40px;
+        padding: 10px 20px;
+        font-size: 12.2px;
+        line-height: 1.35;
+      }
+      .nav-footer {
+        margin-top: 16px;
+        padding-top: 10px;
+        gap: 12px;
+      }
+      .nav-btn {
+        min-width: 110px;
+        padding: 8px 18px;
+        font-size: 13px;
+      }
+      .card-bottom-tags {
+        margin-top: 12px;
+        padding-top: 8px;
+      }
+      .size-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+      .setup-section {
+        margin-bottom: 18px;
+      }
+      .end-actions {
+        flex-wrap: wrap;
+      }
+      .end-actions .nav-btn {
+        flex: 1;
+        min-width: 95px;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+
+  <!-- Organic Angled Dot-Matrix Canvas -->
+  <canvas id="dotMatrixCanvas"></canvas>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="brand" onclick="abortSession()">StudyBank</div>
+    <div class="topbar-right">
+      <button id="exitSessionBtn" class="pill pill-sm exit-session-btn hidden" onclick="abortSession()">Exit Session</button>
+      <button id="finishInfiniteBtn" class="pill pill-sm exit-session-btn hidden" onclick="finishSession()">Finish & Save</button>
+      <button class="pill pill-sm" id="themeToggleBtn" onclick="toggleTheme()"></button>
+    </div>
+  </header>
+
+  <div class="workspace">
+    <!-- Compact Single-Line Left Context Sidebar -->
+    <aside id="contextSidebar" class="context-sidebar hidden"></aside>
+
+    <!-- Main Centered Stage -->
+    <main class="stage">
+
+      <!-- SCREEN 1: SETUP FLOW -->
+      <section id="screenSetup" class="card">
+        <div class="setup-section">
+          <div class="setup-header">
+            <span class="setup-label">Major</span>
+          </div>
+          <div id="majorList" class="pill-group"></div>
+        </div>
+
+        <div class="setup-section">
+          <div class="setup-header">
+            <span class="setup-label">Course</span>
+          </div>
+          <div id="courseList" class="pill-group"></div>
+        </div>
+
+        <div class="setup-section">
+          <div class="setup-header">
+            <span class="setup-label">Modules</span>
+            <button class="pill pill-sm" onclick="toggleAllModules()">Select All</button>
+          </div>
+          <div id="moduleList" class="pill-group"></div>
+        </div>
+
+        <div class="setup-section">
+          <div class="setup-header">
+            <span class="setup-label">Practice Mode</span>
+          </div>
+          <div class="pill-group" style="margin-bottom: 10px;">
+            <button id="modeQuestionsBtn" class="pill active" onclick="setPracticeMode('question')">Questions</button>
+            <button id="modeFlashcardsBtn" class="pill" onclick="setPracticeMode('content_note')">Content Flashcards</button>
+          </div>
+
+          <div id="questionTypeSection">
+            <div class="setup-header" style="margin-top: 10px;">
+              <span class="setup-label">Question Types</span>
+              <button class="pill pill-sm" onclick="toggleAllQuestionTypes()">Select All</button>
+            </div>
+            <div id="questionTypeList" class="pill-group"></div>
+          </div>
+
+          <div id="flashcardStyleSection" class="hidden">
+            <div class="setup-header" style="margin-top: 10px;">
+              <span class="setup-label">Flashcard Style</span>
+            </div>
+            <div class="pill-group">
+              <button id="fcStyleMixedBtn" class="pill active" onclick="setFlashcardStyle('mixed')">2-Sided Practice (Clipped & Blanks)</button>
+              <button id="fcStyleSimpleBtn" class="pill" onclick="setFlashcardStyle('simple')">Simple Flip</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-section">
+          <div class="setup-header">
+            <span class="setup-label">Session Size</span>
+          </div>
+          <div class="size-grid">
+            <button class="pill" data-size="13" onclick="setSessionSize(13)">Quick (13)</button>
+            <button class="pill active" data-size="28" onclick="setSessionSize(28)">Medium (28)</button>
+            <button class="pill" data-size="44" onclick="setSessionSize(44)">Deep (44)</button>
+            <button class="pill" data-size="infinite" onclick="setSessionSize('infinite')">Infinite</button>
+          </div>
+        </div>
+
+        <button class="pill active start-btn" onclick="startNewSession()">Start Practice Session</button>
+      </section>
+
+      <!-- SCREEN 2A & 2B: ACTIVE PRACTICE CARD -->
+      <section id="screenPractice" class="card hidden">
+        <div class="card-top-meta">
+          <span class="qtype-label" id="questionTypeIndicator">Single Choice</span>
+          <span class="progress-counter" id="progressCounter">1 / 28</span>
+          <div class="meta-right">
+            <span class="stars" id="cardDifficultyStars"></span>
+          </div>
+        </div>
+
+        <!-- Question Mode View -->
+        <div id="questionView">
+          <div class="prompt-body" id="questionPrompt"></div>
+          <div class="options-stack" id="optionsStack"></div>
+
+          <div class="verify-row hidden" id="verifyMultiRow">
+            <button class="pill active pill-sm" onclick="verifyMultipleChoice()">Verify Answer</button>
+          </div>
+
+          <!-- Non-Option Question Flip Zone -->
+          <div id="openEndedZone" class="hidden">
+            <div class="flashcard-surface" onclick="triggerCardFlip('question')">
+              <div id="openEndedFrontText" class="flip-hint">
+                Tap card (or press Space) to flip & reveal answer
+              </div>
+              <div id="openEndedBackContent" class="hidden">
+                <div id="openEndedAnswerText" class="flashcard-text" style="color: var(--correct-border);"></div>
+              </div>
+            </div>
+            <div id="selfGradeButtons" class="self-grade-row hidden">
+              <button class="pill pill-sm" style="border-color: var(--wrong-border);" onclick="gradeNonOption('wrong')">Wrong</button>
+              <button class="pill pill-sm" style="border-color: var(--correct-border);" onclick="gradeNonOption('right')">Right</button>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:center; margin-top: 6px;">
+            <button id="toggleExpBtn" class="pill pill-sm hidden" onclick="toggleExplanation()">Explanation</button>
+          </div>
+          <div id="explanationBox" class="explanation-box hidden"></div>
+        </div>
+
+        <!-- Flashcard Mode View (Screen 2A) -->
+        <div id="flashcardView" class="hidden">
+          <div class="flashcard-surface" onclick="triggerCardFlip('flashcard')">
+            <div class="flashcard-text" id="flashcardBody"></div>
+            <div class="flip-hint" id="flashcardFlipHint">Tap anywhere on card to flip</div>
+          </div>
+          <div id="flashcardGradeRow" class="self-grade-row hidden">
+            <button class="pill pill-sm" style="border-color: var(--wrong-border);" onclick="gradeNonOption('wrong')">Review Again</button>
+            <button class="pill pill-sm" style="border-color: var(--correct-border);" onclick="gradeNonOption('right')">Got It</button>
+          </div>
+        </div>
+
+        <!-- Closer, Uniform Borderless Navigation Buttons -->
+        <div class="nav-footer">
+          <button class="nav-btn" onclick="prevCard()">Back</button>
+          <button class="nav-btn primary" onclick="nextCard()">Next</button>
+        </div>
+
+        <!-- Tiny Related Concept Tag Bubbles at the Bottom of the Card -->
+        <div class="card-bottom-tags" id="cardTagBubbles"></div>
+      </section>
+
+      <!-- SCREEN 3: RESULTS-FIRST END OF SESSION -->
+      <section id="screenResults" class="card hidden">
+        <div class="results-hero" id="resultsAccuracyText">0% Session Accuracy</div>
+        <div class="progress-track">
+          <div class="progress-fill" id="resultsProgressBar" style="width: 0%;"></div>
+        </div>
+
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <span class="metric-val" id="resCorrectCount">0</span>
+            <span class="metric-lbl">Correct</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-val" id="resWrongCount">0</span>
+            <span class="metric-lbl">To Review</span>
+          </div>
+          <div class="metric-box">
+            <span class="metric-val" id="resTotalCount">0</span>
+            <span class="metric-lbl">Total</span>
+          </div>
+        </div>
+
+        <div class="setup-label" style="margin-bottom: 10px;">Breakdown by Question Type</div>
+        <div class="breakdown-list" id="resultsBreakdownList"></div>
+
+        <div class="end-actions">
+          <button class="nav-btn" onclick="repeatSameSession()">Repeat Same</button>
+          <button class="nav-btn" onclick="retakeMixSession()">Retake Mix</button>
+          <button class="nav-btn primary" onclick="exitToSetup()">Exit Setup</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    const QUESTION_TYPE_LABELS = {
+      true_false: "True / False",
+      single_choice: "Single Choice",
+      multiple_choice: "Multiple Choice",
+      short_answer: "Short Answer",
+      open_ended: "Open Ended",
+      calculation: "Calculation"
+    };
+
+    const SUN_SVG = `<svg class="theme-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"/></svg><span>Light</span>`;
+    const MOON_SVG = `<svg class="theme-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><span>Dark</span>`;
+
+    let catalogData = { majors: [], all_items: [] };
+    let isAnimatingCard = false;
+    let currentDotColor = "#2F2F37";
+
+    let state = {
+      major: "",
+      subject: "",
+      selectedModules: new Set(),
+      itemType: "question",
+      selectedQuestionTypes: new Set(Object.keys(QUESTION_TYPE_LABELS)),
+      flashcardStyle: "mixed",
+      sessionSize: 28,
+      sessionDeck: [],
+      currentIndex: 0,
+      cardStates: {},
+      sessionTelemetry: [],
+      lastWrongIds: [],
+      lastRightIds: []
+    };
+
+    /* Organic Non-Continuous, Non-Linear Wave Dot-Matrix Renderer (±9% Size) */
+    function initOrganicDotMatrix() {
+      const canvas = document.getElementById("dotMatrixCanvas");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      let width = 0;
+      let height = 0;
+      let dpr = 1;
+      let points = [];
+
+      const spacing = 22;
+      const baseRadius = 1.5;
+      const maxModulation = 0.4; // ±40% radius modulation
+      const angle = -32 * (Math.PI / 180);
+      const cosA = Math.cos(angle);
+      const sinA = Math.sin(angle);
+
+      function rebuildGrid() {
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+        points = [];
+        const diag = Math.hypot(width, height);
+        const halfSpan = Math.ceil(diag / spacing) + 2;
+        const cx = width / 2;
+        const cy = height / 2;
+
+        for (let gx = -halfSpan; gx <= halfSpan; gx++) {
+          for (let gy = -halfSpan; gy <= halfSpan; gy++) {
+            const rx = gx * spacing;
+            const ry = gy * spacing;
+            const sx = cx + rx * cosA - ry * sinA;
+            const sy = cy + rx * sinA + ry * cosA;
+            if (sx >= -15 && sx <= width + 15 && sy >= -15 && sy <= height + 15) {
+              points.push({ sx, sy, gx, gy });
+            }
+          }
+        }
+      }
+
+      window.addEventListener("resize", rebuildGrid);
+      rebuildGrid();
+
+      // 7 discrete radius buckets across [-9%, +9%] for ultra-fast batched path rendering
+      const bucketCount = 9;
+      const bucketRadii = [];
+      for (let b = 0; b < bucketCount; b++) {
+        const norm = (b / (bucketCount - 1)) * 2 - 1; // -1 to +1
+        bucketRadii.push(baseRadius * (1 + maxModulation * norm));
+      }
+
+      function renderWaveFrame(ts) {
+        const t = ts * 0.0014; // Slow, organic temporal drift
+        ctx.clearRect(0, 0, width, height);
+        ctx.fillStyle = currentDotColor;
+
+        const buckets = Array.from({ length: bucketCount }, () => []);
+
+        // Non-periodic wandering wave packets for non-continuous, non-linear ripples
+        const pulseGate = Math.max(0, Math.sin(t * 0.82) + 0.35 * Math.cos(t * 1.71));
+
+        for (let i = 0; i < points.length; i++) {
+          const p = points[i];
+          // Superposition of two incommensurate warped wave fronts
+          const warp = Math.sin(p.gx * 0.14 - p.gy * 0.11 + t * 0.8);
+          const w1 = Math.sin(p.gx * 0.21 + p.gy * 0.09 - t * 1.4 + warp * 0.9);
+          const w2 = Math.cos(p.gx * 0.08 - p.gy * 0.24 + t * 1.05 - warp * 0.7);
+          const raw = (w1 * w2 + 0.45 * Math.sin(w1 - w2 + t)) / 1.45;
+
+          // Non-linear cubic deadband so most dots rest calmly while localized waves swell ±40%
+          const nonLinear = Math.pow(raw, 1) * (0.41 + 0.59 * pulseGate);
+          const clamped = Math.max(-1, Math.min(1, nonLinear * 1.65));
+
+          const bIdx = Math.round(((clamped + 1) * 0.5) * (bucketCount - 1));
+          buckets[bIdx].push(p);
+        }
+
+        for (let b = 0; b < bucketCount; b++) {
+          const list = buckets[b];
+          if (!list.length) continue;
+          const r = bucketRadii[b];
+          ctx.beginPath();
+          for (let j = 0; j < list.length; j++) {
+            const pt = list[j];
+            ctx.moveTo(pt.sx + r, pt.sy);
+            ctx.arc(pt.sx, pt.sy, r, 0, Math.PI * 2);
+          }
+          ctx.fill();
+        }
+
+        requestAnimationFrame(renderWaveFrame);
+      }
+
+      requestAnimationFrame(renderWaveFrame);
+    }
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      document.body.setAttribute("data-theme", theme);
+      const btn = document.getElementById("themeToggleBtn");
+      if (btn) {
+        btn.innerHTML = theme === "dark" ? SUN_SVG : MOON_SVG;
+      }
+      currentDotColor = theme === "dark" ? "#2F2F37" : "#B6B6C2";
+      localStorage.setItem("studybank_theme", theme);
+    }
+
+    function initTheme() {
+      const saved = localStorage.getItem("studybank_theme") || "dark";
+      applyTheme(saved);
+    }
+
+    function toggleTheme() {
+      const cur = document.body.getAttribute("data-theme") || "dark";
+      applyTheme(cur === "dark" ? "light" : "dark");
+    }
+
+    function renderMath(el) {
+      if (window.renderMathInElement && el) {
+        window.renderMathInElement(el, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "$", right: "$", display: false }
+          ],
+          throwOnError: false
+        });
+      }
+    }
+
+    function normalizeAndShuffleOptions(item) {
+      if (!Array.isArray(item.options)) return [];
+      const correctSet = new Set(
+        Array.isArray(item.answer) ? item.answer.map(String) : [String(item.answer)]
+      );
+
+      const normalized = item.options.map(opt => {
+        if (Array.isArray(opt) && opt.length >= 2) {
+          const cleanText = String(opt[0]).replace(/^([A-E]|Option\s+[A-E]):\s*/i, "").trim();
+          return { text: cleanText, isCorrect: Boolean(opt[1]) };
+        }
+        const rawStr = String(opt);
+        const match = rawStr.match(/^([A-E]):\s*(.*)$/i);
+        if (match) {
+          const key = match[1].toUpperCase();
+          const cleanText = match[2].trim();
+          return { text: cleanText, isCorrect: correctSet.has(key) || correctSet.has(rawStr) };
+        }
+        return { text: rawStr, isCorrect: correctSet.has(rawStr) };
+      });
+
+      if (item.question_type !== "true_false") {
+        for (let i = normalized.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [normalized[i], normalized[j]] = [normalized[j], normalized[i]];
+        }
+      }
+      return normalized;
+    }
+
+    async function loadCatalog() {
+      try {
+        const res = await fetch("/api/catalog");
+        if (!res.ok) throw new Error("API offline");
+        catalogData = await res.json();
+        localStorage.setItem("studybank_offline_catalog", JSON.stringify(catalogData));
+        flushPendingTelemetry();
+      } catch (err) {
+        const cached = localStorage.getItem("studybank_offline_catalog");
+        if (cached) catalogData = JSON.parse(cached);
+      }
+      initDefaultSelections();
+      renderSetupScreen();
+    }
+
+    function initDefaultSelections() {
+      if (!catalogData.majors.length) return;
+      const firstMajor = catalogData.majors[0];
+      state.major = firstMajor.major;
+      if (firstMajor.courses.length) {
+        const firstCourse = firstMajor.courses[0];
+        state.subject = firstCourse.subject;
+        state.selectedModules = new Set(firstCourse.modules.map(m => m.name));
+      }
+    }
+
+    function getCurrentCourseObj() {
+      const m = catalogData.majors.find(x => x.major === state.major);
+      if (!m) return null;
+      return m.courses.find(c => c.subject === state.subject) || m.courses[0] || null;
+    }
+
+    function renderSetupScreen() {
+      const majorEl = document.getElementById("majorList");
+      majorEl.innerHTML = "";
+      catalogData.majors.forEach(m => {
+        const btn = document.createElement("button");
+        btn.className = `pill ${m.major === state.major ? "active" : ""}`;
+        btn.textContent = m.major;
+        btn.onclick = () => {
+          state.major = m.major;
+          if (m.courses.length === 1) state.subject = m.courses[0].subject;
+          const c = getCurrentCourseObj();
+          if (c) state.selectedModules = new Set(c.modules.map(mod => mod.name));
+          renderSetupScreen();
+        };
+        majorEl.appendChild(btn);
+      });
+
+      const courseEl = document.getElementById("courseList");
+      courseEl.innerHTML = "";
+      const mObj = catalogData.majors.find(x => x.major === state.major);
+      if (mObj) {
+        mObj.courses.forEach(c => {
+          const btn = document.createElement("button");
+          btn.className = `pill ${c.subject === state.subject ? "active" : ""}`;
+          btn.textContent = `${c.subject} (${c.total_items})`;
+          btn.onclick = () => {
+            state.subject = c.subject;
+            state.selectedModules = new Set(c.modules.map(mod => mod.name));
+            renderSetupScreen();
+          };
+          courseEl.appendChild(btn);
+        });
+      }
+
+      const modEl = document.getElementById("moduleList");
+      modEl.innerHTML = "";
+      const cObj = getCurrentCourseObj();
+      if (cObj) {
+        cObj.modules.forEach(mod => {
+          const btn = document.createElement("button");
+          const isSel = state.selectedModules.has(mod.name);
+          btn.className = `pill ${isSel ? "active" : ""}`;
+          const count = state.itemType === "question" ? mod.questions : mod.flashcards;
+          btn.textContent = `${mod.name} (${count})`;
+          btn.onclick = () => {
+            if (state.selectedModules.has(mod.name)) {
+              if (state.selectedModules.size > 1) state.selectedModules.delete(mod.name);
+            } else {
+              state.selectedModules.add(mod.name);
+            }
+            renderSetupScreen();
+          };
+          modEl.appendChild(btn);
+        });
+      }
+
+      const qtEl = document.getElementById("questionTypeList");
+      qtEl.innerHTML = "";
+      Object.entries(QUESTION_TYPE_LABELS).forEach(([key, label]) => {
+        const btn = document.createElement("button");
+        btn.className = `pill ${state.selectedQuestionTypes.has(key) ? "active" : ""}`;
+        btn.textContent = label;
+        btn.onclick = () => {
+          if (state.selectedQuestionTypes.has(key)) {
+            if (state.selectedQuestionTypes.size > 1) state.selectedQuestionTypes.delete(key);
+          } else {
+            state.selectedQuestionTypes.add(key);
+          }
+          renderSetupScreen();
+        };
+        qtEl.appendChild(btn);
+      });
+    }
+
+    function toggleAllModules() {
+      const cObj = getCurrentCourseObj();
+      if (!cObj) return;
+      if (state.selectedModules.size === cObj.modules.length) {
+        state.selectedModules = new Set([cObj.modules[0].name]);
+      } else {
+        state.selectedModules = new Set(cObj.modules.map(m => m.name));
+      }
+      renderSetupScreen();
+    }
+
+    function toggleAllQuestionTypes() {
+      const allKeys = Object.keys(QUESTION_TYPE_LABELS);
+      if (state.selectedQuestionTypes.size === allKeys.length) {
+        state.selectedQuestionTypes = new Set(["single_choice"]);
+      } else {
+        state.selectedQuestionTypes = new Set(allKeys);
+      }
+      renderSetupScreen();
+    }
+
+    function setPracticeMode(mode) {
+      state.itemType = mode;
+      document.getElementById("modeQuestionsBtn").classList.toggle("active", mode === "question");
+      document.getElementById("modeFlashcardsBtn").classList.toggle("active", mode === "content_note");
+      document.getElementById("questionTypeSection").classList.toggle("hidden", mode !== "question");
+      document.getElementById("flashcardStyleSection").classList.toggle("hidden", mode !== "content_note");
+      renderSetupScreen();
+    }
+
+    function setFlashcardStyle(style) {
+      state.flashcardStyle = style;
+      document.getElementById("fcStyleMixedBtn").classList.toggle("active", style === "mixed");
+      document.getElementById("fcStyleSimpleBtn").classList.toggle("active", style === "simple");
+    }
+
+    function setSessionSize(size) {
+      state.sessionSize = size;
+      document.querySelectorAll("[data-size]").forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-size") === String(size));
+      });
+    }
+
+    function prepareFlashcardDeck(rawItems, targetSize) {
+      const modes = ["clipped", "blanks"];
+      const deck = [];
+      for (let i = 0; i < rawItems.length; i++) {
+        const chosenMode = state.flashcardStyle === "simple"
+          ? "simple"
+          : modes[Math.floor(Math.random() * modes.length)];
+        deck.push({ ...rawItems[i], fcMode: chosenMode });
+
+        if (state.flashcardStyle === "mixed" && i > 1 && Math.random() < 0.22) {
+          const prevIdx = Math.floor(Math.random() * i);
+          const prevCard = deck[prevIdx];
+          const oppositeMode = prevCard.fcMode === "clipped" ? "blanks" : "clipped";
+          deck.push({ ...rawItems[prevIdx], fcMode: oppositeMode });
+        }
+      }
+      const limit = targetSize === "infinite" ? deck.length : Math.min(Number(targetSize), deck.length);
+      return deck.slice(0, limit);
+    }
+
+    async function startNewSession(useRetakeWeights = false) {
+      const payload = {
+        major: state.major,
+        subject: state.subject,
+        modules: Array.from(state.selectedModules),
+        item_type: state.itemType,
+        question_types: Array.from(state.selectedQuestionTypes),
+        size: state.sessionSize,
+        previous_wrong_ids: useRetakeWeights ? state.lastWrongIds : [],
+        previous_right_ids: useRetakeWeights ? state.lastRightIds : []
+      };
+
+      let rawItems = [];
+      try {
+        const res = await fetch("/api/session", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error("Fallback to offline pool");
+        const data = await res.json();
+        rawItems = data.session_items;
+      } catch (err) {
+        let pool = catalogData.all_items.filter(it =>
+          it.major === state.major &&
+          it.subject === state.subject &&
+          it.item_type === state.itemType &&
+          it.modules.some(m => state.selectedModules.has(m)) &&
+          (state.itemType !== "question" || state.selectedQuestionTypes.has(it.question_type))
+        );
+        pool.sort(() => Math.random() - 0.5);
+        const limit = state.sessionSize === "infinite" ? pool.length : Math.min(Number(state.sessionSize), pool.length);
+        rawItems = pool.slice(0, limit);
+      }
+
+      if (!rawItems.length) {
+        alert("Nenhum item encontrado para os filtros selecionados.");
+        return;
+      }
+
+      state.sessionDeck = state.itemType === "content_note"
+        ? prepareFlashcardDeck(rawItems, state.sessionSize)
+        : rawItems;
+
+      launchDeck();
+    }
+
+    function launchDeck() {
+      state.currentIndex = 0;
+      state.cardStates = {};
+      state.sessionTelemetry = [];
+
+      document.getElementById("screenSetup").classList.add("hidden");
+      document.getElementById("screenResults").classList.add("hidden");
+      document.getElementById("screenPractice").classList.remove("hidden");
+      document.getElementById("exitSessionBtn").classList.remove("hidden");
+      document.getElementById("finishInfiniteBtn").classList.toggle("hidden", state.sessionSize !== "infinite");
+
+      renderSidebar();
+      renderCurrentCard();
+    }
+
+    function renderSidebar() {
+      const sb = document.getElementById("contextSidebar");
+      sb.innerHTML = "";
+      sb.classList.remove("hidden");
+
+      const pills = [state.major, state.subject, ...Array.from(state.selectedModules)];
+      pills.forEach(text => {
+        const div = document.createElement("div");
+        div.className = "sidebar-pill";
+        div.title = text;
+        div.textContent = text;
+        sb.appendChild(div);
+      });
+    }
+
+    function transformFlashcardFront(promptText, mode) {
+      if (mode === "simple") return promptText;
+      if (mode === "clipped") {
+        return promptText.split("\n").map((line, idx) => {
+          if (idx === 0) return line;
+          const colonIdx = line.indexOf(":");
+          if (colonIdx !== -1) {
+            return line.slice(0, colonIdx + 1) + "  [ ... ]";
+          }
+          return line;
+        }).join("\n");
+      }
+      const tokens = promptText.split(/(\s+)/);
+      return tokens.map((tok, i) => {
+        const clean = tok.replace(/[.,;()]/g, "");
+        if (clean.length >= 5 && (i % 7 === 3 || /\d/.test(clean))) {
+          return "[ _____ ]";
+        }
+        return tok;
+      }).join("");
+    }
+
+    function renderCurrentCard() {
+      const item = state.sessionDeck[state.currentIndex];
+      if (!state.cardStates[state.currentIndex]) {
+        state.cardStates[state.currentIndex] = {
+          answered: false,
+          outcome: null,
+          chosenIndices: new Set(),
+          shuffledOptions: normalizeAndShuffleOptions(item),
+          flipped: false,
+          showExp: false
+        };
+      }
+      const cState = state.cardStates[state.currentIndex];
+
+      const typeLabel = state.itemType === "content_note"
+        ? "Content Flashcard"
+        : (QUESTION_TYPE_LABELS[item.question_type] || "Question");
+      document.getElementById("questionTypeIndicator").textContent = typeLabel;
+
+      const totalLabel = state.sessionSize === "infinite" ? "∞" : state.sessionDeck.length;
+      document.getElementById("progressCounter").textContent = `${state.currentIndex + 1} / ${totalLabel}`;
+
+      const diff = item.difficulty || 1;
+      document.getElementById("cardDifficultyStars").innerHTML =
+        `<span class="star-on">${"★".repeat(diff)}</span>` +
+        `<span class="star-off">${"★".repeat(5 - diff)}</span>`;
+
+      const bubblesEl = document.getElementById("cardTagBubbles");
+      bubblesEl.innerHTML = "";
+      (item.tag_bubbles || []).forEach(b => {
+        const span = document.createElement("span");
+        span.className = "tag-bubble";
+        span.textContent = b;
+        bubblesEl.appendChild(span);
+      });
+
+      if (state.itemType === "content_note") {
+        document.getElementById("questionView").classList.add("hidden");
+        document.getElementById("flashcardView").classList.remove("hidden");
+        const bodyEl = document.getElementById("flashcardBody");
+        const hintEl = document.getElementById("flashcardFlipHint");
+        const gradeRow = document.getElementById("flashcardGradeRow");
+
+        if (cState.flipped || item.fcMode === "simple") {
+          bodyEl.textContent = item.prompt;
+          hintEl.textContent = item.fcMode === "simple" ? "Tap card to flip" : "Full note revealed (tap to flip back)";
+          gradeRow.classList.toggle("hidden", cState.answered);
+        } else {
+          bodyEl.textContent = transformFlashcardFront(item.prompt, item.fcMode);
+          hintEl.textContent = "Tap anywhere on card (or Space) to flip";
+          gradeRow.classList.add("hidden");
+        }
+        renderMath(bodyEl);
+        return;
+      }
+
+      // Question Mode
+      document.getElementById("flashcardView").classList.add("hidden");
+      document.getElementById("questionView").classList.remove("hidden");
+
+      const promptEl = document.getElementById("questionPrompt");
+      promptEl.textContent = item.prompt;
+      renderMath(promptEl);
+
+      const isOptionType = ["true_false", "single_choice", "multiple_choice"].includes(item.question_type);
+      const stackEl = document.getElementById("optionsStack");
+      const verifyRow = document.getElementById("verifyMultiRow");
+      const openZone = document.getElementById("openEndedZone");
+
+      stackEl.innerHTML = "";
+
+      if (isOptionType && cState.shuffledOptions.length > 0) {
+        openZone.classList.add("hidden");
+
+        cState.shuffledOptions.forEach((optObj, idx) => {
+          const btn = document.createElement("button");
+          btn.className = "option-pill";
+
+          if (!cState.answered) {
+            if (cState.chosenIndices.has(idx)) {
+              btn.classList.add("state-chosen");
+            }
+            btn.onclick = () => handleOptionClick(idx, item);
+          } else {
+            const wasChosen = cState.chosenIndices.has(idx);
+            const isCorrect = optObj.isCorrect;
+            if (wasChosen && isCorrect) {
+              btn.classList.add("state-chosen-correct");
+            } else if (wasChosen && !isCorrect) {
+              btn.classList.add("state-chosen-wrong");
+            } else if (!wasChosen && isCorrect) {
+              btn.classList.add("state-unchosen-correct");
+            }
+          }
+
+          btn.textContent = optObj.text;
+          stackEl.appendChild(btn);
+          renderMath(btn);
+        });
+
+        verifyRow.classList.toggle(
+          "hidden",
+          item.question_type !== "multiple_choice" || cState.answered || cState.chosenIndices.size === 0
+        );
+      } else {
+        verifyRow.classList.add("hidden");
+        openZone.classList.remove("hidden");
+        document.getElementById("openEndedFrontText").classList.toggle("hidden", cState.flipped);
+        document.getElementById("openEndedBackContent").classList.toggle("hidden", !cState.flipped);
+        const ansEl = document.getElementById("openEndedAnswerText");
+        ansEl.textContent = typeof item.answer === "string" ? item.answer : JSON.stringify(item.answer);
+        renderMath(ansEl);
+        document.getElementById("selfGradeButtons").classList.toggle("hidden", !cState.flipped || cState.answered);
+      }
+
+      const expBtn = document.getElementById("toggleExpBtn");
+      const expBox = document.getElementById("explanationBox");
+      expBtn.classList.toggle("hidden", !cState.answered || !item.explanation);
+      expBox.classList.toggle("hidden", !cState.showExp);
+      expBox.textContent = item.explanation || "";
+      renderMath(expBox);
+    }
+
+    function handleOptionClick(optIdx, item) {
+      const cState = state.cardStates[state.currentIndex];
+      if (cState.answered) return;
+
+      if (item.question_type === "multiple_choice") {
+        if (cState.chosenIndices.has(optIdx)) {
+          cState.chosenIndices.delete(optIdx);
+        } else {
+          cState.chosenIndices.add(optIdx);
+        }
+        renderCurrentCard();
+      } else {
+        cState.chosenIndices.add(optIdx);
+        cState.answered = true;
+        const isRight = Boolean(cState.shuffledOptions[optIdx].isCorrect);
+        cState.outcome = isRight ? "right" : "wrong";
+        logSessionAttempt(item.id, cState.outcome, item.question_type);
+        renderCurrentCard();
+      }
+    }
+
+    function verifyMultipleChoice() {
+      const item = state.sessionDeck[state.currentIndex];
+      const cState = state.cardStates[state.currentIndex];
+      if (cState.answered || !cState.chosenIndices.size) return;
+
+      const isExactMatch = cState.shuffledOptions.every((opt, idx) =>
+        opt.isCorrect === cState.chosenIndices.has(idx)
+      );
+
+      cState.answered = true;
+      cState.outcome = isExactMatch ? "right" : "wrong";
+      logSessionAttempt(item.id, cState.outcome, item.question_type);
+      renderCurrentCard();
+    }
+
+    function triggerCardFlip() {
+      if (isAnimatingCard) return;
+      isAnimatingCard = true;
+      const cardEl = document.getElementById("screenPractice");
+      const cState = state.cardStates[state.currentIndex];
+
+      cardEl.classList.add("flip-out");
+      setTimeout(() => {
+        cState.flipped = !cState.flipped;
+        renderCurrentCard();
+        cardEl.classList.remove("flip-out");
+        cardEl.classList.add("flip-in");
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            cardEl.classList.remove("flip-in");
+            setTimeout(() => { isAnimatingCard = false; }, 160);
+          });
+        });
+      }, 145);
+    }
+
+    function gradeNonOption(outcome) {
+      const item = state.sessionDeck[state.currentIndex];
+      const cState = state.cardStates[state.currentIndex];
+      cState.answered = true;
+      cState.outcome = outcome;
+      logSessionAttempt(item.id, outcome, item.question_type || "flashcard");
+      renderCurrentCard();
+    }
+
+    function toggleExplanation() {
+      const cState = state.cardStates[state.currentIndex];
+      cState.showExp = !cState.showExp;
+      renderCurrentCard();
+    }
+
+    function logSessionAttempt(itemId, outcome, qType) {
+      state.sessionTelemetry.push({
+        item_id: itemId,
+        outcome: outcome,
+        question_type: qType || "flashcard"
+      });
+    }
+
+    function animateCardSlide(direction, updateIndexCallback) {
+      if (isAnimatingCard) return;
+      isAnimatingCard = true;
+      const cardEl = document.getElementById("screenPractice");
+      const outClass = direction === "next" ? "throw-left" : "throw-right";
+      const inClass = direction === "next" ? "enter-from-right" : "enter-from-left";
+
+      cardEl.classList.add(outClass);
+      setTimeout(() => {
+        updateIndexCallback();
+        renderCurrentCard();
+        cardEl.classList.remove(outClass);
+        cardEl.classList.add(inClass);
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            cardEl.classList.remove(inClass);
+            setTimeout(() => { isAnimatingCard = false; }, 220);
+          });
+        });
+      }, 190);
+    }
+
+    function prevCard() {
+      if (state.currentIndex > 0) {
+        animateCardSlide("prev", () => {
+          state.currentIndex--;
+        });
+      }
+    }
+
+    function nextCard() {
+      if (state.currentIndex < state.sessionDeck.length - 1) {
+        animateCardSlide("next", () => {
+          state.currentIndex++;
+        });
+      } else if (state.sessionSize === "infinite") {
+        animateCardSlide("next", () => {
+          state.sessionDeck.sort(() => Math.random() - 0.5);
+          state.currentIndex = 0;
+          state.cardStates = {};
+        });
+      } else {
+        finishSession();
+      }
+    }
+
+    function abortSession() {
+      state.sessionTelemetry = [];
+      exitToSetup();
+    }
+
+    function finishSession() {
+      document.getElementById("screenPractice").classList.add("hidden");
+      document.getElementById("exitSessionBtn").classList.add("hidden");
+      document.getElementById("finishInfiniteBtn").classList.add("hidden");
+      document.getElementById("screenResults").classList.remove("hidden");
+
+      const total = state.sessionTelemetry.length;
+      const right = state.sessionTelemetry.filter(x => x.outcome === "right").length;
+      const wrong = state.sessionTelemetry.filter(x => x.outcome === "wrong").length;
+      const pct = total > 0 ? Math.round((right / total) * 100) : 0;
+
+      state.lastWrongIds = state.sessionTelemetry.filter(x => x.outcome === "wrong").map(x => x.item_id);
+      state.lastRightIds = state.sessionTelemetry.filter(x => x.outcome === "right").map(x => x.item_id);
+
+      document.getElementById("resultsAccuracyText").textContent = `${pct}% Session Accuracy`;
+      document.getElementById("resultsProgressBar").style.width = `${pct}%`;
+      document.getElementById("resCorrectCount").textContent = right;
+      document.getElementById("resWrongCount").textContent = wrong;
+      document.getElementById("resTotalCount").textContent = total;
+
+      const byType = {};
+      state.sessionTelemetry.forEach(t => {
+        const key = QUESTION_TYPE_LABELS[t.question_type] || "Flashcard";
+        if (!byType[key]) byType[key] = { right: 0, total: 0 };
+        byType[key].total++;
+        if (t.outcome === "right") byType[key].right++;
+      });
+
+      const bList = document.getElementById("resultsBreakdownList");
+      bList.innerHTML = "";
+      Object.entries(byType).forEach(([label, stats]) => {
+        const bPct = Math.round((stats.right / stats.total) * 100);
+        const row = document.createElement("div");
+        row.innerHTML = `
+          <div class="breakdown-item-top">
+            <span>${label}</span>
+            <span>${stats.right}/${stats.total}</span>
+          </div>
+          <div class="progress-track" style="height: 7px; margin-bottom: 0;">
+            <div class="progress-fill" style="width: ${bPct}%; background: var(--bg-pill-active);"></div>
+          </div>
+        `;
+        bList.appendChild(row);
+      });
+
+      queueAndFlushTelemetry(state.sessionTelemetry);
+    }
+
+    async function queueAndFlushTelemetry(attempts) {
+      if (!attempts || !attempts.length) return;
+      const pending = JSON.parse(localStorage.getItem("studybank_pending_telemetry") || "[]");
+      const merged = pending.concat(attempts.map(a => ({ item_id: a.item_id, outcome: a.outcome })));
+      localStorage.setItem("studybank_pending_telemetry", JSON.stringify(merged));
+      await flushPendingTelemetry();
+    }
+
+    async function flushPendingTelemetry() {
+      const pending = JSON.parse(localStorage.getItem("studybank_pending_telemetry") || "[]");
+      if (!pending.length) return;
+      try {
+        const res = await fetch("/api/telemetry/batch", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ attempts: pending })
+        });
+        if (res.ok) {
+          localStorage.removeItem("studybank_pending_telemetry");
+        }
+      } catch (e) {}
+    }
+
+    function repeatSameSession() {
+      launchDeck();
+    }
+
+    function retakeMixSession() {
+      startNewSession(true);
+    }
+
+    function exitToSetup() {
+      document.getElementById("screenPractice").classList.add("hidden");
+      document.getElementById("screenResults").classList.add("hidden");
+      document.getElementById("contextSidebar").classList.add("hidden");
+      document.getElementById("exitSessionBtn").classList.add("hidden");
+      document.getElementById("finishInfiniteBtn").classList.add("hidden");
+      document.getElementById("screenSetup").classList.remove("hidden");
+      renderSetupScreen();
+    }
+
+    document.addEventListener("keydown", e => {
+      if (document.getElementById("screenPractice").classList.contains("hidden")) return;
+      if (e.key === "ArrowRight") nextCard();
+      if (e.key === "ArrowLeft") prevCard();
+      if (e.key === " ") {
+        e.preventDefault();
+        triggerCardFlip();
+      }
+    });
+
+    let touchStartX = 0;
+    document.addEventListener("touchstart", e => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    document.addEventListener("touchend", e => {
+      if (document.getElementById("screenPractice").classList.contains("hidden")) return;
+      const dx = e.changedTouches[0].screenX - touchStartX;
+      if (Math.abs(dx) > 65) {
+        if (dx < 0) nextCard();
+        else prevCard();
+      }
+    }, { passive: true });
+
+    initTheme();
+    initOrganicDotMatrix();
+    loadCatalog();
+  </script>
+</body>
+</html>

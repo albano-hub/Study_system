@@ -1,0 +1,1653 @@
+[
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "algebra_booleana_6_upla",
+        "variaveis_e_funcoes_booleanas",
+        "dominio_binario"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 4, 5 e 6"
+      },
+      "prompt": "Fundamentos da Álgebra de Boole, Variáveis e Funções Lógicas:\n1. Definição Formal: A Álgebra de Boole é uma estrutura matemática usada na análise e no projeto de circuitos digitais, definida formalmente por uma 6-upla (X, ^, v, -, 0, 1), correspondente a um conjunto de variáveis booleanas, três operações fundamentais (E, OU, NÃO) e dois únicos valores lógicos possíveis ('0' ou '1').\n2. Variáveis e Funções: As variáveis booleanas (representadas por letras maiúsculas como A, B, C, D) e as funções booleanas (F, G, S, Y) assumem exclusivamente os valores discretos 0 (Falso / Nível BAIXO / LOW) ou 1 (Verdadeiro / Nível ALTO / HIGH).\n3. Finitude e Enumeração: Como o domínio de valores é discreto e reduzido a dois estados, qualquer função booleana de n variáveis possui um número finito de combinações de entrada (2^n), permitindo listar exaustivamente todos os resultados numa Tabela de Verdade.",
+      "options": null,
+      "answer": null,
+      "explanation": "Síntese introdutória da Aula 5 sobre a natureza algébrica das variáveis e funções lógicas."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "porta_and",
+        "operacao_e_logico",
+        "ci_7408"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 7, 8 e 9"
+      },
+      "prompt": "Operação Fundamental E (Porta Lógica AND):\n1. Comportamento Lógico: A saída de uma porta AND é nível ALTO (1) APENAS quando todas as suas entradas estiverem simultaneamente em nível ALTO (1). Se qualquer entrada for 0, a saída é 0.\n2. Notações Algébricas: Representa-se por A . B, A ^ B, A AND B ou simplesmente pela justaposição das variáveis sem operador explícito (AB).\n3. Tabela de Verdade (2 entradas): 00 -> 0 | 01 -> 0 | 10 -> 0 | 11 -> 1.\n4. Circuito Integrado TTL Padrão: O CI 7408 encapsula 4 portas AND independentes de 2 entradas num invólucro DIP de 14 pinos (alimentação VCC no pino 14 e terra GND no pino 7).",
+      "options": null,
+      "answer": null,
+      "explanation": "Resumo completo da operação lógica E (AND), notação algébrica e referência ao CI 7408."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "porta_or",
+        "operacao_ou_logico",
+        "ci_7432"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 10, 11 e 12"
+      },
+      "prompt": "Operação Fundamental OU (Porta Lógica OR):\n1. Comportamento Lógico: A saída de uma porta OR é nível ALTO (1) quando QUALQUER uma das suas entradas (pelo menos uma) estiver em nível ALTO (1). A saída só é 0 quando todas as entradas forem 0.\n2. Notações Algébricas: Representa-se por A + B, A v B ou A OR B.\n3. Tabela de Verdade (2 entradas): 00 -> 0 | 01 -> 1 | 10 -> 1 | 11 -> 1.\n4. Circuito Integrado TTL Padrão: O CI 7432 encapsula 4 portas OR independentes de 2 entradas (14 pinos, GND no pino 7 e VCC no pino 14).",
+      "options": null,
+      "answer": null,
+      "explanation": "Resumo completo da operação lógica OU (OR), tabela de verdade e referência ao CI 7432."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "porta_not",
+        "inversor_logico",
+        "ci_7404"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 13, 14 e 15"
+      },
+      "prompt": "Operação Fundamental NÃO (Porta Lógica NOT / Inversor):\n1. Comportamento Lógico: Operação unária (1 única entrada) que produz na saída o complemento ou inverso do valor lógico atual da entrada (se A = 0, saída = 1; se A = 1, saída = 0).\n2. Notações Algébricas: Barra superior sobre a variável (Ā), apóstrofo/prima (A'), til (~A) ou palavra NOT A.\n3. Símbolo Gráfico: Triângulo seguido de um pequeno círculo (bolha de inversão) na saída.\n4. Circuito Integrado TTL Padrão: O CI 7404 contém 6 inversores (portas NOT) independentes num invólucro de 14 pinos.",
+      "options": null,
+      "answer": null,
+      "explanation": "Resumo da porta inversora (NOT), respetivas notações e referência ao CI 7404."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "porta_nand",
+        "porta_nor",
+        "ci_7400_7402"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 16 a 20"
+      },
+      "prompt": "Operações Compostas NÃO-E (NAND) e NÃO-OU (NOR):\n1. Porta NAND (NÃO-E): Equivale a uma porta AND com a saída ligada a um inversor (NOT), expressa por F = (A . B)'.\n- Comportamento: A saída é 0 APENAS quando todas as entradas são 1; caso contrário (qualquer entrada em 0), a saída é 1.\n- Tabela de Verdade (2 entradas): 00 -> 1 | 01 -> 1 | 10 -> 1 | 11 -> 0. (CI TTL padrão: 7400).\n2. Porta NOR (NÃO-OU): Equivale a uma porta OR com a saída invertida, expressa por F = (A + B)'.\n- Comportamento: A saída é 1 APENAS quando todas as entradas são 0; se qualquer entrada for 1, a saída é 0.\n- Tabela de Verdade (2 entradas): 00 -> 1 | 01 -> 0 | 10 -> 0 | 11 -> 0. (CI TTL padrão: 7402).",
+      "options": null,
+      "answer": null,
+      "explanation": "Síntese comparativa das portas universais NAND e NOR, suas tabelas de verdade e CIs TTL."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "porta_xor",
+        "porta_xnor",
+        "ci_7486"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 21, 22, 23 e 40"
+      },
+      "prompt": "Operações Compostas OU-Exclusivo (XOR) e NÃO-OU-Exclusivo (XNOR / Coincidência):\n1. Porta XOR (XOU / OU-Exclusivo): Representada pelo operador A ⊕ B.\n- Comportamento (2 entradas): A saída é 1 quando as duas entradas têm valores DIFERENTES entre si (01 ou 10), e 0 quando são iguais (00 ou 11).\n- Equação Booleana Equivalente: A ⊕ B = A' . B + A . B'. (CI TTL padrão: 7486).\n2. Porta XNOR (NÃO-OU-Exclusivo / Equivalência): Representada por A ⊗ B (ou A ⊙ B), sendo o complemento exato da porta XOR: (A ⊕ B)'.\n- Comportamento (2 entradas): A saída é 1 quando as duas entradas são IGUAIS entre si (00 ou 11), e 0 quando são diferentes (01 ou 10).\n- Equação Booleana Equivalente: A ⊗ B = A' . B' + A . B = (A' . B + A . B')'.",
+      "options": null,
+      "answer": null,
+      "explanation": "Definição algébrica e funcional das portas XOR e XNOR, essenciais para circuitos aritméticos e comparadores."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "precedencia_operadores",
+        "avaliacao_expressoes",
+        "parenteses_booleanos"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 24, 25 e 33"
+      },
+      "prompt": "Precedência de Operadores e Avaliação de Expressões Booleanas:\n1. Ordem de Avaliação Padrão: Na álgebra booleana e na construção de circuitos lógicos:\n- Os parênteses '(' e ')' têm prioridade máxima, forçando a avaliação das subexpressões internas primeiro.\n- As negações individuais de variáveis (NOT, ex.: A', B') são sempre seguras para serem avaliadas e ligadas primeiro.\n- Na convenção algébrica padrão dos manuais (Tocci/Capuano) e das fichas práticas, o produto lógico (AND) tem precedência sobre a soma lógica (OR) — por exemplo, A + B . C significa A + (B . C) — embora na ausência de parênteses entre operadores de igual nível se avalie da esquerda para a direita.\n2. Barra de Negação Longa: Uma barra de negação que cobre uma expressão inteira (ex.: (A + B)') funciona simultaneamente como operador NOT e como parênteses agrupador, exigindo calcular primeiro A + B e só depois inverter o resultado.",
+      "options": null,
+      "answer": null,
+      "explanation": "Regras críticas para construir tabelas de verdade e desenhar circuitos sem erros de precedência."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "tabela_de_verdade",
+        "metodo_sistematico",
+        "colunas_intermediarias"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 26 a 29"
+      },
+      "prompt": "Construção Sistemática de Tabelas de Verdade a partir de Expressões:\n1. Dimensionamento: Para uma função com n variáveis distintas de entrada (ex.: A, B, C), a tabela possui exatamente 2^n linhas, listadas em contagem binária crescente de 00...0 até 11...1.\n2. Decomposição em Colunas Intermédias: Para evitar erros em exame:\n- Crie colunas auxiliares para as variáveis negadas necessárias (ex.: A', B').\n- Crie colunas para cada termo entre parênteses ou produto parcial (ex.: A . B' e C + A').\n- Calcule a coluna final combinando os resultados das colunas intermédias segundo o operador principal da função.",
+      "options": null,
+      "answer": null,
+      "explanation": "Metodologia apresentada nos Slides 26 a 29 da Aula 5 para levantar tabelas de verdade sem falhas."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "expressao_para_circuito",
+        "desenho_de_circuitos",
+        "barramento_de_entradas"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 30 a 35"
+      },
+      "prompt": "Metodologia de Desenho de Circuitos Lógicos a partir de Expressões Booleanas:\n1. Identificar as Entradas: Extraem-se da assinatura F(A, B, ...) ou das variáveis distintas da expressão e desenham-se no topo de linhas paralelas verticais (barramentos de entrada).\n2. Mapear Operadores em Portas: Cada operação lógica da expressão traduz-se diretamente numa porta lógica correspondente (NOT, AND, OR, NAND, NOR, XOR).\n3. Ligar por Ordem de Precedência: Ligam-se primeiro os inversores (NOT) das variáveis negadas, depois as portas correspondentes aos termos entre parênteses / produtos (AND) e, por fim, a porta de saída que combina os termos (ex.: OR).\n4. Reorganização Visual: Dispor as portas da esquerda para a direita em níveis lógicos para minimizar o cruzamento de fios.",
+      "options": null,
+      "answer": null,
+      "explanation": "Passos formais dos Slides 30 a 35 da Aula 5 para desenhar esquemáticos em testes."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "circuito_para_expressao",
+        "propagacao_de_sinais",
+        "equivalencia_representacoes"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 36, 37 e 38"
+      },
+      "prompt": "Levantamento de Expressões Booleanas a partir de Circuitos Lógicos e Tríade de Representação:\n1. Propagação Progressiva (Esquerda -> Direita): Para extrair a equação de um circuito esquemático sem erros, anota-se sobre cada fio a subexpressão produzida pela saída de cada porta lógica, desde as entradas primárias até atingir o pino de saída F.\n2. Atenção a Bolhas de Inversão: Uma bolha na entrada de uma porta inverte apenas esse sinal específico (ex.: entrada C ligada a uma bolha numa porta AND recebe C'); uma bolha na saída da porta inverte toda a operação da porta (ex.: NAND ou NOR).\n3. Equivalência Fundamental (Slide 38): Tabela de Verdade, Expressão/Função Booleana e Circuito Lógico são três formas equivalentes e intermutáveis de representar exatamente o mesmo sistema digital.",
+      "options": null,
+      "answer": null,
+      "explanation": "Método direto exigido na Questão 1 e Questão 6 do Grupo II dos testes da Uni-CV."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "diagrama_de_tempo",
+        "formas_de_onda",
+        "identificacao_de_porta"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 9, 12, 15, 18, 20 e 22 & Ficha Prática SD Nº2.pdf Ex. 12 & 1º teste 24_25 Q1"
+      },
+      "prompt": "Análise de Diagramas de Tempo (Formas de Onda Temporais):\n1. Leitura por Intervalos (Fatias de Tempo): Os diagramas de tempo dividem o eixo horizontal (t) por linhas tracejadas verticais. Em cada intervalo, lê-se o nível de tensão (baixo = 0, alto = 1) da Entrada 1, da Entrada 2 e da Saída.\n2. Padrão de Entradas nos Slides e Exames: Nos diagramas da Aula 5, da Ficha Prática Nº 2 (Ex. 12) e do 1º Teste 2024/2025 (Grupo II, Q1), os primeiros quatro intervalos percorrem ciclicamente os pares (Entrada 1, Entrada 2) = (0,0), (0,1), (1,1), (1,0):\n- Se a Saída for [0, 0, 1, 0] -> Porta AND (só é 1 quando ambas são 1).\n- Se a Saída for [0, 1, 1, 1] -> Porta OR (é 1 sempre que pelo menos uma é 1).\n- Se a Saída for [1, 1, 0, 1] -> Porta NAND (só cai para 0 quando ambas são 1).\n- Se a Saída for [1, 0, 0, 0] -> Porta NOR (só sobe para 1 quando ambas são 0).\n- Se a Saída for [0, 1, 0, 1] -> Porta XOR (é 1 apenas quando as entradas diferem).",
+      "options": null,
+      "answer": null,
+      "explanation": "Guia prático para resolver instantaneamente questões de diagramas de tempo em fichas e exames."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "content_note",
+      "question_type": null,
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "logisim",
+        "simulacao_de_circuitos",
+        "bibliotecas_logisim"
+      ],
+      "relevancy": "supplementary",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "SD_aula15_2014_1Funções Lógicas Incompletamente Especificadas.pptx",
+        "location": "Slides 9, 13, 14, 15, 16 e 17 & EXERCÍCIO PRÁTICO COM LOGISIM.pdf"
+      },
+      "prompt": "Ferramentas de Simulação Digital no Logisim:\n1. Ferramentas Principais da Barra Superior: A 'Mão' (Poke Tool) serve para alterar interativamente os valores dos pinos de entrada (0 <-> 1) durante a simulação; a 'Seta' (Select/Edit Tool) serve para selecionar componentes, mover e desenhar ligações entre pontos.\n2. Comportamento Padrão de Portas: Ao inserir uma porta lógica (AND, OR, etc.) na área de projeto, o Logisim adiciona-a por defeito em tamanho grande e com 5 entradas, devendo configurar-se o atributo 'Número de Entradas' (ex.: para 2 ou 3) na tabela de atributos à esquerda.\n3. Distribuidores (Splitters): Permitem agrupar múltiplos fios individuais num barramento de N bits ou separar um barramento de N bits nos seus fios constituintes (bits 0 a N-1).",
+      "options": null,
+      "answer": null,
+      "explanation": "Resumo prático sobre o uso do simulador Logisim nas aulas práticas."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "variaveis_booleanas",
+        "tabela_de_verdade"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 5, 6 e 26"
+      },
+      "prompt": "Uma função booleana de 4 variáveis de entrada distintas (A, B, C, D) possui exatamente 16 linhas na sua tabela de verdade completa.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "Como cada variável booleana pode assumir 2 valores (0 ou 1), uma função de n = 4 variáveis possui 2^4 = 16 combinações distintas de entrada."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "porta_and",
+        "notacao_booleana"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slide 7"
+      },
+      "prompt": "Em expressões e funções booleanas, a ausência de um símbolo de operador explícito entre duas variáveis adjacentes (como em AB) significa que deve ser inferida a operação lógica OU (OR).",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "De acordo com o Slide 7 da Aula 5, a ausência de operador explícito entre variáveis booleanas significa que o operador E (AND / produto lógico) deve ser inferido, tal como na multiplicação algébrica tradicional."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "porta_or",
+        "tabela_de_verdade_or"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slide 10"
+      },
+      "prompt": "Numa porta lógica OR de 3 entradas, se duas entradas estiverem no nível lógico 1 e a terceira entrada estiver no nível lógico 0, a saída da porta será 0.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "A operação OR produz saída 1 sempre que pelo menos uma (qualquer uma) das suas entradas for 1. A saída de uma porta OR só é 0 quando todas as entradas são 0."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "porta_nand",
+        "tabela_de_verdade_nand"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slide 17"
+      },
+      "prompt": "A saída de uma porta lógica NAND de duas entradas é igual a 0 exclusivamente quando ambas as entradas são iguais a 1.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "Como a porta NAND inverte a saída de uma porta AND, a sua saída vale 0 apenas para o par de entrada 11, mantendo-se em 1 para 00, 01 e 10."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "porta_nor",
+        "tabela_de_verdade_nor"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slide 19"
+      },
+      "prompt": "Uma porta lógica NOR de duas entradas produz saída em nível ALTO (1) sempre que pelo menos uma das suas entradas estiver em nível BAIXO (0).",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "A porta NOR (inverso da OR) só produz saída 1 quando TODAS as suas entradas estão em 0 (entrada 00). Para 01 e 10, embora exista um zero na entrada, a presença de um 1 força a saída da NOR para 0. (Quem produz 1 quando qualquer entrada é 0 é a porta NAND)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "porta_xor",
+        "expressao_xor"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 21, 25 e 27"
+      },
+      "prompt": "A função booleana F(A, B) = (A' . B) + (B' . A) possui exatamente a mesma tabela de verdade que uma porta lógica OU-Exclusivo (XOR).",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "Conforme demonstrado no Slide 27 da Aula 5, a expressão (A' . B) + (B' . A) resulta em 0 para A=0,B=0 e A=1,B=1, e resulta em 1 para A=0,B=1 e A=1,B=0, definindo exatamente a operação A ⊕ B (XOR)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "porta_xnor",
+        "comparador_de_igualdade"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 23 e 40"
+      },
+      "prompt": "A porta NÃO-OU-Exclusivo (XNOR), cuja expressão é F(A, B) = A' . B' + A . B, funciona como um detetor de igualdade de 1 bit, pois a sua saída vale 1 apenas quando ambas as entradas são iguais.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "Na porta XNOR (Slide 23), para 00 tem-se 1.1 + 0.0 = 1 e para 11 tem-se 0.0 + 1.1 = 1; para entradas diferentes (01 e 10) a saída é 0. Por isso é usada como comparador de igualdade bit a bit."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "avaliacao_expressoes",
+        "tabela_de_verdade"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slide 29"
+      },
+      "prompt": "A função booleana F(A, B, C) = (A . B') . (C + A') assume o valor lógico 1 apenas para uma única combinação das entradas (A=1, B=0, C=1).",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "Pela tabela de verdade do Slide 29 da Aula 5, para que o produto (A . B') . (C + A') seja 1, o primeiro fator exige A=1 e B=0; substituindo A=1 no segundo fator (C + 0), exige-se C=1. Logo, apenas a linha 101 produz saída 1."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "associatividade_nor",
+        "cascata_de_portas_nor"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "correccoes-exames_SD.pdf",
+        "location": "2ª chamada 24/Jan/2002 Q2a"
+      },
+      "prompt": "Ligar três portas NOR de 2 entradas em cascata série — calculando Z = (((A + B)' + C)' + D)' — realiza exatamente a mesma função lógica que uma porta NOR de 4 entradas F = (A + B + C + D)'.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "False",
+      "explanation": "A operação NOR NÃO é associativa! Conforme provado no Exame 24/Jan/2002 (Q2a), para ABCD = 1110, uma NOR de 4 entradas dá F = (1+1+1+0)' = 0, enquanto a cascata dá Z = (((1+1)'+1)'+0)' = ((0+1)'+0)' = (0+0)' = 1."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "ci_7404",
+        "ci_7400"
+      ],
+      "relevancy": "supplementary",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 8, 11, 14, 17, 19 e 21"
+      },
+      "prompt": "Na família de circuitos integrados TTL de 14 pinos apresentada na Aula 5, o CI 7404 corresponde a inversores (portas NOT) e o CI 7400 corresponde a portas NAND de duas entradas.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "Nos diagramas de pinagem da Aula 5: 7404 = 6 portas NOT (Slide 14), 7400 = 4 portas NAND (Slide 17), 7408 = 4 portas AND (Slide 8), 7432 = 4 portas OR (Slide 11), 7402 = 4 portas NOR (Slide 19) e 7486 = 4 portas XOR (Slide 21)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "dupla_negacao",
+        "inversores_em_serie"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "9 - Latches e Flip-Flops.pptx",
+        "location": "Slide 5 & 5 - Visão Geral da Álgebra de Boole.pdf Slide 13"
+      },
+      "prompt": "Se dois inversores (portas NOT) forem ligados em série sem realimentação, o nível lógico na saída do segundo inversor será sempre igual ao nível lógico aplicado na entrada do primeiro inversor.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "O primeiro inversor complementa o sinal de entrada (A -> A') e o segundo inverte-o novamente ((A')' = A), restaurando o valor lógico original."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "true_false",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "diagrama_de_tempo",
+        "porta_not"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slide 15"
+      },
+      "prompt": "No diagrama de tempo de uma porta NOT (inversor), sempre que a forma de onda da entrada se encontra no patamar superior (nível ALTO), a forma de onda da saída encontra-se no patamar inferior (nível BAIXO), e vice-versa.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "True",
+      "explanation": "Como ilustrado no Slide 15 da Aula 5, a forma de onda de saída de um inversor é exatamente o espelho invertido da forma de onda de entrada em todos os intervalos de tempo."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "definicao_algebra_booleana",
+        "grupo_i_exame"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Exame de Sistemas digitais.pdf",
+        "location": "Grupo I, Questão 1 (e 1º Teste 2024/2025 Q1, 1º Teste 2025/2026 Q1)"
+      },
+      "prompt": "De acordo com a Questão 1 do Grupo I dos exames de Sistemas Digitais da Uni-CV, a álgebra booleana é:",
+      "options": [
+        "A: Uma ferramenta matemática usada na análise e no projeto de circuitos digitais.",
+        "B: Uma ferramenta digital usada na análise e no projeto de circuitos digitais.",
+        "C: Uma ferramenta de prática usada na análise e no projeto de circuitos digitais.",
+        "D: Nenhuma das anteriores."
+      ],
+      "answer": "A",
+      "explanation": "Questão oficial de abertura de todos os testes e exames do Prof. Carlos Reis: a álgebra de Boole é uma ferramenta matemática usada na análise e no projeto de circuitos digitais."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "operacoes_booleanas_basicas",
+        "grupo_i_exame"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Exame de Sistemas digitais.pdf",
+        "location": "Grupo I, Questão 2"
+      },
+      "prompt": "Segundo a Questão 2 do Grupo I do Exame de Sistemas Digitais, as operações booleanas básicas (fundamentais) são:",
+      "options": [
+        "A: OR, AND e NOT.",
+        "B: OR, AND e NOR.",
+        "C: NOR, NAND e NOT.",
+        "D: Nenhuma das anteriores."
+      ],
+      "answer": "A",
+      "explanation": "As três operações fundamentais da álgebra booleana são E (AND), OU (OR) e NÃO (NOT); as operações NAND, NOR, XOR e XNOR são operações compostas derivadas das três básicas."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "porta_or",
+        "grupo_i_exame"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Exame de Sistemas digitais.pdf",
+        "location": "Grupo I, Questão 3"
+      },
+      "prompt": "Uma porta lógica OR gerará uma saída em nível ALTO quando (Exame de Sistemas Digitais, Grupo I, Questão 3):",
+      "options": [
+        "A: Quaisquer entradas forem nível ALTO.",
+        "B: Quaisquer entradas forem nível BAIXO.",
+        "C: Quaisquer entradas forem nível SEMIALTO.",
+        "D: Nenhuma das anteriores."
+      ],
+      "answer": "A",
+      "explanation": "Na porta OR (Slide 10 da Aula 5), a saída é verdadeira (nível ALTO / 1) quando qualquer uma das suas entradas for verdadeira (nível ALTO)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "porta_and",
+        "grupo_i_exame"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Exame de Sistemas digitais.pdf",
+        "location": "Grupo I, Questão 4"
+      },
+      "prompt": "Uma porta lógica AND gerará uma saída em nível ALTO quando (Exame de Sistemas Digitais, Grupo I, Questão 4):",
+      "options": [
+        "A: Todas as entradas forem nível ALTO.",
+        "B: Todas as entradas forem nível BAIXO.",
+        "C: Todas as entradas forem nível ALTO e BAIXO.",
+        "D: Nenhuma das anteriores."
+      ],
+      "answer": "A",
+      "explanation": "Na porta AND (Slide 7 da Aula 5), a saída só atinge o nível ALTO (1) quando todas as entradas estiverem em nível ALTO."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "porta_nor",
+        "grupo_i_exame"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Exame de Sistemas digitais.pdf",
+        "location": "Grupo I, Questão 5"
+      },
+      "prompt": "De acordo com a Questão 5 do Grupo I do Exame de Sistemas Digitais, uma porta NOR é o mesmo que:",
+      "options": [
+        "A: Uma porta OR com a saída INVERTIDA.",
+        "B: Uma porta OR com a saída conectada a um COMUTADOR.",
+        "C: Uma porta OR com a saída conectada a uma porta NAND.",
+        "D: Nenhuma das anteriores."
+      ],
+      "answer": "A",
+      "explanation": "A porta NOR (NÃO-OU) equivale funcionalmente a uma porta OR seguida de um inversor na saída: F = (A + B)'."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)"
+      ],
+      "related_content_labels": [
+        "porta_not",
+        "grupo_i_exame"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Exame de Sistemas digitais.pdf",
+        "location": "Grupo I, Questão 6"
+      },
+      "prompt": "Um circuito NOT gerará uma saída que é (Exame de Sistemas Digitais, Grupo I, Questão 6):",
+      "options": [
+        "A: O nível lógico com a negação da entrada.",
+        "B: O nível lógico igual ao da entrada.",
+        "C: O nível lógico parecido ao da entrada.",
+        "D: Nenhuma das anteriores."
+      ],
+      "answer": "A",
+      "explanation": "O circuito NOT (inversor) produz na saída o nível lógico correspondente à negação (complemento) da entrada."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "porta_nand",
+        "grupo_i_exame"
+      ],
+      "relevancy": "core",
+      "difficulty": 1,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Exame de Sistemas digitais.pdf",
+        "location": "Grupo I, Questão 7"
+      },
+      "prompt": "No Grupo I (Questão 7) dos testes e exames de Sistemas Digitais, uma porta NAND é definida como sendo o mesmo que:",
+      "options": [
+        "A: Uma porta AND com a saída conectada a um INVERSOR.",
+        "B: Uma porta AND com a saída conectada a uma porta NOR.",
+        "C: Uma porta OR com as entradas invertidas sem inversão final.",
+        "D: Nenhuma das anteriores."
+      ],
+      "answer": "A",
+      "explanation": "A porta NAND (NÃO-E) consiste numa porta AND cuja saída está ligada a um inversor (porta NOT): F = (A . B)'."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "diagrama_de_tempo",
+        "porta_nand"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº2.pdf",
+        "location": "Exercício 12 & 5 - Visão Geral da Álgebra de Boole.pdf Slide 18"
+      },
+      "prompt": "No Exercício 12 da Ficha Prática Nº 2, é apresentado um diagrama de tempo onde nos quatro primeiros intervalos as entradas assumem os pares (Entrada 1, Entrada 2) = (0,0), (0,1), (1,1), (1,0) e a Saída apresenta os níveis [1, 1, 0, 1], caindo para nível BAIXO (0) exclusivamente nos intervalos em que ambas as entradas estão em nível ALTO (1). A que porta lógica corresponde este diagrama?",
+      "options": [
+        "A: Porta OR",
+        "B: Porta AND",
+        "C: Porta NAND",
+        "D: Porta NOR"
+      ],
+      "answer": "C",
+      "explanation": "Comparando com o Slide 18 da Aula 5, a tabela de verdade extraída do diagrama é 00->1, 01->1, 10->1, 11->0, que caracteriza exatamente a porta NÃO-E (NAND)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "diagrama_de_tempo",
+        "porta_or"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "1º teste Sistemas digitais 24_25.pdf",
+        "location": "Grupo II, Questão 1 (1.1 e 1.2) & 5 - Visão Geral da Álgebra de Boole.pdf Slide 12"
+      },
+      "prompt": "Na Questão 1 do Grupo II do 1º Teste (2024/2025), o diagrama de tempo mostra que a Saída permanece em 0 apenas quando a Entrada 1 e a Entrada 2 estão ambas em 0, subindo para nível ALTO (1) durante todos os três intervalos consecutivos em que os pares de entrada são (0,1), (1,1) e (1,0). De que porta lógica se trata?",
+      "options": [
+        "A: Porta AND",
+        "B: Porta OR",
+        "C: Porta XOR",
+        "D: Porta NOR"
+      ],
+      "answer": "B",
+      "explanation": "O diagrama reproduz exatamente o Slide 12 da Aula 5 ('Diagrama de Tempo - OU'): a saída vale 0 para (0,0) e vale 1 para (0,1), (1,1) e (1,0), correspondendo a uma porta lógica OR."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "tabela_de_verdade_para_expressao",
+        "porta_xnor"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº3.pdf",
+        "location": "Exercício 17a & Lista de Exercicio2.docx.pdf Questão 1a"
+      },
+      "prompt": "No Exercício 17a da Ficha Prática Nº 3 (e Questão 1a da Lista 2), uma função lógica f(x, y) de duas variáveis é definida pela tabela de verdade: (0,0)->1, (0,1)->0, (1,0)->0, (1,1)->1. Qual é a expressão booleana e a porta lógica correspondente a f(x, y)?",
+      "options": [
+        "A: f(x, y) = x'y + xy' (Porta XOR)",
+        "B: f(x, y) = x'y' + xy (Porta XNOR / Coincidência)",
+        "C: f(x, y) = x'y' (Porta NOR)",
+        "D: f(x, y) = (xy)' (Porta NAND)"
+      ],
+      "answer": "B",
+      "explanation": "As linhas com saída f = 1 são 00 (x'y') e 11 (xy). Somando os dois mintermos obtém-se f(x, y) = x'y' + xy = x ⊗ y, que é a equação da porta XNOR."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "alarme_automotivo",
+        "projeto_circuito_basico"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "EXERCÍCIO PRÁTICO COM LOGISIM.pdf",
+        "location": "Exercício 8"
+      },
+      "prompt": "No Exercício 8 do Guião Prático de Logisim, um circuito de alarme automóvel monitoriza três interruptores (onde +5V = 1 e Terra = 0): Porta (D = 1 aberta, 0 fechada), Ignição (I = 1 ligada, 0 desligada) e Faróis (L = 1 acesos, 0 apagados). O alarme deve disparar (Alarm = 1) sempre que os faróis estiverem acesos com a ignição desligada OU a porta estiver aberta com a ignição ligada. Qual expressão traduz diretamente este circuito?",
+      "options": [
+        "A: Alarm = I' . L + D . I",
+        "B: Alarm = I . L + D' . I'",
+        "C: Alarm = (I + L) . (D + I)",
+        "D: Alarm = D . I . L"
+      ],
+      "answer": "A",
+      "explanation": "A condição 1 ('faróis acesos E ignição desligada') escreve-se L . I' (ou I' . L). A condição 2 ('porta aberta E ignição ligada') escreve-se D . I. Como basta ocorrer uma das duas condições (OU), a expressão em Soma de Produtos é Alarm = I' . L + D . I."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "single_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "contagem_de_portas",
+        "expressao_para_circuito"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 30 a 35"
+      },
+      "prompt": "Para implementar diretamente (sem simplificação e usando apenas portas básicas AND, OR e NOT) a expressão booleana F(A, B) = (A' . B) + (A . B'), quantas portas lógicas de cada tipo são utilizadas no circuito apresentado no Slide 35 da Aula 5?",
+      "options": [
+        "A: 1 porta NOT, 1 porta AND e 2 portas OR.",
+        "B: 2 portas NOT, 2 portas AND de duas entradas e 1 porta OR de duas entradas.",
+        "C: 2 portas NOT, 1 porta AND e 1 porta OR.",
+        "D: 4 portas NAND apenas."
+      ],
+      "answer": "B",
+      "explanation": "Como mostrado passo a passo nos Slides 32 a 35 da Aula 5, a expressão possui duas negações de variáveis (A' e B' -> 2 portas NOT), dois produtos lógicos (A'.B e A.B' -> 2 portas AND) e uma soma lógica final (+ -> 1 porta OR)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "multiple_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)",
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "tabelas_de_verdade_portas",
+        "comparacao_portas"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 7 a 23"
+      },
+      "prompt": "Considere todas as portas lógicas de 2 entradas (A e B) quando ambas as entradas recebem o nível lógico BAIXO (A = 0 e B = 0). Quais das seguintes portas produzem nível lógico ALTO (1) na sua saída para essa condição de entrada? (Selecione todas as corretas)",
+      "options": [
+        "A: Porta NAND",
+        "B: Porta NOR",
+        "C: Porta XNOR",
+        "D: Porta XOR"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "Para A=0 e B=0: NAND dá (0.0)' = 1; NOR dá (0+0)' = 1; XNOR dá 1 (pois as entradas são iguais: 0=0). Já as portas AND, OR e XOR dão todas saída 0 para a entrada 00."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "multiple_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)",
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "tabelas_de_verdade_portas",
+        "comparacao_portas"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 7 a 23"
+      },
+      "prompt": "Considere as portas lógicas de 2 entradas (A e B) quando ambas as entradas recebem o nível lógico ALTO (A = 1 e B = 1). Quais das seguintes portas produzem nível lógico ALTO (1) na saída para a entrada 11? (Selecione todas as corretas)",
+      "options": [
+        "A: Porta AND",
+        "B: Porta OR",
+        "C: Porta XNOR",
+        "D: Porta XOR"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "Para A=1 e B=1: AND dá 1.1 = 1; OR dá 1+1 = 1; XNOR dá 1 (entradas iguais). Já as portas NAND, NOR e XOR produzem saída 0 quando ambas as entradas valem 1."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "multiple_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "porta_xor",
+        "porta_xnor",
+        "equivalencias_booleanas"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 21, 23 e 40"
+      },
+      "prompt": "De acordo com os Slides 21, 23 e 40 da Aula 5, quais das seguintes expressões booleanas representam corretamente a operação NÃO-OU-Exclusivo (XNOR) entre duas variáveis A e B? (Selecione todas as corretas)",
+      "options": [
+        "A: F(A, B) = (A' . B') + (A . B)",
+        "B: F(A, B) = ((A' . B) + (B' . A))'",
+        "C: F(A, B) = (A ⊕ B)'",
+        "D: F(A, B) = (A' . B) + (A . B')"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "No Slide 40 da Aula 5 ('Extra!!!'), demonstra-se a cadeia de identidades para a porta XNOR: F(A,B) = (A'.B') + (A.B) = ((A'.B) + (B'.A))' = A ⊗ B = (A ⊕ B)'. A opção D representa a porta XOR."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "multiple_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)",
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "familia_ttl_74xx",
+        "pinagem_cis"
+      ],
+      "relevancy": "supplementary",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 8, 11, 14, 17, 19 e 21"
+      },
+      "prompt": "Sobre os circuitos integrados comerciais da série 74xx apresentados na Aula 5, selecione todas as correspondências corretas:",
+      "options": [
+        "A: 7408 -> Quatro portas AND de 2 entradas; 7432 -> Quatro portas OR de 2 entradas.",
+        "B: 7400 -> Quatro portas NAND de 2 entradas; 7402 -> Quatro portas NOR de 2 entradas.",
+        "C: 7404 -> Seis portas inversoras (NOT); 7486 -> Quatro portas XOR de 2 entradas.",
+        "D: Em todos esses CIs de 14 pinos, o pino 7 é ligado ao Terra (GND) e o pino 14 à alimentação positiva (VCC)."
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Todas as quatro alíneas sintetizam com exatidão os diagramas de pinos dos CIs 7408, 7432, 7404, 7400, 7402 e 7486 mostrados na Aula 5."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "multiple_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "avaliacao_expressoes",
+        "ficha_pratica_3"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº3.pdf",
+        "location": "Exercício 3 (alíneas a, b, e)"
+      },
+      "prompt": "Analise as funções booleanas de 3 variáveis do Exercício 3 da Ficha Prática Nº 3 e selecione todas as afirmações verdadeiras sobre as suas tabelas de verdade:",
+      "options": [
+        "A: Na função F(A,B,C) = ((A . B) + C)', a saída só vale 1 quando C = 0 e o produto A . B = 0 (ou seja, nas linhas 000, 010 e 100).",
+        "B: Na função F(A,B,C) = (A + B) . C', a saída vale 1 apenas nas combinações 010, 100 e 110 (três linhas no total).",
+        "C: Na função de maioria F(A,B,C) = AB + AC + BC, a saída vale 1 sempre que pelo menos duas variáveis de entrada forem iguais a 1 (linhas 011, 101, 110 e 111).",
+        "D: Na função F(A,B,C) = (A + B) . C', a saída vale 1 quando A=0, B=0 e C=0."
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "A) Uma porta NOR com entradas (AB) e C só dá 1 quando C=0 e AB=0 (m0=000, m2=010, m4=100). B) Exige C=0 (C'=1) e A+B=1 (m2=010, m4=100, m6=110). C) É a função maioria de 3 variáveis (carry-out do somador completo). D é falsa pois para A=0, B=0 tem-se (0+0).1 = 0."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "multiple_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "circuito_para_expressao",
+        "1_teste_2025_2026"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "1º Teste SD 2025_2026 Adventista.pdf",
+        "location": "Grupo II, Questão 5 (Circuitos A, B e C)"
+      },
+      "prompt": "Na Questão 5 do Grupo II do 1º Teste (2025/2026), são dados três pequenos circuitos lógicos (A, B e C):\n- Circuito A: Uma porta XOR recebe (A, B) e uma porta NAND recebe (B, C' — com bolha de inversão na entrada C); as saídas de ambas alimentam uma porta NAND final.\n- Circuito B: Uma porta AND recebe (A, B) e outra porta AND recebe (A' — com bolha na entrada superior — e B); as saídas de ambas alimentam uma porta NOR final.\n- Circuito C: Uma porta XOR recebe (A, B) e uma porta NAND recebe (B, C); as saídas de ambas alimentam uma porta XOR final.\nQuais das seguintes expressões descrevem corretamente as saídas não simplificadas desses circuitos? (Selecione todas as corretas)",
+      "options": [
+        "A: Circuito A -> S = ((A ⊕ B) . (B . C')')'",
+        "B: Circuito B -> S = ((A . B) + (A' . B))' (que simplifica para B')",
+        "C: Circuito C -> S = (A ⊕ B) ⊕ (B . C)'",
+        "D: Circuito B -> S = (A + B) . (A' + B)"
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "Propagando os sinais de cada porta nos esquemas A, B e C da Questão 5 (1º Teste 2025/2026): A tem saída NAND entre (A⊕B) e (BC')'; B tem saída NOR entre (AB) e (A'B), sendo AB + A'B = B(A+A') = B, logo a saída da NOR é B'; C tem saída XOR entre (A⊕B) e (BC)'."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "multiple_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "expressao_para_circuito",
+        "regras_de_desenho"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "5 -  Visão Geral da Álgebra de Boole.pdf",
+        "location": "Slides 30 a 38"
+      },
+      "prompt": "Quais das seguintes boas práticas fazem parte do procedimento recomendado na Aula 5 para traduzir expressões booleanas em circuitos lógicos e vice-versa? (Selecione todas as corretas)",
+      "options": [
+        "A: Desenhar linhas verticais paralelas para cada variável de entrada identificada na assinatura da função.",
+        "B: Ligar primeiro as negações individuais de variáveis (portas NOT) e respeitar rigorosamente os parênteses e a precedência de operadores.",
+        "C: Reorganizar a disposição das portas lógicas para minimizar o número de conexões que se cruzam, tornando o diagrama mais legível.",
+        "D: Ao extrair a expressão de um circuito existente, escrever sobre cada ligação a subexpressão propagada desde as entradas até à saída."
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "explanation": "Todas as opções correspondem aos passos metodológicos ensinados nos Slides 30 a 37 da Aula 5."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "multiple_choice",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "logisim",
+        "simulacao_pratica"
+      ],
+      "relevancy": "supplementary",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "SD_aula15_2014_1Funções Lógicas Incompletamente Especificadas.pptx",
+        "location": "Slides 14 a 17"
+      },
+      "prompt": "Durante a construção e teste de circuitos lógicos básicos no software Logisim (Aula 15 e Guião Prático), quais das seguintes afirmações são verdadeiras? (Selecione todas as corretas)",
+      "options": [
+        "A: Para alternar o estado lógico de um pino de entrada entre 0 e 1 durante a simulação, deve selecionar-se a ferramenta 'Mão' (Alterar Valores / Poke).",
+        "B: Por definição inicial no Logisim, ao selecionar uma porta lógica (AND ou OR) da barra de ferramentas, ela é colocada com 5 entradas e em tamanho grande, podendo ser ajustada nos seus atributos.",
+        "C: Na biblioteca 'Portas' do Logisim encontram-se disponíveis as portas NOT, Buffer, AND, OR, NAND, NOR, XOR e XNOR.",
+        "D: O Logisim não permite simular circuitos com mais de duas portas lógicas."
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "Conforme documentado nos Slides 9, 14, 15 e 16 da Aula 15, o Logisim permite simular desde uma simples porta lógica até um processador completo como o MIPS (logo D é falsa e A, B, C são verdadeiras)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "short_answer",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Fundamentais > NOT (Inversor), AND (E) e OR (OU)",
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "resumo_tabelas_verdade",
+        "portas_2_entradas"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº2.pdf",
+        "location": "Exercício 13 & 5 - Visão Geral da Álgebra de Boole.pdf Slides 7 a 23"
+      },
+      "prompt": "Para duas variáveis de entrada A e B (nas combinações ordenadas 00, 01, 10, 11), indique a sequência dos 4 bits de saída da tabela de verdade para cada uma das 6 portas de duas entradas: AND, OR, NAND, NOR, XOR e XNOR.",
+      "options": null,
+      "answer": "AND: [0, 0, 0, 1] | OR: [0, 1, 1, 1] | NAND: [1, 1, 1, 0] | NOR: [1, 0, 0, 0] | XOR: [0, 1, 1, 0] | XNOR: [1, 0, 0, 1].",
+      "explanation": "Síntese direta das tabelas de verdade de todas as portas de 2 entradas pedidas no Exercício 13 da Ficha Prática Nº 2 e na Aula 5."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "short_answer",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "tabela_de_verdade",
+        "ficha_pratica_3"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº3.pdf",
+        "location": "Exercício 1 (alíneas a, b, c)"
+      },
+      "prompt": "Determine para quais combinações das entradas (X, Y, Z) — de 000 a 111 — as três expressões do Exercício 1 da Ficha Prática Nº 3 assumem o valor lógico 1:\n(a) F1 = X + (Y + Z)'\n(b) F2 = X'(Y + Z) + XY\n(c) F3 = (X + Y + Z)'",
+      "options": null,
+      "answer": "(a) F1 = 1 em {000, 100, 101, 110, 111} | (b) F2 = 1 em {001, 010, 011, 110, 111} | (c) F3 = 1 apenas em {000}.",
+      "explanation": "(a) F1 vale 1 quando X=1 (100, 101, 110, 111) ou quando Y+Z=0 (000).\n(b) F2 vale 1 quando X=0 e Y+Z=1 (001, 010, 011) ou quando X=1 e Y=1 (110, 111).\n(c) F3 é uma porta NOR de 3 entradas: só vale 1 quando X=0, Y=0 e Z=0 (000)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "short_answer",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "tabela_de_verdade",
+        "logisim"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "EXERCÍCIO PRÁTICO COM LOGISIM.pdf",
+        "location": "Exercício 2 (alíneas a, b)"
+      },
+      "prompt": "No Exercício 2 do Guião Prático de Logisim, pede-se a tabela de verdade das expressões:\n(a) S(A,B,C) = (B + ~C)(~B + C) + ~A\n(b) R(A,B,C) = ~A B + B ~C + A ~B C\nIndique para que combinações de (A,B,C) cada expressão resulta em 1.",
+      "options": null,
+      "answer": "(a) S = 1 em {000, 001, 010, 011, 100, 111} (só é 0 em 101 e 110) | (b) R = 1 em {010, 011, 101, 110}.",
+      "explanation": "(a) O produto (B + C')(B' + C) equivale a B ⊗ C (igualdade entre B e C). Somado com A', S vale 1 sempre que A=0 (000, 001, 010, 011) ou quando A=1 e B=C (100, 111).\n(b) A'B cobre {010, 011}; BC' cobre {010, 110}; AB'C cobre {101}. Reunião: {010, 011, 101, 110}."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "short_answer",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "circuito_para_expressao",
+        "logisim"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "EXERCÍCIO PRÁTICO COM LOGISIM.pdf",
+        "location": "Exercício 6"
+      },
+      "prompt": "No Exercício 6 do Guião Prático de Logisim, um circuito com entradas A, B, C possui 4 portas no primeiro nível ligadas a uma porta OR de 4 entradas na saída:\n1ª porta (OR de 2 entradas): recebe A' e C;\n2ª porta (AND de 3 entradas): recebe A, B' e C';\n3ª porta (OR de 3 entradas): recebe A, B' e C;\n4ª porta (AND de 2 entradas): recebe A e C.\nEscreva a expressão booleana completa da saída e indique o seu valor lógico simplificado.",
+      "options": null,
+      "answer": "Expressão não simplificada: F = (A' + C) + (A . B' . C') + (A + B' + C) + (A . C). Valor simplificado: F = 1 (constante lógica ALTO para todas as combinações).",
+      "explanation": "Somando apenas o 1º e o 3º termos na porta OR de saída: (A' + C) + (A + B' + C) = (A' + A) + B' + C = 1 + B' + C = 1. Assim, na tabela de verdade do Exercício 6, a saída vale 1 nas 8 linhas."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "short_answer",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "expressao_para_circuito",
+        "2_teste_2022_2023"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "2º Teste SD 2022_2023.pdf",
+        "location": "Grupo II, Questão 7 (7.1 e 7.2)"
+      },
+      "prompt": "Na Questão 7 do Grupo II do 2º Teste (2022/2023), pede-se para construir os circuitos digitais equivalentes às expressões:\n(7.1) X = (A + B)' . (C ⊕ (A + D'))\n(7.2) X = ((A + B' ⊕ D) . (C' + A) + B) . (A + B)'\nIndique que portas compõem a expressão (7.1) e qual é o valor lógico que a expressão (7.2) assume para qualquer combinação das entradas.",
+      "options": null,
+      "answer": "Em (7.1), usa-se uma porta NOR para (A+B)', um inversor para D', uma porta OR para (A+D'), uma porta XOR entre C e (A+D'), e uma porta AND final. Em (7.2), se avaliada sem simplificar requer inversores, XOR, ORs, ANDs e NOR, mas algebricamente vale sempre X = 0 (ou X = A'B'C'(1+D') consoante se simplifique antes).",
+      "explanation": "Em 7.1, cada subexpressão mapeia diretamente numa porta: NOR(A,B), OR(A, NOT(D)), XOR(C, A+D') e AND final. Em 7.2, o fator externo (A+B)' = A'B' impõe A=0 e B=0 para que X possa ser 1; substituindo A=0 e B=0 no primeiro fator obtém-se ((0 + 1 ⊕ D).(C' + 0) + 0) = D'.C', dando X = A'B'C'D' (apenas a linha 0000 dá 1)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "short_answer",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "tabela_de_verdade",
+        "ficha_pratica_3"
+      ],
+      "relevancy": "core",
+      "difficulty": 2,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº3.pdf",
+        "location": "Exercício 9 (alíneas a, d)"
+      },
+      "prompt": "Obtenha os mintermos (linhas onde F = 1) para as seguintes funções de 3 variáveis do Exercício 9 da Ficha Prática Nº 3:\n(a) F(X,Y,Z) = X'Y + X'Y'Z\n(d) F(A,B,C) = (A + A')B + BA'C' + C(A + B')(A' + B)",
+      "options": null,
+      "answer": "(a) F(X,Y,Z) = 1 nas linhas {001, 010, 011} (mintermos m1, m2, m3) | (d) F(A,B,C) = 1 nas linhas {001, 010, 011, 110, 111} (mintermos m1, m2, m3, m6, m7).",
+      "explanation": "(a) X'Y vale 1 em 010 e 011; X'Y'Z vale 1 em 001 -> {001, 010, 011}.\n(d) Como (A+A')B = B, absorve BA'C'; e (A+B')(A'+B) = AB + A'B'. Logo F = B + C(AB + A'B') = B + A'B'C, que vale 1 sempre que B=1 (010, 011, 110, 111) e também em A=0,B=0,C=1 (001)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "short_answer",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "circuito_com_nand",
+        "exame_fev_2025"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Exame de Sistemas digitais.pdf",
+        "location": "Grupo II, Questão 3 (3.1 e 3.2) & 1º Teste 2025_2026 Q4"
+      },
+      "prompt": "Na Questão 3 do Grupo II do Exame de Sistemas Digitais (Fev 2025) e Questão 4 do 1º Teste (2025/2026), é apresentado um circuito com entradas A, B, C formado por 4 portas NAND e 2 inversores:\n- Porta NAND 1 recebe A e B;\n- Porta NAND 2 recebe A' (via inversor) e C;\n- Porta NAND 3 recebe as saídas das Portas NAND 1 e NAND 2;\n- Porta NAND 4 (saída F) recebe a saída da Porta NAND 3 e B' (via inversor a partir de B).\nDetermine a equação booleana na saída F e indique o número mínimo de portas básicas para a redesenhar.",
+      "options": null,
+      "answer": "Equação direta: F = ( ( (A.B)' . (A'.C)' )' . B' )'. Simplificando por De Morgan: a saída da NAND 3 é AB + A'C, e a saída F é (AB + A'C)' + B = B + (A' + B')(A + C') = B + A' + C' (implementável com uma única porta NAND de 3 entradas recebendo A, B', C, ou portas básicas).",
+      "explanation": "Pelo Teorema de De Morgan, duas portas NAND em dois níveis (NAND 1, 2 -> NAND 3) equivalem a AND-OR: X = AB + A'C. Na porta NAND 4 de saída, F = (X . B')' = X' + B = (AB + A'C)' + B = A'B' + BC' + B = B + A'B' = B + A' (se a 2ª linha for B) ou, caso o inversor inferior venha de B, reduz-se drasticamente o número de portas."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "open_ended",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "analise_de_circuito_exame",
+        "pontos_intermediarios_a_b"
+      ],
+      "relevancy": "core",
+      "difficulty": 4,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Exame de Sistemas digitais.pdf",
+        "location": "Grupo II, Questão 1 (1.1 a 1.4) & 1º Teste 2025_2026 Q1 & 1º teste 24_25 Q6"
+      },
+      "prompt": "Considere o circuito lógico clássico da Questão 1 do Grupo II do Exame de Sistemas Digitais (Fev 2025) e do 1º Teste (2025/2026) (também presente na Questão 6 do 1º Teste 2024/2025 com uma porta OR na saída), alimentado pelas linhas verticais A, A', B, B', C, C':\n- Ramo superior (ponto intermédio A_out): combina três termos produtos através de portas OR: T1 = A' . (B' . C), T2 = B . C' e T3 = A . (B' . C');\n- Ramo inferior (ponto intermédio B_out): calcula o produto T4 = A . (B . C);\n- No ponto 1 (saída F), coloca-se uma porta OR de 2 entradas recebendo A_out e B_out.\n(a) Obtenha as expressões booleanas nos pontos A_out, B_out e a equação de F (sem minimizar).\n(b) Construa a tabela de verdade de F(A,B,C) e apresente a expressão minimizada e o circuito correspondente.",
+      "options": null,
+      "answer": "(a) Ponto A_out = A'B'C + BC' + AB'C' | Ponto B_out = ABC | Equação não minimizada (com porta OR em 1): F = A'B'C + BC' + AB'C' + ABC. || (b) Tabela de verdade: F = 1 para m1(001), m2(010), m4(100), m6(110), m7(111) (e 0 para 000, 011, 101). Expressão minimizada: F = BC' + AB + A'B'C (ou F = B'C + BC' + AB caso T3 seja B'C).",
+      "explanation": "Seguindo as ligações dos barramentos verticais (A, A', B, B', C, C') no esquemático do exame: cada par de portas AND em cascata forma um produto de 3 literais (A'B'C, AB'C' e ABC) mais a porta AND de 2 entradas (BC'). As portas OR somam os termos, permitindo extrair a equação exata antes de minimizar por Mapa de Karnaugh."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "open_ended",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "simplificacao_de_circuito_xor",
+        "1_teste_2024_2025"
+      ],
+      "relevancy": "core",
+      "difficulty": 4,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "1º teste Sistemas digitais 24_25.pdf",
+        "location": "Grupo II, Questão 3 (3.1)"
+      },
+      "prompt": "Na Questão 3 do Grupo II do 1º Teste (2024/2025), é apresentado um circuito com entradas A, D, B, C', A', D' onde:\n- Uma porta AND superior recebe (A, D) e a sua saída vai a uma porta OR superior juntamente com a entrada B, produzindo X1 = AD + B;\n- Uma porta AND intermédia recebe (B, C') e uma porta AND inferior de 3 entradas recebe (B, A', D'); as saídas de ambas vão a uma porta OR inferior, produzindo X2 = BC' + BA'D';\n- Uma porta XOR final recebe X1 e X2, gerando a saída F = X1 ⊕ X2.\nLevante a expressão booleana de F, simplifique-a e indique como redesenhar F da forma mais simples possível.",
+      "options": null,
+      "answer": "F = (AD + B) ⊕ (BC' + BA'D') = (AD + B) ⊕ B(C' + A'D'). Analisando os dois casos para B: se B = 0, F = (AD + 0) ⊕ 0 = AD; se B = 1, X1 = 1 e X2 = C' + A'D', logo F = 1 ⊕ (C' + A'D') = (C' + A'D')' = C . (A + D). Portanto, na forma mínima de Soma de Produtos: F = A.B'.D + A.B.C + B.C.D (ou F = AD(B' + C) + BCD).",
+      "explanation": "Substituindo B=0 e B=1 (expansão de Shannon) evita-se expandir longos produtos de XOR: para B=0, X1=AD e X2=0 => F=AD; para B=1, X1=1 e X2=C'+A'D' => F = X2' = C(A+D) = AC + CD. Juntando: F = B'(AD) + B(AC + CD) = AB'D + ABC + BCD."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "open_ended",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "analise_de_circuito_exame",
+        "2_teste_2022_2023"
+      ],
+      "relevancy": "core",
+      "difficulty": 4,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "2º Teste SD 2022_2023.pdf",
+        "location": "Grupo II, Questão 1 (1.1 e 1.2)"
+      },
+      "prompt": "Na Questão 1 do Grupo II do 2º Teste (2022/2023) (e Exercício 6b da Ficha Prática Nº 3), considere o circuito com 4 entradas (A, B, C, D de cima para baixo):\n- Porta 1: recebe A' (via inversor) e B numa porta AND seguida de inversor (equivalente a NAND: (A'B)');\n- Porta 2: recebe A e B' (via inversor) numa porta AND seguida de inversor ((AB')');\n- Porta 3: uma porta OR de 3 entradas seguida de inversor (NOR) recebe as saídas da Porta 1, da Porta 2 e C' (via inversor);\n- Porta 4: uma porta OR de 2 entradas recebe C e D;\n- Porta 5 (Saída F): uma porta AND final recebe as saídas da Porta 3 e da Porta 4.\n(a) Levante a expressão booleana não simplificada de F.\n(b) Simplifique a expressão e construa a tabela de verdade.",
+      "options": null,
+      "answer": "(a) F = ( (A'B)' + (AB')' + C' )' . (C + D) | (b) Aplicando De Morgan à porta NOR (Porta 3): ((A'B)' + (AB')' + C')' = (A'B) . (AB') . C = 0 . C = 0 (pois A.A' = 0 e B.B' = 0). Multiplicado por (C + D), resulta em F = 0 para todas as 16 combinações da tabela de verdade!",
+      "explanation": "Pelo Teorema de De Morgan, a saída da porta NOR de 3 entradas é o produto das negações das suas entradas: ((A'B)')' . ((AB')')' . (C')' = (A'B).(AB').C = (A.A')(B.B')C = 0. Logo a saída da Porta 3 é permanentemente 0 e a saída final da porta AND (F) é identicamente 0."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "open_ended",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "expressao_para_circuito",
+        "ficha_pratica_3"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº3.pdf",
+        "location": "Exercício 2 (alíneas a, b)"
+      },
+      "prompt": "No Exercício 2 da Ficha Prática Nº 3, pede-se para construir a tabela de verdade e estruturar o circuito lógico das seguintes expressões:\n(a) F(A, B, C) = AB + B'C + AC\n(b) Z(A, B, C, D) = A'BD + BC'D' + B'C'D + AB'D'\nIndique os mintermos onde cada função vale 1 e especifique quantas portas AND e OR compõem cada circuito na implementação direta em dois níveis (Soma de Produtos).",
+      "options": null,
+      "answer": "(a) F(A,B,C) vale 1 em {001, 101, 110, 111} (m1, m5, m6, m7); usa 1 inversor (B'), 3 portas AND de 2 entradas e 1 porta OR de 3 entradas. | (b) Z(A,B,C,D) vale 1 em {0001, 0100, 0101, 0111, 1000, 1001, 1010, 1100} (m1, m4, m5, m7, m8, m9, m10, m12); usa 4 inversores, 4 portas AND de 3 entradas e 1 porta OR de 4 entradas.",
+      "explanation": "(a) Nota-se pelo teorema do consenso que AB + B'C + AC = AB + B'C (m1=001, m5=101, m6=110, m7=111).\n(b) Expandindo cada produto de 3 variáveis nos seus 2 mintermos de 4 variáveis: A'BD = {0101(5), 0111(7)}; BC'D' = {0100(4), 1100(12)}; B'C'D = {0001(1), 1001(9)}; AB'D' = {1000(8), 1010(10)}."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "open_ended",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "associatividade_nor",
+        "sintese_nor_4_entradas"
+      ],
+      "relevancy": "core",
+      "difficulty": 4,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "correccoes-exames_SD.pdf",
+        "location": "2ª chamada 24/Jan/2002 Q2c"
+      },
+      "prompt": "Explique por que razão não se pode construir diretamente uma porta NOR de 4 entradas F = (A + B + C + D)' encadeando 3 portas NOR de 2 entradas em série, e mostre como implementar corretamente F = (A + B + C + D)' utilizando o menor número possível de portas NOR de 2 entradas.",
+      "options": null,
+      "answer": "Porque a operação NOR não é associativa (cada NOR inverte o sinal acumulado). Para implementar corretamente F = (A+B+C+D)' com portas NOR de 2 entradas, usa-se a propriedade associativa da OR: F = ((A+B) + (C+D))'. Colocam-se 2 portas NOR na entrada para obter (A+B)' e (C+D)', seguidas de 2 portas NOR ligadas como inversores para restaurar (A+B) e (C+D), e 1 porta NOR final na saída, totalizando 5 portas NOR de 2 entradas.",
+      "explanation": "Resolução oficial do Exame 24/Jan/2002 (Q2c): separando (A+B+C+D)' em ((A+B)+(C+D))', calculam-se (A+B)' e (C+D)' com duas NORs, invertem-se ambas com duas NORs de entradas unidas para obter (A+B) e (C+D), e aplica-se uma 5ª NOR na saída."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "calculation",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "tabela_de_verdade",
+        "1_teste_2024_2025"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "1º teste Sistemas digitais 24_25.pdf",
+        "location": "Grupo II, Questão 4 (4.1, 4.2 e 4.3)"
+      },
+      "prompt": "Dada a função booleana de 4 variáveis da Questão 4 (Grupo II) do 1º Teste (2024/2025):\nf(A, B, C, D) = (A' + B)' C + A(CD)' + AB'CD\nCalcule:\n(a) Os índices decimais (0 a 15) das linhas onde f(A, B, C, D) = 1 na tabela de verdade;\n(b) A lista numérica de soma de mintermos (Σm) e de produto de maxtermos (ΠM).",
+      "options": null,
+      "answer": "(a) A função vale 1 nas 10 linhas: 2 (0010), 3 (0011), 8 (1000), 9 (1001), 10 (1010), 11 (1011), 12 (1100), 13 (1101), 14 (1110) e 15 (1111) (ou seja, se o 3º termo for AB'CD; se o 2º termo é A(CD)', apenas m15 seria 0 antes do 3º termo, dando 9 linhas: 2, 3, 8, 9, 10, 11, 12, 13, 14). | (b) Para f = AB'C + A(C'+D') + AB'CD = AB'C + AC' + AD': Σm(8, 9, 10, 11, 12, 13, 14) (ou incluindo 2, 3 se o 1º termo for A'B'C) e ΠM nas posições restantes.",
+      "explanation": "Analisando termo a termo: pelo Teorema de De Morgan, (A' + B)' . C = A . B' . C (cobre 1010=10 e 1011=11); o segundo termo A . (CD)' = A . (C' + D') cobre todos os mintermos onde A=1 exceto 1111 (ou seja: 8, 9, 10, 11, 12, 13, 14); o terceiro termo A . B' . C . D é o mintermo 1011 (11). Reunindo todos os mintermos obtém-se Σm(8, 9, 10, 11, 12, 13, 14) e os zeros em ΠM(0, 1, 2, 3, 4, 5, 6, 7, 15)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "calculation",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "circuito_para_expressao",
+        "exame_26_jun_2002"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "correccoes-exames_SD.pdf",
+        "location": "1ª chamada 26/Jun/2002 Q2a"
+      },
+      "prompt": "Considere o circuito lógico de 4 entradas (A, B, C, D) do Exame 26/Jun/2002 (Q2a), composto no primeiro nível por:\n- Uma porta NOR de 3 entradas ligada a (A, B, C);\n- Uma porta AND de 3 entradas ligada a (A, C, D' — através de um inversor na linha D);\n- Uma porta AND de 2 entradas ligada a (A, C' — através de um inversor na linha C);\ncujas três saídas alimentam uma porta OR de 3 entradas na saída F(A, B, C, D).\nExtraia a expressão booleana de F e determine todas as linhas (0000 a 1111) da sua tabela de verdade onde F = 1.",
+      "options": null,
+      "answer": "Expressão: F(A,B,C,D) = (A + B + C)' + A.C.D' + A.C' = A'.B'.C' + A.C.D' + A.C'. Na tabela de verdade, F = 1 nas 8 linhas: 0000 (0), 0001 (1), 1000 (8), 1001 (9), 1010 (10), 1100 (12), 1101 (13) e 1110 (14).",
+      "explanation": "Pelo Teorema de De Morgan, (A+B+C)' = A'B'C', que vale 1 quando A=B=C=0 (0000 e 0001). O termo AC' vale 1 quando A=1 e C=0 (1000, 1001, 1100, 1101). O termo ACD' vale 1 quando A=1, C=1 e D=0 (1010 e 1110)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "calculation",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "tabela_de_verdade_4_variaveis",
+        "ficha_pratica_3"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº3.pdf",
+        "location": "Exercício 3d & Exercício 9b"
+      },
+      "prompt": "Determine os mintermos (índices de 0 a 15 onde F = 1) na tabela de verdade de 4 variáveis para as duas funções da Ficha Prática Nº 3:\n(1) Exercício 3d: F1(A, B, C, D) = ( (A + B) . (C + D)' )'\n(2) Exercício 9b: F2(W, X, Y, Z) = (W . X)' . (Y' + Z')",
+      "options": null,
+      "answer": "(1) F1 = 0 apenas quando A+B=1 e C+D=0 (linhas 0100=4, 1000=8, 1100=12), logo F1 = 1 nas restantes 13 linhas: {0, 1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15}. || (2) F2 = 1 quando WX != 11 E YZ != 11, o que corresponde a 3 * 3 = 9 linhas: {0, 1, 2, 4, 5, 6, 8, 9, 10}.",
+      "explanation": "(1) Por De Morgan, F1 = (A+B)' + (C+D) = A'B' + C + D; só falha (dá 0) quando C=0, D=0 e pelo menos um entre A,B é 1 (mintermos 4, 8, 12).\n(2) (WX)' vale 1 para WX em {00, 01, 10} (3 casos) e (Y'+Z') = (YZ)' vale 1 para YZ em {00, 01, 10} (3 casos). O produto vale 1 nos 3x3 = 9 mintermos: 0000(0), 0001(1), 0010(2), 0100(4), 0101(5), 0110(6), 1000(8), 1001(9), 1010(10)."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "calculation",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Operações Compostas > NAND, NOR, XOR e XNOR"
+      ],
+      "related_content_labels": [
+        "xor_3_variaveis",
+        "detetor_paridade_impar"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº3.pdf",
+        "location": "Exercício 18a & correccoes-exames_SD.pdf 5/Jul/2000 Q3b"
+      },
+      "prompt": "Considere a função OU-Exclusivo de 3 variáveis F(A, B, C) = A ⊕ B ⊕ C (Exercício 18a da Ficha Prática Nº 3 e Exame 5/Jul/2000 Q3b).\n(a) Construa a tabela de verdade indicando para quais combinações de (A, B, C) a saída F é igual a 1.\n(b) Escreva a expressão algébrica de F em Soma de Mintermos e indique se é possível simplificá-la por Mapa de Karnaugh.",
+      "options": null,
+      "answer": "(a) F = 1 nas 4 linhas que possuem um número ímpar de bits iguais a 1: 001 (m1), 010 (m2), 100 (m4) e 111 (m7). | (b) F = A'B'C + A'BC' + AB'C' + ABC. Não admite qualquer simplificação em Soma de Produtos (padrão em xadrez no Mapa de Karnaugh, sem células adjacentes).",
+      "explanation": "A operação XOR de 3 variáveis funciona como detetor de paridade ímpar: vale 1 para 001, 010, 100 e 111. No Mapa de Karnaugh, estes quatro 1s ficam em posições diagonalmente opostas (padrão xadrez), pelo que nenhum par pode ser agrupado."
+    },
+    {
+      "major": "Computer Engineering",
+      "subject": "Digital Systems",
+      "item_type": "question",
+      "question_type": "calculation",
+      "subject_tags": [
+        "Portas Lógicas e Circuitos Básicos > Representação e Análise > Tabelas de Verdade, Diagramas de Tempo e Tradução Expressão-Circuito"
+      ],
+      "related_content_labels": [
+        "tabela_de_verdade_para_expressao",
+        "ficha_pratica_3"
+      ],
+      "relevancy": "core",
+      "difficulty": 3,
+      "source_reference": {
+        "origin": "provided_material",
+        "source_name": "Ficha Prática SD Nº3.pdf",
+        "location": "Exercício 17 (alíneas b, c) & Lista de Exercicio2.docx.pdf Questão 1 (b, c)"
+      },
+      "prompt": "No Exercício 17 (alíneas b e c) da Ficha Prática Nº 3 (e Questão 1 da Lista 2), são dadas duas tabelas de verdade de 3 variáveis (x, y, z de 000 a 111):\n- Tabela (b): f_b = 1 nas linhas 001 (1), 100 (4) e 110 (6), e 0 nas restantes;\n- Tabela (c): f_c = 1 nas linhas 000 (0), 001 (1), 010 (2), 100 (4) e 101 (5), e 0 nas restantes.\nEscreva para cada uma: (1) a expressão canónica em Soma de Mintermos e (2) a expressão mínima simplificada.",
+      "options": null,
+      "answer": "Tabela (b): (1) Canónica: f_b = x'y'z + xy'z' + xyz' | (2) Simplificada: f_b = x'y'z + xz'. || Tabela (c): (1) Canónica: f_c = x'y'z' + x'y'z + x'yz' + xy'z' + xy'z | (2) Simplificada: f_c = y' + x'z'.",
+      "explanation": "Na Tabela (b), os mintermos 100 (xy'z') e 110 (xyz') agrupam-se em xz', ficando f_b = x'y'z + xz'. Na Tabela (c), os quatro mintermos onde y=0 {000, 001, 100, 101} formam a quadra y', e {000, 010} formam o par x'z', resultando em f_c = y' + x'z'."
+    }
+  ]
