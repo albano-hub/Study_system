@@ -1,1665 +1,1665 @@
 [
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Sistemas Posicionais > Decimal, Binário, Octal e Hexadecimal"
-      ],
-      "related_content_labels": [
-        "sistemas_posicionais",
-        "base_numerica",
-        "pesos_posicionais"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slides 4 a 9, 12, 16 e 20"
-      },
-      "prompt": "Fundamentos dos Sistemas Numéricos Posicionais (Decimal, Binário, Octal e Hexadecimal):\n1. Princípio Posicional: Cada algarismo possui um peso associado igual a uma potência da base B (B^i para a parte inteira, com i = 0, 1, 2... da direita para a esquerda, e B^-j para a parte fracionária, com j = 1, 2... da esquerda para a direita após a vírgula).\n2. Alfabetos das Bases:\n- Decimal (Base 10): {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}\n- Binária (Base 2): {0, 1} — requer mais casas para representar a mesma quantidade, mas corresponde diretamente aos dois estados físicos dos circuitos digitais.\n- Octal (Base 8 = 2^3): {0, 1, 2, 3, 4, 5, 6, 7} — cada dígito octal equivale exatamente a 3 bits.\n- Hexadecimal (Base 16 = 2^4): {0..9, A=10, B=11, C=12, D=13, E=14, F=15} — cada dígito hexadecimal equivale exatamente a 4 bits (1 nibble), sendo amplamente usada por compactar palavras de 8, 16, 32 e 64 bits.",
-      "options": null,
-      "answer": null,
-      "explanation": "Síntese das propriedades das quatro bases posicionais estudadas na Aula 2."
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Sistemas Posicionais > Decimal, Binário, Octal e Hexadecimal"
+    ],
+    "related_content_labels": [
+      "sistemas_posicionais",
+      "base_numerica",
+      "pesos_posicionais"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Sistemas Posicionais Decimal, Binário, Octal e Hexadecimal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "bit_nibble_byte_word",
-        "msb_lsb",
-        "multiplos_do_byte"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slides 8 e 21 & Ficha prática SD nº1.pdf Questões 5 a 7"
-      },
-      "prompt": "Unidades de Informação Binária, MSB/LSB e Múltiplos do Byte:\n1. Agrupamentos padrão: Bit (1 dígito binário), Nibble (4 bits), Byte (8 bits, bits indexados de 0 a 7) e Word (16 bits, bits indexados de 0 a 15).\n2. MSB e LSB: O MSB (Most Significant Bit) é o bit mais à esquerda (maior peso posicional); o LSB (Least Significant Bit) é o bit mais à direita (menor peso posicional; em inteiros sem sinal tem peso 2^0 = 1 e define se o número é par ou ímpar).\n3. Os 6 primeiros múltiplos do Byte em potências de base 2 (e correspondência em bits, sabendo que 1 Byte = 2^3 bits = 8 bits):\n- 1 Kilobyte (KB) = 2^10 Bytes = 1.024 Bytes = 2^13 bits (8.192 bits)\n- 1 Megabyte (MB) = 2^20 Bytes = 2^23 bits\n- 1 Gigabyte (GB) = 2^30 Bytes = 2^33 bits\n- 1 Terabyte (TB) = 2^40 Bytes = 2^43 bits\n- 1 Petabyte (PB) = 2^50 Bytes = 2^53 bits\n- 1 Exabyte (EB) = 2^60 Bytes = 2^63 bits",
-      "options": null,
-      "answer": null,
-      "explanation": "Referência direta para as questões sobre múltiplos do Byte e conversão entre KB/MB/GB e bits da Ficha Prática Nº 1."
+    "prompt": "Fundamentos dos Sistemas Numéricos Posicionais (Decimal, Binário, Octal e Hexadecimal):\n1. Princípio Posicional: Cada algarismo possui um peso associado igual a uma potência da base B (B^i para a parte inteira, com i = 0, 1, 2... da direita para a esquerda, e B^-j para a parte fracionária, com j = 1, 2... da esquerda para a direita após a vírgula).\n2. Alfabetos das Bases:\n- Decimal (Base 10): {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}\n- Binária (Base 2): {0, 1} — requer mais casas para representar a mesma quantidade, mas corresponde diretamente aos dois estados físicos dos circuitos digitais.\n- Octal (Base 8 = 2^3): {0, 1, 2, 3, 4, 5, 6, 7} — cada dígito octal equivale exatamente a 3 bits.\n- Hexadecimal (Base 16 = 2^4): {0..9, A=10, B=11, C=12, D=13, E=14, F=15} — cada dígito hexadecimal equivale exatamente a 4 bits (1 nibble), sendo amplamente usada por compactar palavras de 8, 16, 32 e 64 bits.",
+    "options": null,
+    "answer": null,
+    "explanation": "Síntese das propriedades das quatro bases posicionais fundamentais em Sistemas Digitais."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "bit_nibble_byte_word",
+      "msb_lsb",
+      "multiplos_do_byte"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Agrupamentos de Bits e Múltiplos do Byte"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "conversao_de_bases",
-        "divisoes_sucessivas",
-        "agrupamento_de_bits"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slides 10 a 21"
-      },
-      "prompt": "Algoritmos de Conversão entre Bases (Números Inteiros):\n1. Base B para Decimal (Base 10): Soma polinomial dos produtos de cada algarismo pela potência da base correspondente à sua posição (ex.: 1A2_16 = 1*16^2 + 10*16^1 + 2*16^0 = 418_10).\n2. Decimal para Base B (Binário, Octal ou Hexadecimal): Método das divisões inteiras sucessivas pela base B até que o quociente seja 0. O número convertido é lido a partir do último resto (MSB) até ao primeiro resto obtido (LSB).\n3. Binário <-> Octal (Atalho por agrupamento): Agrupam-se os bits de 3 em 3 da direita para a esquerda (preenchendo com zeros à esquerda se necessário) e converte-se cada tríade diretamente (000_2=0_8 até 111_2=7_8).\n4. Binário <-> Hexadecimal (Atalho por agrupamento): Agrupam-se os bits de 4 em 4 da direita para a esquerda e converte-se cada nibble diretamente (0000_2=0_16 até 1111_2=F_16).\n5. Octal <-> Hexadecimal: Converte-se primeiro para binário como ponte intermédia e reagrupam-se os bits em grupos de 4 (para Hex) ou de 3 (para Octal).",
-      "options": null,
-      "answer": null,
-      "explanation": "Resumo operacional para executar conversões rápidas sem calculadora em exame."
+    "prompt": "Unidades de Informação Binária, MSB/LSB e Múltiplos do Byte:\n1. Agrupamentos padrão: Bit (1 dígito binário), Nibble (4 bits), Byte (8 bits, bits indexados de 0 a 7) e Word (16 bits, bits indexados de 0 a 15).\n2. MSB e LSB: O MSB (Most Significant Bit) é o bit mais à esquerda (maior peso posicional); o LSB (Least Significant Bit) é o bit mais à direita (menor peso posicional; em inteiros sem sinal tem peso 2^0 = 1 e define se o número é par ou ímpar).\n3. Os 6 primeiros múltiplos do Byte em potências de base 2 (sabendo que 1 Byte = 2^3 bits = 8 bits):\n- 1 Kilobyte (KB) = 2^10 Bytes = 1.024 Bytes = 2^13 bits (8.192 bits)\n- 1 Megabyte (MB) = 2^20 Bytes = 2^23 bits\n- 1 Gigabyte (GB) = 2^30 Bytes = 2^33 bits\n- 1 Terabyte (TB) = 2^40 Bytes = 2^43 bits\n- 1 Petabyte (PB) = 2^50 Bytes = 2^53 bits\n- 1 Exabyte (EB) = 2^60 Bytes = 2^63 bits",
+    "options": null,
+    "answer": null,
+    "explanation": "Relação entre bits, nibbles, Bytes, Words e os múltiplos binários do Byte."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "conversao_de_bases",
+      "divisoes_sucessivas",
+      "agrupamento_de_bits"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Conversão entre Bases Numéricas"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "numeros_reais_binario",
-        "conversao_fracionaria",
-        "potencias_negativas_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slides 11 a 14"
-      },
-      "prompt": "Representação e Conversão de Números Reais (Fracionários) em Binário:\n1. Pesos Fracionários em Base 2: As casas à direita da vírgula têm pesos 2^-1 = 0,5; 2^-2 = 0,25; 2^-3 = 0,125; 2^-4 = 0,0625; 2^-5 = 0,03125; 2^-6 = 0,015625.\n2. Conversão Binário Fracionário -> Decimal: Soma-se o valor da parte inteira com a soma dos pesos fracionários onde o bit vale 1 (ex.: 1010,01_2 = 8 + 2 + 0*0,5 + 1*0,25 = 10,25_10).\n3. Conversão Decimal Fracionário -> Binário: Converte-se a parte inteira normalmente por divisões sucessivas por 2. A parte fracionária é multiplicada sucessivamente por 2: em cada passo, a parte inteira resultante (0 ou 1) torna-se o próximo bit fracionário (lido de cima para baixo, do primeiro ao último), e repete-se a multiplicação apenas com a nova parte fracionária até que esta se anule (0,00) ou atinja o número de casas pretendido.\n4. Agrupamento Octal/Hexadecimal com Vírgula: A partir da vírgula, agrupam-se os bits da parte inteira para a esquerda e os da parte fracionária para a direita (preenchendo zeros à direita na fração se faltar completar o grupo de 3 ou 4 bits).",
-      "options": null,
-      "answer": null,
-      "explanation": "Regras essenciais para resolver conversões fracionárias como 647,75_10, 123,625_10 e 1111001010,01_2."
+    "prompt": "Algoritmos de Conversão entre Bases (Números Inteiros):\n1. Base B para Decimal (Base 10): Soma polinomial dos produtos de cada algarismo pela potência da base correspondente à sua posição (ex.: 1A2_16 = 1*16^2 + 10*16^1 + 2*16^0 = 418_10).\n2. Decimal para Base B (Binário, Octal ou Hexadecimal): Método das divisões inteiras sucessivas pela base B até que o quociente seja 0. O número convertido é lido a partir do último resto (MSB) até ao primeiro resto obtido (LSB).\n3. Binário <-> Octal (Atalho por agrupamento): Agrupam-se os bits de 3 em 3 da direita para a esquerda (preenchendo com zeros à esquerda se necessário) e converte-se cada tríade diretamente (000_2=0_8 até 111_2=7_8).\n4. Binário <-> Hexadecimal (Atalho por agrupamento): Agrupam-se os bits de 4 em 4 da direita para a esquerda e converte-se cada nibble diretamente (0000_2=0_16 até 1111_2=F_16).\n5. Octal <-> Hexadecimal: Converte-se primeiro para binário como ponte intermédia e reagrupam-se os bits em grupos de 4 (para Hex) ou de 3 (para Octal).",
+    "options": null,
+    "answer": null,
+    "explanation": "Resumo operacional para executar conversões rápidas entre bases posicionais."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "numeros_reais_binario",
+      "conversao_fracionaria",
+      "potencias_negativas_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Representação e Conversão de Números Fracionários"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
-      ],
-      "related_content_labels": [
-        "adicao_binaria",
-        "subtracao_binaria",
-        "multiplicacao_e_divisao_binaria"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
-        "location": "Slides 4, 5, 12 a 15"
-      },
-      "prompt": "Operações Aritméticas em Binário Puro (Sem Sinal):\n1. Adição Binária (bit a bit com transporte/carry 'v1'):\n- 0 + 0 = 0 (carry = 0)\n- 0 + 1 = 1 (carry = 0)\n- 1 + 0 = 1 (carry = 0)\n- 1 + 1 = 0 (carry = 1)\n- 1 + 1 + 1 = 1 (carry = 1)\n2. Subtração Binária (bit a bit com empréstimo/borrow 'v1'):\n- 0 - 0 = 0 (borrow = 0)\n- 1 - 0 = 1 (borrow = 0)\n- 1 - 1 = 0 (borrow = 0)\n- 0 - 1 = 1 (borrow = 1, pede-se 1 emprestado à casa imediatamente superior, que vale 2 na posição atual).\n3. Multiplicação Binária: Realizada de forma idêntica à decimal através de somas de produtos parciais deslocados para a esquerda (0x0=0, 0x1=0, 1x0=0, 1x1=1).\n4. Divisão Binária: Segue o algoritmo de divisão longa decimal; se após descer 1 bit o dividendo parcial for menor que o divisor, coloca-se 0 no quociente e desce-se o próximo bit.",
-      "options": null,
-      "answer": null,
-      "explanation": "Regras das quatro operações aritméticas em binário sem sinal apresentadas na Aula 3."
+    "prompt": "Representação e Conversão de Números Reais (Fracionários) em Binário:\n1. Pesos Fracionários em Base 2: As casas à direita da vírgula têm pesos 2^-1 = 0,5; 2^-2 = 0,25; 2^-3 = 0,125; 2^-4 = 0,0625; 2^-5 = 0,03125; 2^-6 = 0,015625.\n2. Conversão Binário Fracionário -> Decimal: Soma-se o valor da parte inteira com a soma dos pesos fracionários onde o bit vale 1 (ex.: 1010,01_2 = 8 + 2 + 0*0,5 + 1*0,25 = 10,25_10).\n3. Conversão Decimal Fracionário -> Binário: Converte-se a parte inteira normalmente por divisões sucessivas por 2. A parte fracionária é multiplicada sucessivamente por 2: em cada passo, a parte inteira resultante (0 ou 1) torna-se o próximo bit fracionário (lido de cima para baixo, do primeiro ao último), e repete-se a multiplicação apenas com a nova parte fracionária até que esta se anule (0,00) ou atinja o número de casas pretendido.\n4. Agrupamento Octal/Hexadecimal com Vírgula: A partir da vírgula, agrupam-se os bits da parte inteira para a esquerda e os da parte fracionária para a direita (preenchendo zeros à direita na fração se faltar completar o grupo de 3 ou 4 bits).",
+    "options": null,
+    "answer": null,
+    "explanation": "Regras essenciais para converter números fracionários entre decimal, binário, octal e hexadecimal."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
+    ],
+    "related_content_labels": [
+      "adicao_binaria",
+      "subtracao_binaria",
+      "multiplicacao_e_divisao_binaria"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Adição, Subtração, Multiplicação e Divisão Binária"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
-      ],
-      "related_content_labels": [
-        "aritmetica_hexadecimal",
-        "adicao_hexadecimal",
-        "subtracao_hexadecimal"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
-        "location": "Slide 16"
-      },
-      "prompt": "Aritmética Direta na Base Hexadecimal (Base 16):\n1. Adição Hexadecimal: Somam-se os dígitos coluna a coluna da direita para a esquerda (lembrando A=10, B=11, C=12, D=13, E=14, F=15). Sempre que a soma numa coluna for >= 16, subtrai-se 16 para obter o dígito da posição atual e transporta-se 1 (carry = 1) para a coluna seguinte à esquerda.\n- Exemplo (Slide 16): A0A0_16 + 1BB2_16 -> 0+2=2; A(10)+B(11)=21 = 16+5 (escreve 5, vai 1); 1+0+B(11)=12(C); A(10)+1=11(B) -> Resultado: BC52_16.\n2. Subtração Hexadecimal: Quando o dígito do minuendo é menor que o do subtraendo, pede-se 1 unidade emprestada à coluna seguinte à esquerda, o que equivale a somar 16_10 ao dígito atual.\n- Exemplo (Slide 16): A0A0_16 - 0CC1_16 = 93DF_16.",
-      "options": null,
-      "answer": null,
-      "explanation": "Procedimento passo a passo para adição e subtração em hexadecimal da Aula 3."
+    "prompt": "Operações Aritméticas em Binário Puro (Sem Sinal):\n1. Adição Binária (bit a bit com transporte/carry 'v1'):\n- 0 + 0 = 0 (carry = 0)\n- 0 + 1 = 1 (carry = 0)\n- 1 + 0 = 1 (carry = 0)\n- 1 + 1 = 0 (carry = 1)\n- 1 + 1 + 1 = 1 (carry = 1)\n2. Subtração Binária (bit a bit com empréstimo/borrow 'v1'):\n- 0 - 0 = 0 (borrow = 0)\n- 1 - 0 = 1 (borrow = 0)\n- 1 - 1 = 0 (borrow = 0)\n- 0 - 1 = 1 (borrow = 1, pede-se 1 emprestado à casa imediatamente superior, que vale 2 na posição atual).\n3. Multiplicação Binária: Realizada de forma idêntica à decimal através de somas de produtos parciais deslocados para a esquerda (0x0=0, 0x1=0, 1x0=0, 1x1=1).\n4. Divisão Binária: Segue o algoritmo de divisão longa decimal; se após descer 1 bit o dividendo parcial for menor que o divisor, coloca-se 0 no quociente e desce-se o próximo bit.",
+    "options": null,
+    "answer": null,
+    "explanation": "Regras das quatro operações aritméticas em binário sem sinal."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
+    ],
+    "related_content_labels": [
+      "aritmetica_hexadecimal",
+      "adicao_hexadecimal",
+      "subtracao_hexadecimal"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Operações Aritméticas em Hexadecimal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
-      ],
-      "related_content_labels": [
-        "sinal_magnitude",
-        "complemento_de_1",
-        "complemento_de_2",
-        "gama_de_representacao"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slides 4 a 8"
-      },
-      "prompt": "Representação de Números Inteiros com Sinal (Palavra de N bits):\nEm todas as três convenções, o bit mais significativo (MSB) indica o sinal: 0 para positivo, 1 para negativo. Para números positivos, as três representações são idênticas.\n1. Sinal e Valor Absoluto (Sinal-Magnitude): O MSB é o sinal e os restantes N-1 bits representam diretamente o módulo em binário puro. Gama: [-(2^(N-1) - 1), +(2^(N-1) - 1)]. Possui dupla representação para o zero (+0 e -0) e exige hardware complexo para soma/subtração.\n2. Complemento de 1 (C1): Obtém-se para números negativos invertendo todos os bits da representação positiva correspondente. Gama: [-(2^(N-1) - 1), +(2^(N-1) - 1)]. Também apresenta duas representações para o zero (ex. em 4 bits: +0 = 0000 e -0 = 1111).\n3. Complemento de 2 (C2): Obtém-se invertendo todos os bits do número positivo (C1) e somando 1 ao resultado (C2 = C1 + 1). O MSB tem peso negativo -2^(N-1). Possui uma única representação para o zero (00...0) e gama assimétrica: [-2^(N-1), +(2^(N-1) - 1)] (ex.: em 4 bits de -8 a +7; em 8 bits de -128 a +127).",
-      "options": null,
-      "answer": null,
-      "explanation": "Comparação estrutural e gamas de representação para números sinalizados de N bits."
+    "prompt": "Aritmética Direta na Base Hexadecimal (Base 16):\n1. Adição Hexadecimal: Somam-se os dígitos coluna a coluna da direita para a esquerda (lembrando A=10, B=11, C=12, D=13, E=14, F=15). Sempre que a soma numa coluna for >= 16, subtrai-se 16 para obter o dígito da posição atual e transporta-se 1 (carry = 1) para a coluna seguinte à esquerda.\n- Exemplo: A0A0_16 + 1BB2_16 -> 0+2=2; A(10)+B(11)=21 = 16+5 (escreve 5, vai 1); 1+0+B(11)=12(C); A(10)+1=11(B) -> Resultado: BC52_16.\n2. Subtração Hexadecimal: Quando o dígito do minuendo é menor que o do subtraendo, pede-se 1 unidade emprestada à coluna seguinte à esquerda, o que equivale a somar 16_10 ao dígito atual.\n- Exemplo: A0A0_16 - 0CC1_16 = 93DF_16.",
+    "options": null,
+    "answer": null,
+    "explanation": "Procedimento passo a passo para adição e subtração direta na base 16."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
+    ],
+    "related_content_labels": [
+      "sinal_magnitude",
+      "complemento_de_1",
+      "complemento_de_2",
+      "gama_de_representacao"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Representação de Números Binários com Sinal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "extensao_de_sinal",
-        "adicao_complemento_de_2",
-        "subtracao_complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slides 9 e 10 & SD_aula03_Operações Aritméticas em Binário.pdf Slides 6 a 11"
-      },
-      "prompt": "Extensão de Sinal e Aritmética em Complemento de 2:\n1. Extensão de Sinal (Sign Extension): Para aumentar o tamanho da palavra de um número representado em Complemento de 2 (por exemplo, de 5 bits para 8 bits) mantendo o seu valor numérico intacto, replicam-se os novos bits à esquerda com o mesmo valor do bit de sinal (MSB): preenche-se com 0s se for positivo (ex.: +11_10 = 01011_2 -> 00001011_2) e preenche-se com 1s se for negativo (ex.: -11_10 = 10101_2 -> 11110101_2).\n2. Adição em Complemento de 2: Somam-se todos os bits diretamente (incluindo o bit de sinal) como se fossem binários puros. Qualquer transporte (carry-out) gerado para além do MSB da palavra fixa de N bits é simplesmente descartado.\n3. Subtração em Complemento de 2 (A - B): Transforma-se a subtração numa adição somando ao minuendo (A) o simétrico (Complemento de 2) do subtraendo: A - B = A + (-B).",
-      "options": null,
-      "answer": null,
-      "explanation": "Regras fundamentais de extensão de sinal e redução da subtração à adição em Complemento de 2."
+    "prompt": "Representação de Números Inteiros com Sinal (Palavra de N bits):\nEm todas as três convenções, o bit mais significativo (MSB) indica o sinal: 0 para positivo, 1 para negativo. Para números positivos, as três representações são idênticas.\n1. Sinal e Valor Absoluto (Sinal-Magnitude): O MSB é o sinal e os restantes N-1 bits representam diretamente o módulo em binário puro. Gama: [-(2^(N-1) - 1), +(2^(N-1) - 1)]. Possui dupla representação para o zero (+0 e -0) e exige hardware complexo para soma/subtração.\n2. Complemento de 1 (C1): Obtém-se para números negativos invertendo todos os bits da representação positiva correspondente. Gama: [-(2^(N-1) - 1), +(2^(N-1) - 1)]. Também apresenta duas representações para o zero (ex. em 4 bits: +0 = 0000 e -0 = 1111).\n3. Complemento de 2 (C2): Obtém-se invertendo todos os bits do número positivo (C1) e somando 1 ao resultado (C2 = C1 + 1). O MSB tem peso negativo -2^(N-1). Possui uma única representação para o zero (00...0) e gama assimétrica: [-2^(N-1), +(2^(N-1) - 1)] (ex.: em 4 bits de -8 a +7; em 8 bits de -128 a +127).",
+    "options": null,
+    "answer": null,
+    "explanation": "Comparação estrutural e gamas de representação para números sinalizados de N bits."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "extensao_de_sinal",
+      "adicao_complemento_de_2",
+      "subtracao_complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Extensão de Sinal e Operações em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "overflow",
-        "borrow_out",
-        "detecao_de_overflow"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "correccoes-exames_SD.pdf",
-        "location": "Provas 5/Jul/2000 Q1, 25/Jan/2001 Q1, 7/Jan/2002 Q1 e 24/Jan/2002 Q1"
-      },
-      "prompt": "Regras de Deteção de Overflow (Transbordo) em Exames:\n1. Em Inteiros Sem Sinal (N bits, gama [0, 2^N - 1]):\n- Na adição: ocorre overflow sempre que é gerado um carry-out = 1 no bit mais significativo (a soma ultrapassa 2^N - 1).\n- Na subtração (A - B): ocorre overflow/underflow se for gerado um borrow-out = 1 (quando B > A, pois o resultado negativo não existe em sem sinal).\n2. Em Complemento de 2 (N bits, gama [-2^(N-1), +2^(N-1) - 1]):\n- Na adição (X + Y): NUNCA ocorre overflow quando se somam dois números de sinais contrários. Só pode ocorrer overflow quando os dois operandos têm o MESMO sinal e o resultado apresenta o SINAL OPOSTO (ex.: Positivo + Positivo = Negativo, ou Negativo + Negativo = Positivo). O carry-out isoladamente não indica overflow em C2!\n- Na subtração (X - Y): Como X - Y = X + (-Y), só pode ocorrer overflow quando X e Y têm SINAIS OPOSTOS e o resultado final fica com sinal diferente do diminuendo X.",
-      "options": null,
-      "answer": null,
-      "explanation": "Síntese crítica para justificar as questões de overflow da Lista de Exercícios 1 e dos exames."
+    "prompt": "Extensão de Sinal e Aritmética em Complemento de 2:\n1. Extensão de Sinal (Sign Extension): Para aumentar o tamanho da palavra de um número representado em Complemento de 2 (por exemplo, de 5 bits para 8 bits) mantendo o seu valor numérico intacto, replicam-se os novos bits à esquerda com o mesmo valor do bit de sinal (MSB): preenche-se com 0s se for positivo (ex.: +11_10 = 01011_2 -> 00001011_2) e preenche-se com 1s se for negativo (ex.: -11_10 = 10101_2 -> 11110101_2).\n2. Adição em Complemento de 2: Somam-se todos os bits diretamente (incluindo o bit de sinal) como se fossem binários puros. Qualquer transporte (carry-out) gerado para além do MSB da palavra fixa de N bits é simplesmente descartado.\n3. Subtração em Complemento de 2 (A - B): Transforma-se a subtração numa adição somando ao minuendo (A) o simétrico (Complemento de 2) do subtraendo: A - B = A + (-B).",
+    "options": null,
+    "answer": null,
+    "explanation": "Regras fundamentais de extensão de sinal e redução da subtração à adição em Complemento de 2."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "overflow",
+      "borrow_out",
+      "detecao_de_overflow"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Transporte e Transbordo (Overflow) em Aritmética Binária"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "dimensionamento_de_bits",
-        "resolucao",
-        "aplicacoes_sensores"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Lista de Exercicio1.docx.pdf",
-        "location": "Questões 14, 17, 19 e 20 & correccoes-exames_SD.pdf 26/Jun/2001 Q1, 7/Jan/2002 Q1 e 26/Jun/2002 Q1"
-      },
-      "prompt": "Dimensionamento Prático do Número Mínimo de Bits (N):\n1. Grandezas Positivas Sem Sinal [0, M_max]: Escolhe-se o menor inteiro N tal que 2^N - 1 >= M_max (ex.: para pressão atmosférica até 1100 mBar, como 2^10 - 1 = 1023 < 1100 e 2^11 - 1 = 2047 >= 1100, são necessários N = 11 bits).\n2. Grandezas Simétricas com Sinal em Complemento de 2 [-M, +M]: Como a gama é [-2^(N-1), +2^(N-1) - 1], o limite positivo é o mais restritivo; logo, escolhe-se o menor inteiro N tal que 2^(N-1) - 1 >= +M:\n- Para variação [-40, +40]: 2^(7-1) - 1 = 63 >= 40 -> N = 7 bits (gama [-64, +63]).\n- Para latitude [-90, +90]: 2^(8-1) - 1 = 127 >= 90 -> N = 8 bits (gama [-128, +127]).\n- Para longitude ou bússola [-180, +180]: 2^(9-1) - 1 = 255 >= 180 -> N = 9 bits (gama [-256, +255]).\n3. Inteiro Decimal de n Dígitos: Requer no mínimo m >= n * log2(10) ≈ 3,3219 * n bits.",
-      "options": null,
-      "answer": null,
-      "explanation": "Fórmulas e casos práticos recorrentes nas listas de exercícios e exames."
+    "prompt": "Regras de Deteção de Overflow (Transbordo):\n1. Em Inteiros Sem Sinal (N bits, gama [0, 2^N - 1]):\n- Na adição: ocorre overflow sempre que é gerado um carry-out = 1 no bit mais significativo (a soma ultrapassa 2^N - 1).\n- Na subtração (A - B): ocorre overflow/underflow se for gerado um borrow-out = 1 (quando B > A, pois o resultado negativo não existe em representação sem sinal).\n2. Em Complemento de 2 (N bits, gama [-2^(N-1), +2^(N-1) - 1]):\n- Na adição (X + Y): NUNCA ocorre overflow quando se somam dois números de sinais contrários. Só pode ocorrer overflow quando os dois operandos têm o MESMO sinal e o resultado apresenta o SINAL OPOSTO (ex.: Positivo + Positivo = Negativo, ou Negativo + Negativo = Positivo). O carry-out isoladamente não indica overflow em Complemento de 2.\n- Na subtração (X - Y): Como X - Y = X + (-Y), só pode ocorrer overflow quando X e Y têm SINAIS OPOSTOS e o resultado final fica com sinal diferente do minuendo X.",
+    "options": null,
+    "answer": null,
+    "explanation": "Critérios formais para distinguir transporte (carry) de transbordo (overflow) em palavras de N bits."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "dimensionamento_de_bits",
+      "resolucao",
+      "aplicacoes_sensores"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Dimensionamento de Palavra Binária e Gama"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "bcd_8421",
-        "excesso_de_3",
-        "codigo_gray",
-        "codigo_johnson",
-        "codigo_ascii"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slides 15 a 22"
-      },
-      "prompt": "Códigos Binários Numéricos e Alfanuméricos:\n1. BCD 8421 (Binary-Coded Decimal): Codifica individualmente cada dígito decimal (0 a 9) através do seu nibble binário de 4 bits (0000 a 1001) com pesos 8, 4, 2, 1. Os 6 padrões de 1010 (10) a 1111 (15) são inválidos (don't care). Ex.: 36_10 em BCD = 0011 0110_BCD.\n2. Código Excesso de 3 (XS-3): Código não ponderado obtido somando 3 (0011_2) a cada dígito BCD 8421 (0 -> 0011 até 9 -> 1100). É auto-complementar (o complemento de 1 de um dígito corresponde ao complemento a 9 decimal).\n3. Código Gray (Refletido): Código não ponderado onde quaisquer dois valores consecutivos diferem em exatamente 1 bit (distância de Hamming = 1). Evita leituras falsas em sensores eletromecânicos e estrutura os Mapas de Karnaugh.\n4. Código de Johnson (5 bits para dígitos 0-9): Padrão em anel com deslocamento progressivo de 1s seguido de 0s (0=00000, 1=00001, 2=00011, 3=00111, 4=01111, 5=11111, 6=11110, 7=11100, 8=11000, 9=10000), muito usado em contadores.\n5. Código ASCII: Código alfanumérico de 7 bits (128 caracteres, 0 a 127) ou 8 bits estendido (256 caracteres) para representar letras, dígitos, pontuação e caracteres de controlo.",
-      "options": null,
-      "answer": null,
-      "explanation": "Resumo completo de todos os códigos binários exigidos no programa da UC e nos testes."
+    "prompt": "Dimensionamento Prático do Número Mínimo de Bits (N):\n1. Grandezas Positivas Sem Sinal [0, M_max]: Escolhe-se o menor inteiro N tal que 2^N - 1 >= M_max (ex.: para medir valores até 1100, como 2^10 - 1 = 1023 < 1100 e 2^11 - 1 = 2047 >= 1100, são necessários N = 11 bits).\n2. Grandezas Simétricas com Sinal em Complemento de 2 [-M, +M]: Como a gama é [-2^(N-1), +2^(N-1) - 1], o limite positivo é o mais restritivo; logo, escolhe-se o menor inteiro N tal que 2^(N-1) - 1 >= +M:\n- Para o intervalo [-40, +40]: 2^(7-1) - 1 = 63 >= 40 -> N = 7 bits (gama [-64, +63]).\n- Para o intervalo [-90, +90]: 2^(8-1) - 1 = 127 >= 90 -> N = 8 bits (gama [-128, +127]).\n- Para o intervalo [-180, +180]: 2^(9-1) - 1 = 255 >= 180 -> N = 9 bits (gama [-256, +255]).\n3. Inteiro Decimal de n Dígitos: Requer no mínimo m >= n * log2(10) ≈ 3,3219 * n bits.",
+    "options": null,
+    "answer": null,
+    "explanation": "Regras de dimensionamento do número mínimo de bits para grandezas sem sinal e com sinal."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "bcd_8421",
+      "excesso_de_3",
+      "codigo_gray",
+      "codigo_johnson",
+      "codigo_ascii"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Códigos BCD, Excesso de 3, Gray, Johnson e ASCII"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "ponto_fixo",
-        "ponto_flutuante",
-        "precisao_binaria"
-      ],
-      "relevancy": "supplementary",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Importante.pdf",
-        "location": "Capítulo VIII, Questões 26 a 34"
-      },
-      "prompt": "Notação de Ponto Fixo, Ponto Flutuante e Erros de Representação:\n1. Dízimas Periódicas Binárias: Frações decimais cujo denominador reduzido não é potência de 2 (como 0,1_10 = 1/10 ou 0,3_10 = 3/10) não possuem representação binária finita exata (0,1_10 = 0,0001100110011..._2), causando erros de truncamento/arredondamento em somas sucessivas.\n2. Ponto Flutuante Normalizado: Divide a palavra num bit de sinal (S), numa mantissa fracionária normalizada M (onde o primeiro bit após a vírgula é 1, ou implícito no caso de 'bit escondido') e num expoente E (frequentemente em complemento de 2 ou polarizado), representando o valor (-1)^S * M * 2^E.\n3. Adição em Ponto Flutuante: Exige alinhar previamente os expoentes (igualando o menor expoente ao maior através do deslocamento da sua mantissa para a direita), somar as mantissas e normalizar o resultado.",
-      "options": null,
-      "answer": null,
-      "explanation": "Síntese suplementar sobre representação real em ponto flutuante e limitações de precisão finita."
+    "prompt": "Códigos Binários Numéricos e Alfanuméricos:\n1. BCD 8421 (Binary-Coded Decimal): Codifica individualmente cada dígito decimal (0 a 9) através do seu nibble binário de 4 bits (0000 a 1001) com pesos 8, 4, 2, 1. Os 6 padrões de 1010 (10) a 1111 (15) são inválidos (don't care). Ex.: 36_10 em BCD = 0011 0110_BCD.\n2. Código Excesso de 3 (XS-3): Código não ponderado obtido somando 3 (0011_2) a cada dígito BCD 8421 (0 -> 0011 até 9 -> 1100). É auto-complementar (o complemento de 1 de um dígito corresponde ao complemento a 9 decimal).\n3. Código Gray (Refletido): Código não ponderado onde quaisquer dois valores consecutivos diferem em exatamente 1 bit (distância de Hamming = 1). Evita leituras falsas em sensores eletromecânicos e estrutura os Mapas de Karnaugh.\n4. Código de Johnson (5 bits para dígitos 0-9): Padrão em anel com deslocamento progressivo de 1s seguido de 0s (0=00000, 1=00001, 2=00011, 3=00111, 4=01111, 5=11111, 6=11110, 7=11100, 8=11000, 9=10000), muito usado em contadores.\n5. Código ASCII: Código alfanumérico de 7 bits (128 caracteres, 0 a 127) ou 8 bits estendido (256 caracteres) para representar letras, dígitos, pontuação e caracteres de controlo.",
+    "options": null,
+    "answer": null,
+    "explanation": "Resumo completo dos códigos binários numéricos e alfanuméricos."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "ponto_fixo",
+      "ponto_flutuante",
+      "precisao_binaria"
+    ],
+    "relevancy": "supplementary",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Representação Fracionária e Precisão Finita"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Sistemas Posicionais > Decimal, Binário, Octal e Hexadecimal"
-      ],
-      "related_content_labels": [
-        "base_binaria",
-        "base_hexadecimal"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slides 7 e 16"
-      },
-      "prompt": "Para representar uma mesma quantidade numérica inteira, o sistema binário requer geralmente menos casas (dígitos) do que o sistema hexadecimal.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "False",
-      "explanation": "Quanto menor for a base numérica, maior é o número de casas necessário para representar a mesma quantidade. Como cada dígito hexadecimal compacta 4 bits, o sistema binário requer quatro vezes mais dígitos do que o hexadecimal."
+    "prompt": "Notação de Ponto Fixo, Ponto Flutuante e Erros de Representação:\n1. Dízimas Periódicas Binárias: Frações decimais cujo denominador reduzido não é potência de 2 (como 0,1_10 = 1/10 ou 0,3_10 = 3/10) não possuem representação binária finita exata (0,1_10 = 0,0001100110011..._2), causando erros de truncamento ou arredondamento em somas sucessivas.\n2. Ponto Flutuante Normalizado: Divide a palavra num bit de sinal (S), numa mantissa fracionária normalizada M (onde o primeiro bit após a vírgula é 1, ou implícito no caso de 'bit escondido') e num expoente E (em complemento de 2 ou polarizado), representando o valor (-1)^S * M * 2^E.\n3. Adição em Ponto Flutuante: Exige alinhar previamente os expoentes (igualando o menor expoente ao maior através do deslocamento da sua mantissa para a direita), somar as mantissas e normalizar o resultado.",
+    "options": null,
+    "answer": null,
+    "explanation": "Síntese suplementar sobre representação real em ponto flutuante e limitações de precisão finita."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Sistemas Posicionais > Decimal, Binário, Octal e Hexadecimal"
+    ],
+    "related_content_labels": [
+      "base_binaria",
+      "base_hexadecimal"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Sistemas Binário e Hexadecimal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Sistemas Posicionais > Decimal, Binário, Octal e Hexadecimal"
-      ],
-      "related_content_labels": [
-        "base_octal",
-        "alfabeto_octal"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slides 6, 12 e 22"
-      },
-      "prompt": "O número 4148_8 (apresentado no exercício 18 do Slide 22 da Aula 2 e na alínea r da Ficha Prática Nº 1) constitui uma representação válida na base numérica octal.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "False",
-      "explanation": "O alfabeto da base octal (base 8) contém apenas os oito símbolos {0, 1, 2, 3, 4, 5, 6, 7}. O algarismo '8' não existe em octal (o valor 8 decimal escreve-se 10_8), tornando 4148_8 um número inválido nessa base."
+    "prompt": "Para representar uma mesma quantidade numérica inteira, o sistema binário requer geralmente menos casas (dígitos) do que o sistema hexadecimal.",
+    "options": [
+      ["True", false],
+      ["False", true]
+    ],
+    "answer": "False",
+    "explanation": "Quanto menor for a base numérica, maior é o número de casas necessário para representar a mesma quantidade. Como cada dígito hexadecimal compacta 4 bits, o sistema binário requer cerca de quatro vezes mais dígitos do que o hexadecimal."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Sistemas Posicionais > Decimal, Binário, Octal e Hexadecimal"
+    ],
+    "related_content_labels": [
+      "base_octal",
+      "alfabeto_octal"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Sistema Octal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "bit_nibble_byte_word",
-        "msb_lsb"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slide 8"
-      },
-      "prompt": "Numa organização padrão de dados binários, um 'nibble' corresponde a um agrupamento de 4 bits e uma 'word' (palavra) padrão ilustrada na Aula 2 corresponde a 16 bits (indexados de 0 a 15).",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "True",
-      "explanation": "De acordo com o Slide 8 da Aula 2, um bit é 1 casa binária, um nibble agrupa 4 bits (0 a 3), um byte agrupa 8 bits (0 a 7) e uma word agrupa 16 bits (0 a 15)."
+    "prompt": "A sequência de algarismos 4148_8 constitui uma representação válida na base numérica octal.",
+    "options": [
+      ["True", false],
+      ["False", true]
+    ],
+    "answer": "False",
+    "explanation": "O alfabeto da base octal (base 8) contém apenas os oito símbolos {0, 1, 2, 3, 4, 5, 6, 7}. O algarismo '8' não existe em octal (o valor 8 decimal escreve-se 10_8), tornando 4148_8 uma representação inválida nessa base."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "bit_nibble_byte_word",
+      "msb_lsb"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Unidades Binárias: Bit, Nibble, Byte e Word"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
-      ],
-      "related_content_labels": [
-        "complemento_de_1",
-        "duplo_zero"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slides 7 e 8"
-      },
-      "prompt": "No sistema de representação em Complemento de 1 existem duas representações binárias distintas para o número zero (+0 e -0), ao passo que no sistema de Complemento de 2 existe uma única representação para o zero.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "True",
-      "explanation": "Em Complemento de 1 com 4 bits, +0 é 0000 e -0 é 1111. No Complemento de 2, ao inverter 0000 (obtendo 1111) e somar 1, obtém-se (1)0000, eliminando o duplo zero e libertando o código 1000 para representar -8."
+    "prompt": "Numa organização padrão de dados binários, um 'nibble' corresponde a um agrupamento de 4 bits, um 'byte' a 8 bits e uma 'word' (palavra) básica a 16 bits.",
+    "options": [
+      ["True", true],
+      ["False", false]
+    ],
+    "answer": "True",
+    "explanation": "Um bit é 1 casa binária, um nibble agrupa 4 bits (índices 0 a 3), um byte agrupa 8 bits (índices 0 a 7) e uma word básica agrupa 16 bits (índices 0 a 15)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
+    ],
+    "related_content_labels": [
+      "complemento_de_1",
+      "duplo_zero"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Complemento de 1 e Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "extensao_de_sinal",
-        "complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slide 10"
-      },
-      "prompt": "Para estender a palavra de um número negativo representado em Complemento de 2 de 5 bits para 8 bits sem alterar o seu valor, devem preencher-se os 3 novos bits mais significativos à esquerda com zeros.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "False",
-      "explanation": "Na extensão de sinal em Complemento de 2 (Slide 10 da Aula 4), os bits adicionais à esquerda devem ser preenchidos com o próprio bit de sinal: para um número negativo (MSB = 1), preenchem-se com 1s (ex.: -11_10 em 5 bits é 10101_2 e em 8 bits torna-se 11110101_2)."
+    "prompt": "No sistema de representação em Complemento de 1 existem duas representações binárias distintas para o número zero (+0 e -0), ao passo que no sistema de Complemento de 2 existe uma única representação para o zero.",
+    "options": [
+      ["True", true],
+      ["False", false]
+    ],
+    "answer": "True",
+    "explanation": "Em Complemento de 1 com 4 bits, +0 é 0000 e -0 é 1111. No Complemento de 2, ao inverter 0000 (obtendo 1111) e somar 1, obtém-se (1)0000, eliminando o duplo zero e libertando o código 1000 para representar -8."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "extensao_de_sinal",
+      "complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Extensão de Sinal em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "overflow",
-        "adicao_complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "correccoes-exames_SD.pdf",
-        "location": "2ª chamada 5/Jul/2000 Q1b-ii e 25/Jan/2001 Q1a"
-      },
-      "prompt": "Na adição binária de dois números inteiros representados em Complemento de 2 com o mesmo número de bits, é matematicamente impossível ocorrer overflow se os dois operandos tiverem sinais contrários.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "True",
-      "explanation": "Quando se somam dois operandos de sinais opostos dentro da gama representável [-2^(N-1), +2^(N-1)-1], a soma tem módulo inferior ou igual ao maior dos operandos, ficando garantidamente dentro da mesma gama."
+    "prompt": "Para estender a palavra de um número negativo representado em Complemento de 2 de 5 bits para 8 bits sem alterar o seu valor numérico, devem preencher-se os 3 novos bits mais significativos à esquerda com zeros.",
+    "options": [
+      ["True", false],
+      ["False", true]
+    ],
+    "answer": "False",
+    "explanation": "Na extensão de sinal em Complemento de 2, os bits adicionais à esquerda devem ser preenchidos com o próprio bit de sinal: para um número negativo (MSB = 1), preenchem-se com 1s (ex.: -11_10 em 5 bits é 10101_2 e em 8 bits torna-se 11110101_2)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "overflow",
+      "adicao_complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Adição em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "carry_out",
-        "adicao_complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
-        "location": "Slides 8 e 10 & correccoes-exames_SD.pdf 5/Jul/2000 Q1a"
-      },
-      "prompt": "Em aritmética de Complemento de 2 com N bits, sempre que a adição produz um transporte de saída (carry-out = 1) para além do N-ésimo bit mais significativo, significa obrigatoriamente que ocorreu overflow.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "False",
-      "explanation": "Em Complemento de 2, o transporte de saída (carry-out) é simplesmente descartado e não significa overflow por si só. Por exemplo, em 4 bits, (+5) + (-1) = 0101_2 + 1111_2 = (1)0100_2 (+4): gera carry-out = 1, mas o resultado 0100_2 (+4) está perfeitamente correto e sem overflow."
+    "prompt": "Na adição binária de dois números inteiros representados em Complemento de 2 com o mesmo número de bits, é matematicamente impossível ocorrer overflow se os dois operandos tiverem sinais contrários.",
+    "options": [
+      ["True", true],
+      ["False", false]
+    ],
+    "answer": "True",
+    "explanation": "Quando se somam dois operandos de sinais opostos dentro da gama representável [-2^(N-1), +2^(N-1)-1], a soma tem módulo inferior ou igual ao maior dos operandos, ficando garantidamente dentro da mesma gama."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "carry_out",
+      "adicao_complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Descarte do Transporte em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "bcd_8421",
-        "codigos_invalidos_bcd"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slides 16 e 17"
-      },
-      "prompt": "No código BCD 8421, o número decimal 12 é representado por 4 bits na forma 1100.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "False",
-      "explanation": "1100_2 é a representação em binário puro de 12, mas em BCD 8421 cada dígito decimal (0 a 9) requer o seu próprio grupo de 4 bits. Assim, 12_10 em BCD 8421 requer 8 bits: 0001 0010 (0001 para '1' e 0010 para '2'). A combinação 1100 é inválida como dígito BCD."
+    "prompt": "Em aritmética de Complemento de 2 com N bits, sempre que a adição produz um transporte de saída (carry-out = 1) para além do N-ésimo bit mais significativo, significa obrigatoriamente que ocorreu overflow.",
+    "options": [
+      ["True", false],
+      ["False", true]
+    ],
+    "answer": "False",
+    "explanation": "Em Complemento de 2, o transporte de saída (carry-out) é descartado e não significa overflow por si só. Por exemplo, em 4 bits, (+5) + (-1) = 0101_2 + 1111_2 = (1)0100_2 (+4): gera carry-out = 1, mas o resultado 0100_2 (+4) está correto e sem overflow."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "bcd_8421",
+      "codigos_invalidos_bcd"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Código BCD 8421"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "excesso_de_3",
-        "bcd_8421"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slide 19"
-      },
-      "prompt": "O código Excesso de 3 para um determinado dígito decimal (0 a 9) obtém-se somando 0011_2 (3_10) à representação binária pura de 4 bits (BCD 8421) desse mesmo dígito.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "True",
-      "explanation": "Conforme definido no Slide 19 da Aula 4, no código Excesso de 3 soma-se 3 (11_2 ou 0011_2) ao valor binário de cada dígito decimal (por exemplo, 0 passa a 0011 e 7 passa de 0111 para 1010)."
+    "prompt": "No código BCD 8421, o número decimal 12 é representado por 4 bits na forma 1100.",
+    "options": [
+      ["True", false],
+      ["False", true]
+    ],
+    "answer": "False",
+    "explanation": "1100_2 é a representação em binário puro de 12, mas em BCD 8421 cada dígito decimal (0 a 9) requer o seu próprio grupo de 4 bits. Assim, 12_10 em BCD 8421 requer 8 bits: 0001 0010 (0001 para '1' e 0010 para '2'). A combinação 1100 é inválida como dígito BCD."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "excesso_de_3",
+      "bcd_8421"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Código Excesso de 3"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "codigo_gray",
-        "distancia_de_hamming"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slide 20"
-      },
-      "prompt": "No Código Gray (ou código refletido), a transição entre dois valores consecutivos quaisquer altera sempre exatamente um único bit.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "True",
-      "explanation": "A propriedade definidora do Código Gray é manter a distância de Hamming igual a 1 entre palavras sucessivas, evitando ambiguidades transitórias em sensores de posição e permitindo o agrupamento de células adjacentes nos Mapas de Karnaugh."
+    "prompt": "O código Excesso de 3 para um determinado dígito decimal (0 a 9) obtém-se somando 0011_2 (3_10) à representação binária pura de 4 bits (BCD 8421) desse mesmo dígito.",
+    "options": [
+      ["True", true],
+      ["False", false]
+    ],
+    "answer": "True",
+    "explanation": "No código Excesso de 3 soma-se 3 (0011_2) ao valor BCD de 4 bits de cada dígito decimal (por exemplo, o dígito 0 passa a 0011 e o dígito 7 passa de 0111 para 1010)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "codigo_gray",
+      "distancia_de_hamming"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Código Gray"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "numeros_reais_binario",
-        "potencias_negativas_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slides 11 e 13"
-      },
-      "prompt": "Na representação fracionária em base binária, o número 1010,01_2 equivale exatamente ao valor decimal 10,5_10.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "False",
-      "explanation": "Na parte fracionária de 1010,01_2, a primeira casa após a vírgula (peso 2^-1 = 0,5) tem bit 0 e a segunda casa (peso 2^-2 = 0,25) tem bit 1. Portanto, 1010,01_2 equivale a 10,25_10 (enquanto 10,5_10 se escreve 1010,1_2)."
+    "prompt": "No Código Gray (ou código refletido), a transição entre dois valores consecutivos quaisquer altera sempre exatamente um único bit.",
+    "options": [
+      ["True", true],
+      ["False", false]
+    ],
+    "answer": "True",
+    "explanation": "A propriedade definidora do Código Gray é manter a distância de Hamming igual a 1 entre palavras sucessivas, evitando ambiguidades transitórias em sensores de posição e permitindo o agrupamento de células adjacentes nos Mapas de Karnaugh."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "numeros_reais_binario",
+      "potencias_negativas_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Conversão de Frações Binárias"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
-      ],
-      "related_content_labels": [
-        "deslocamento_esquerda",
-        "multiplicacao_binaria"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
-        "location": "Slides 13 e 14"
-      },
-      "prompt": "Deslocar todos os bits de um número binário inteiro sem sinal uma posição para a esquerda (inserindo 0 no LSB e sem exceder a capacidade da palavra) equivale a multiplicar esse número por 2.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "True",
-      "explanation": "Num sistema posicional de base 2, deslocar cada bit uma casa para a esquerda aumenta o expoente do seu peso posicional em 1 unidade (2^i passa a 2^(i+1)), o que multiplica o número por 2."
+    "prompt": "Na representação fracionária em base binária, o número 1010,01_2 equivale exatamente ao valor decimal 10,5_10.",
+    "options": [
+      ["True", false],
+      ["False", true]
+    ],
+    "answer": "False",
+    "explanation": "Na parte fracionária de 1010,01_2, a primeira casa após a vírgula (peso 2^-1 = 0,5) tem bit 0 e a segunda casa (peso 2^-2 = 0,25) tem bit 1. Portanto, 1010,01_2 equivale a 10,25_10 (enquanto 10,5_10 se escreve 1010,1_2)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
+    ],
+    "related_content_labels": [
+      "deslocamento_esquerda",
+      "multiplicacao_binaria"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Multiplicação Binária e Deslocamento"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "multiplos_do_byte",
-        "conversao_unidades"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha prática SD nº1.pdf",
-        "location": "Questão 5"
-      },
-      "prompt": "Na Ficha Prática Nº 1 (Questão 5), considerando a relação entre bits e Bytes (1 Byte = 8 bits e 1 GB = 1024 MB), o valor 4096 Mbits é equivalente a:",
-      "options": [
-        "A: 2^2 GB (4 GB)",
-        "B: 1024 GB",
-        "C: 2 GB",
-        "D: Nenhuma das alíneas (equivale a 0,5 GB / 512 MB)"
-      ],
-      "answer": "D",
-      "explanation": "Como a unidade dada está em Megabits (Mbits) e não em Megabytes (MB), dividindo por 8 bits/Byte obtém-se 4096 / 8 = 512 MB = 0,5 GB. Mesmo que se dividisse apenas por 1024, 4096 / 1024 daria 4 Gbits (= 0,5 GB). Assim, tratando-se de Mbits, corresponde a 0,5 GB ('Nenhuma das alíneas'; nota: se o enunciado pretendesse 4096 MB, 4096 / 1024 = 4 GB = 2^2 GB)."
+    "prompt": "Deslocar todos os bits de um número binário inteiro sem sinal uma posição para a esquerda (inserindo 0 no LSB e sem exceder a capacidade da palavra) equivale a multiplicar esse número por 2.",
+    "options": [
+      ["True", true],
+      ["False", false]
+    ],
+    "answer": "True",
+    "explanation": "Num sistema posicional de base 2, deslocar cada bit uma casa para a esquerda aumenta o expoente do seu peso posicional em 1 unidade (2^i passa a 2^(i+1)), o que multiplica o número por 2."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "multiplos_do_byte",
+      "conversao_unidades"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Relação entre Bits, Bytes, MB e GB"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "multiplos_do_byte",
-        "conversao_unidades"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha prática SD nº1.pdf",
-        "location": "Questão 6"
-      },
-      "prompt": "De acordo com a Ficha Prática Nº 1 (Questão 6), oito kilobytes (8 KB) correspondem exatamente a quantos bits?",
-      "options": [
-        "A: 1 MB",
-        "B: 64 bits",
-        "C: 256 bits",
-        "D: 65536 bits"
-      ],
-      "answer": "D",
-      "explanation": "Sabendo que 1 KB = 2^10 Bytes = 1024 Bytes e que 1 Byte = 8 bits, temos 8 * 1024 * 8 = 65536 bits (2^16 bits)."
+    "prompt": "Sabendo que 1 Byte = 8 bits e que 1 GB = 1024 MB, a que capacidade em Gigabytes (GB) ou Megabytes (MB) equivale um volume de dados de 4096 Megabits (Mbits)?",
+    "options": [
+      ["0,5 GB (512 MB)", true],
+      ["4 GB (4096 MB)", false],
+      ["2 GB (2048 MB)", false],
+      ["8 GB (8192 MB)", false]
+    ],
+    "answer": "0,5 GB (512 MB)",
+    "explanation": "Como a quantidade dada está em Megabits (Mbits) e cada Byte contém 8 bits, dividindo por 8 obtém-se 4096 / 8 = 512 MB, o que equivale exatamente a 512 / 1024 = 0,5 GB."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "multiplos_do_byte",
+      "conversao_unidades"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Múltiplos do Byte"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "hexadecimal_para_binario",
-        "hexadecimal_para_octal"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha prática SD nº1.pdf",
-        "location": "Questão 4"
-      },
-      "prompt": "Na Questão 4 da Ficha Prática Nº 1, pergunta-se a que corresponde o número hexadecimal CACA_16 entre as opções: a) 135279_8, b) 1010101011001010_2, c) 135272_8, d) Alínea b) e c), e) Nenhuma das alíneas. Qual é a opção correta e qual é o verdadeiro valor binário e octal de CACA_16?",
-      "options": [
-        "A: Alínea d), porque CACA_16 = 1010101011001010_2 = 135272_8.",
-        "B: Alínea e) Nenhuma das alíneas, porque CACA_16 = 1100101011001010_2 = 145312_8.",
-        "C: Alínea a), porque 9 é um dígito válido em octal.",
-        "D: Alínea c), porque C_16 equivale a 1010_2."
-      ],
-      "answer": "B",
-      "explanation": "Em hexadecimal, C = 12 = 1100_2 e A = 10 = 1010_2. Logo, CACA_16 = 1100 1010 1100 1010_2 (e em octal 001 100 101 011 001 010_2 = 145312_8). As alíneas b) e c) da ficha converteram o primeiro 'C' como se fosse 'A' (1010_2 = AACA_16 = 135272_8), pelo que a resposta rigorosa é e) Nenhuma das alíneas."
+    "prompt": "A quantos bits correspondem exatamente oito kilobytes (8 KB)?",
+    "options": [
+      ["65536 bits", true],
+      ["8192 bits", false],
+      ["64 bits", false],
+      ["256 bits", false]
+    ],
+    "answer": "65536 bits",
+    "explanation": "Sabendo que 1 KB = 2^10 Bytes = 1024 Bytes e que 1 Byte = 8 bits, temos 8 * 1024 * 8 = 65536 bits (2^16 bits)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "hexadecimal_para_binario",
+      "hexadecimal_para_octal"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Conversão Hexadecimal para Binário e Octal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "octal_para_decimal",
-        "conversao_de_bases"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slide 22 (Exercício 15) & Ficha prática SD nº1.pdf 1-o"
-      },
-      "prompt": "Qual é o valor equivalente na base decimal do número octal 7400_8?",
-      "options": [
-        "A: 3840_10",
-        "B: 3584_10",
-        "C: 4096_10",
-        "D: 29696_10"
-      ],
-      "answer": "A",
-      "explanation": "Calculando o polinómio posicional na base 8: 7 * 8^3 + 4 * 8^2 + 0 * 8^1 + 0 * 8^0 = 7 * 512 + 4 * 64 = 3584 + 256 = 3840_10."
+    "prompt": "Qual é a representação equivalente do número hexadecimal CACA_16 nas bases binária (base 2) e octal (base 8)?",
+    "options": [
+      ["1100101011001010_2 e 145312_8", true],
+      ["1010101011001010_2 e 125312_8", false],
+      ["1100101011001010_2 e 135272_8", false],
+      ["1100110010101010_2 e 146252_8", false]
+    ],
+    "answer": "1100101011001010_2 e 145312_8",
+    "explanation": "Em hexadecimal, C = 12 = 1100_2 e A = 10 = 1010_2. Logo, CACA_16 = 1100 1010 1100 1010_2. Agrupando os 16 bits de 3 em 3 da direita para a esquerda (001 100 101 011 001 010_2), obtém-se 145312_8."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "octal_para_decimal",
+      "conversao_de_bases"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Conversão Octal para Decimal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "numero_minimo_bits",
-        "gama_sem_sinal"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slide 11 & Lista de Exercicio1.docx.pdf Questão 7"
-      },
-      "prompt": "Quantos bits são necessários, no mínimo, para representar em binário puro (sem sinal) o número 4242_10 e qualquer valor inteiro no intervalo de 0 a 12500_10, respetivamente?",
-      "options": [
-        "A: 12 bits para 4242_10 e 13 bits para 12500_10.",
-        "B: 13 bits para 4242_10 e 14 bits para 12500_10.",
-        "C: 10 bits para 4242_10 e 12 bits para 12500_10.",
-        "D: 14 bits para ambos."
-      ],
-      "answer": "B",
-      "explanation": "Com 12 bits representa-se até 2^12 - 1 = 4095 (insuficiente para 4242); com 13 bits chega-se a 2^13 - 1 = 8191 (logo 4242_10 requer 13 bits). Para 12500_10, 13 bits (8191) não bastam, sendo necessários 14 bits (2^14 - 1 = 16383 >= 12500)."
+    "prompt": "Qual é o valor equivalente na base decimal do número octal 7400_8?",
+    "options": [
+      ["3840_10", true],
+      ["3584_10", false],
+      ["4096_10", false],
+      ["29696_10", false]
+    ],
+    "answer": "3840_10",
+    "explanation": "Calculando o polinómio posicional na base 8: 7 * 8^3 + 4 * 8^2 + 0 * 8^1 + 0 * 8^0 = 7 * 512 + 4 * 64 = 3584 + 256 = 3840_10."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "numero_minimo_bits",
+      "gama_sem_sinal"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Capacidade de Representação em Binário"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
-      ],
-      "related_content_labels": [
-        "sinal_magnitude",
-        "conversao_sinalizados"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha Prática SD Nº2.pdf",
-        "location": "Exercício 10 & Lista de Exercicio1.docx.pdf Questão 12"
-      },
-      "prompt": "Qual é o valor decimal do número binário de 8 bits 10010101_2, sabendo que está expresso na convenção de Sinal-Magnitude (sinal e valor absoluto)?",
-      "options": [
-        "A: -21_10",
-        "B: -107_10",
-        "C: +149_10",
-        "D: -85_10"
-      ],
-      "answer": "A",
-      "explanation": "Em Sinal-Magnitude com 8 bits, o MSB (1) indica sinal negativo (-) e os 7 bits seguintes (0010101_2) indicam a magnitude: 16 + 4 + 1 = 21. Logo, o valor representado é -21_10."
+    "prompt": "Quantos bits são necessários, no mínimo, para representar em binário puro (sem sinal) o número 4242_10 e qualquer valor inteiro no intervalo de 0 a 12500_10, respetivamente?",
+    "options": [
+      ["13 bits para 4242_10 e 14 bits para 12500_10.", true],
+      ["12 bits para 4242_10 e 13 bits para 12500_10.", false],
+      ["10 bits para 4242_10 e 12 bits para 12500_10.", false],
+      ["14 bits para 4242_10 e 16 bits para 12500_10.", false]
+    ],
+    "answer": "13 bits para 4242_10 e 14 bits para 12500_10.",
+    "explanation": "Com 12 bits representa-se até 2^12 - 1 = 4095 (insuficiente para 4242); com 13 bits chega-se a 2^13 - 1 = 8191 (logo 4242_10 requer 13 bits). Para 12500_10, 13 bits não bastam, sendo necessários 14 bits (2^14 - 1 = 16383 >= 12500)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
+    ],
+    "related_content_labels": [
+      "sinal_magnitude",
+      "conversao_sinalizados"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Sinal e Valor Absoluto"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
-      ],
-      "related_content_labels": [
-        "complemento_de_2",
-        "hexadecimal_com_sinal"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "correccoes-exames_SD.pdf",
-        "location": "1ª chamada 8/Jan/2001 Q1a-ii"
-      },
-      "prompt": "Considere a sequência de dígitos 101_16 (base 16). Qual é o seu valor decimal se representar um número inteiro em Complemento de 2 com 9 bits?",
-      "options": [
-        "A: +257_10",
-        "B: -255_10",
-        "C: -1_10",
-        "D: +65_10"
-      ],
-      "answer": "B",
-      "explanation": "Convertendo 101_16 para binário (12 bits): 0001 0000 0001_2. Tomando os 9 bits menos significativos (palavra de 9 bits), temos 100000001_2. Como o MSB é 1, o número é negativo em Complemento de 2; calculando o simétrico (011111110_2 + 1 = 011111111_2 = 255_10), conclui-se que vale -255_10."
+    "prompt": "Qual é o valor decimal do número binário de 8 bits 10010101_2, sabendo que está expresso na convenção de Sinal-Magnitude (sinal e valor absoluto)?",
+    "options": [
+      ["-21_10", true],
+      ["-107_10", false],
+      ["+149_10", false],
+      ["-85_10", false]
+    ],
+    "answer": "-21_10",
+    "explanation": "Em Sinal-Magnitude com 8 bits, o MSB (1) indica sinal negativo (-) e os 7 bits seguintes (0010101_2) indicam a magnitude: 16 + 4 + 1 = 21. Logo, o valor representado é -21_10."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
+    ],
+    "related_content_labels": [
+      "complemento_de_2",
+      "hexadecimal_com_sinal"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "polarizacao_excesso",
-        "complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "correccoes-exames_SD.pdf",
-        "location": "2ª chamada 11/Julho/2001 Q1c"
-      },
-      "prompt": "Qual é a constante inteira positiva que é necessário somar a valores representados em Complemento de 2 com 6 bits (intervalo [-32, +31]) para que passem a representar números inteiros não negativos no intervalo [0, +63]?",
-      "options": [
-        "A: +16_10 (010000_2)",
-        "B: +31_10 (011111_2)",
-        "C: +32_10 (100000_2)",
-        "D: +64_10 (1000000_2)"
-      ],
-      "answer": "C",
-      "explanation": "Com 6 bits em Complemento de 2, o intervalo é [-32, +31]. Para transladar este intervalo para [0, +63], basta somar a constante +32_10, cuja representação em binário sem sinal de 6 bits é 100000_2."
+    "prompt": "Considere a sequência de dígitos 101_16 (base 16). Qual é o seu valor decimal se representar um número inteiro em Complemento de 2 com 9 bits?",
+    "options": [
+      ["-255_10", true],
+      ["+257_10", false],
+      ["-1_10", false],
+      ["+65_10", false]
+    ],
+    "answer": "-255_10",
+    "explanation": "Convertendo 101_16 para binário (12 bits): 0001 0000 0001_2. Tomando os 9 bits menos significativos (palavra de 9 bits), temos 100000001_2. Como o MSB é 1, o número é negativo em Complemento de 2; calculando o simétrico (011111110_2 + 1 = 011111111_2 = 255_10), conclui-se que vale -255_10."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "polarizacao_excesso",
+      "complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Gama de Representação em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "overflow",
-        "adicao_complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 4,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "correccoes-exames_SD.pdf",
-        "location": "2ª chamada 25/Jan/2001 Q1c"
-      },
-      "prompt": "Dado o número X = 11010011_2 (-45_10) representado em Complemento de 2 com 8 bits, qual é o maior número negativo (ou seja, o menos negativo) em Complemento de 2 com 8 bits que, quando adicionado a X, provoca overflow?",
-      "options": [
-        "A: -83_10 (10101101_2)",
-        "B: -84_10 (10101100_2)",
-        "C: -128_10 (10000000_2)",
-        "D: -82_10 (10101110_2)"
-      ],
-      "answer": "B",
-      "explanation": "O limite mais negativo representável em 8 bits C2 é -128_10 (10000000_2). Como X = -45_10, somar M = -83_10 produz -45 + (-83) = -128_10 (ainda representável, sem overflow). Logo, o maior número negativo (mais próximo de zero) que faz a soma ultrapassar -128_10 é M - 1 = -84_10 (10101100_2), pois -45 + (-84) = -129_10 (overflow)."
+    "prompt": "Qual é a constante inteira positiva que é necessário somar a valores representados em Complemento de 2 com 6 bits (intervalo [-32, +31]) para que passem a representar números inteiros não negativos no intervalo [0, +63]?",
+    "options": [
+      ["+32_10 (100000_2)", true],
+      ["+16_10 (010000_2)", false],
+      ["+31_10 (011111_2)", false],
+      ["+64_10 (1000000_2)", false]
+    ],
+    "answer": "+32_10 (100000_2)",
+    "explanation": "Com 6 bits em Complemento de 2, o intervalo é [-32, +31]. Para transladar este intervalo para [0, +63], basta somar a constante +32_10, cuja representação em binário sem sinal de 6 bits é 100000_2."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "overflow",
+      "adicao_complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 4,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Limites de Overflow em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "bcd_8421",
-        "dimensionamento_bytes"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Lista de Exercicio1.docx.pdf",
-        "location": "Questão 8"
-      },
-      "prompt": "Quantos bits e quantos Bytes completos são necessários para representar o número inteiro de 6 dígitos decimais 846569 em código BCD 8421?",
-      "options": [
-        "A: 20 bits (2,5 Bytes)",
-        "B: 24 bits (3 Bytes)",
-        "C: 16 bits (2 Bytes)",
-        "D: 48 bits (6 Bytes)"
-      ],
-      "answer": "B",
-      "explanation": "No código BCD 8421, cada dígito decimal ocupa exatamente 4 bits (meio Byte). Para codificar os 6 dígitos de 846569 são necessários 6 * 4 = 24 bits, o que corresponde exatamente a 24 / 8 = 3 Bytes."
+    "prompt": "Dado o número X = 11010011_2 (-45_10) representado em Complemento de 2 com 8 bits, qual é o maior número negativo (ou seja, o menos negativo) em Complemento de 2 com 8 bits que, quando adicionado a X, provoca overflow?",
+    "options": [
+      ["-84_10 (10101100_2)", true],
+      ["-83_10 (10101101_2)", false],
+      ["-128_10 (10000000_2)", false],
+      ["-82_10 (10101110_2)", false]
+    ],
+    "answer": "-84_10 (10101100_2)",
+    "explanation": "O limite mais negativo representável em 8 bits C2 é -128_10 (10000000_2). Como X = -45_10, somar -83_10 produz -45 + (-83) = -128_10 (ainda representável, sem overflow). Logo, o maior número negativo (mais próximo de zero) que faz a soma ultrapassar -128_10 é -84_10 (10101100_2), pois -45 + (-84) = -129_10 (overflow)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "bcd_8421",
+      "dimensionamento_bytes"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Código BCD 8421"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "codigo_johnson",
-        "codigos_binarios"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slide 18"
-      },
-      "prompt": "De acordo com a tabela do Código de Johnson de 5 bits apresentada na Aula 4 (Slide 18), quais são as palavras de código correspondentes aos dígitos decimais 3 e 7, respetivamente?",
-      "options": [
-        "A: 00111 e 11100",
-        "B: 00011 e 00111",
-        "C: 00110 e 10100",
-        "D: 01111 e 11000"
-      ],
-      "answer": "A",
-      "explanation": "No código de Johnson de 5 bits (Slide 18), preenchem-se 1s da direita para a esquerda de 0 a 5 (0=00000, 1=00001, 2=00011, 3=00111, 4=01111, 5=11111) e depois 0s da direita para a esquerda de 6 a 9 (6=11110, 7=11100, 8=11000, 9=10000)."
+    "prompt": "Quantos bits e quantos Bytes completos são necessários para representar o número inteiro de 6 dígitos decimais 846569 em código BCD 8421?",
+    "options": [
+      ["24 bits (3 Bytes)", true],
+      ["20 bits (2,5 Bytes)", false],
+      ["16 bits (2 Bytes)", false],
+      ["48 bits (6 Bytes)", false]
+    ],
+    "answer": "24 bits (3 Bytes)",
+    "explanation": "No código BCD 8421, cada dígito decimal ocupa exatamente 4 bits (meio Byte). Para codificar os 6 dígitos de 846569 são necessários 6 * 4 = 24 bits, o que corresponde exatamente a 24 / 8 = 3 Bytes."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "codigo_johnson",
+      "codigos_binarios"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Código de Johnson"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "codigo_gray",
-        "conversao_binario_gray"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slide 20 & Importante.pdf Questão 39"
-      },
-      "prompt": "Qual é a palavra em Código Gray de 3 bits correspondente ao número decimal 6 (cujo binário puro é 110_2)?",
-      "options": [
-        "A: 111",
-        "B: 101",
-        "C: 100",
-        "D: 010"
-      ],
-      "answer": "B",
-      "explanation": "Pela tabela do Slide 20 da Aula 4 (0=000, 1=001, 2=011, 3=010, 4=110, 5=111, 6=101, 7=100), ou aplicando a regra prática Binário->Gray (mantém o MSB=1, faz XOR entre bits adjacentes: 1 XOR 1 = 0, 1 XOR 0 = 1), obtém-se 101."
+    "prompt": "No Código de Johnson de 5 bits para codificação de dígitos decimais (0 a 9), quais são as palavras de código correspondentes aos dígitos decimais 3 e 7, respetivamente?",
+    "options": [
+      ["00111 e 11100", true],
+      ["00011 e 00111", false],
+      ["00110 e 10100", false],
+      ["01111 e 11000", false]
+    ],
+    "answer": "00111 e 11100",
+    "explanation": "No código de Johnson de 5 bits, preenchem-se 1s da direita para a esquerda de 0 a 5 (0=00000, 1=00001, 2=00011, 3=00111, 4=01111, 5=11111) e depois 0s da direita para a esquerda de 6 a 9 (6=11110, 7=11100, 8=11000, 9=10000)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "codigo_gray",
+      "conversao_binario_gray"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Código Gray de 3 Bits"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Sistemas Posicionais > Decimal, Binário, Octal e Hexadecimal"
-      ],
-      "related_content_labels": [
-        "base_octal",
-        "base_hexadecimal",
-        "potencias_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slides 12 a 21 & Importante.pdf Questão 35"
-      },
-      "prompt": "Quais das seguintes afirmações sobre as bases Octal (base 8) e Hexadecimal (base 16) são verdadeiras? (Selecione todas as corretas)",
-      "options": [
-        "A: Tanto a base octal (8 = 2^3) como a base hexadecimal (16 = 2^4) são bases potências de 2, permitindo conversão direta com a base binária por simples agrupamento de bits.",
-        "B: A base hexadecimal é preferida em arquitetura de computadores moderna porque os tamanhos de palavra (8, 16, 32, 64 bits) são múltiplos de 4 bits, mas nem todos são múltiplos de 3 bits.",
-        "C: O número 10_8 equivale a 8_10, enquanto o número 10_16 equivale a 16_10.",
-        "D: Qualquer algarismo hexadecimal pode ser representado exatamente por 3 dígitos binários."
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "explanation": "A, B e C são verdadeiras. D é falsa (trata-se de uma gralha de cópia no texto do Slide 19 da Aula 2, pois 3 bits só representam 8 valores de 0 a 7 em octal; um algarismo hexadecimal requer 4 bits)."
+    "prompt": "Qual é a palavra em Código Gray de 3 bits correspondente ao número decimal 6 (cujo binário puro é 110_2)?",
+    "options": [
+      ["101", true],
+      ["111", false],
+      ["100", false],
+      ["010", false]
+    ],
+    "answer": "101",
+    "explanation": "Na sequência Gray de 3 bits (0=000, 1=001, 2=011, 3=010, 4=110, 5=111, 6=101, 7=100), ou aplicando a conversão Binário->Gray (mantém o MSB=1 e aplica XOR entre bits adjacentes: 1 XOR 1 = 0, 1 XOR 0 = 1), obtém-se 101."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Sistemas Posicionais > Decimal, Binário, Octal e Hexadecimal"
+    ],
+    "related_content_labels": [
+      "base_octal",
+      "base_hexadecimal",
+      "potencias_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Bases Octal e Hexadecimal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "conversao_de_bases",
-        "exercicios_aula_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
-        "location": "Slides 10, 11 e 22 & Ficha prática SD nº1.pdf Questão 1"
-      },
-      "prompt": "Verifique as conversões da Ficha Prática Nº 1 (Questão 1) e selecione todas as igualdades numericamente corretas:",
-      "options": [
-        "A: 42_10 = 101010_2 = 52_8 = 2A_16",
-        "B: 511_10 = 111111111_2 (nove bits iguais a 1)",
-        "C: 2046_10 = 11111111110_2 (dez bits 1 seguidos de um bit 0)",
-        "D: 10000001_2 = 129_10"
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "explanation": "Todas as quatro igualdades estão corretas: A) 32+8+2 = 42_10 = 101 010_2 (52_8) = 0010 1010_2 (2A_16); B) 511 = 2^9 - 1 = 111111111_2; C) 2047 = 2^11 - 1 (onze 1s), logo 2046 = 11111111110_2; D) 2^7 + 2^0 = 128 + 1 = 129_10."
+    "prompt": "Quais das seguintes afirmações sobre as bases Octal (base 8) e Hexadecimal (base 16) são verdadeiras?",
+    "options": [
+      ["Tanto a base octal (8 = 2^3) como a base hexadecimal (16 = 2^4) são bases potências de 2, permitindo conversão direta com a base binária por simples agrupamento de bits.", true],
+      ["A base hexadecimal é preferida em arquitetura de computadores moderna porque os tamanhos de palavra (8, 16, 32, 64 bits) são múltiplos de 4 bits, mas nem todos são múltiplos de 3 bits.", true],
+      ["O número 10_8 equivale a 8_10, enquanto o número 10_16 equivale a 16_10.", true],
+      ["Qualquer algarismo hexadecimal (de 0 a F) pode ser representado exatamente por 3 dígitos binários.", false]
+    ],
+    "answer": [
+      "Tanto a base octal (8 = 2^3) como a base hexadecimal (16 = 2^4) são bases potências de 2, permitindo conversão direta com a base binária por simples agrupamento de bits.",
+      "A base hexadecimal é preferida em arquitetura de computadores moderna porque os tamanhos de palavra (8, 16, 32, 64 bits) são múltiplos de 4 bits, mas nem todos são múltiplos de 3 bits.",
+      "O número 10_8 equivale a 8_10, enquanto o número 10_16 equivale a 16_10."
+    ],
+    "explanation": "Três bits representam apenas 8 valores (0 a 7, base octal); um algarismo hexadecimal (0 a F, 16 valores) requer exatamente 4 bits."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "conversao_de_bases",
+      "igualdades_numericas"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Equivalência entre Bases"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
-      ],
-      "related_content_labels": [
-        "complemento_de_2",
-        "interpretacao_binaria"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "correccoes-exames_SD.pdf",
-        "location": "1ª chamada 14/Jun/2000 Q1a"
-      },
-      "prompt": "Considere a sequência de dígitos binários 10101 (Exame 14/Jun/2000, Q1a). Quais das seguintes interpretações estão corretas? (Selecione todas as corretas)",
-      "options": [
-        "A: Se representar um número inteiro sem sinal em base 2, o seu valor é +21_10.",
-        "B: Se representar um número inteiro com 6 bits em Complemento de 2 (010101_2), o seu valor é +21_10.",
-        "C: Se representar um número inteiro com 5 bits em Complemento de 2 (10101_2), o seu valor é -11_10.",
-        "D: Se representar um número inteiro com 5 bits em Sinal-Magnitude (10101_2), o seu valor é -5_10."
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "explanation": "A) Sem sinal: 16 + 4 + 1 = 21_10. B) Com 6 bits (010101_2), o MSB é 0 (positivo), logo vale +21_10. C) Com 5 bits em C2 (10101_2), o MSB é 1 (negativo) e o simétrico é 01010_2 + 1 = 01011_2 = 11 -> -11_10. D) Com 5 bits em Sinal-Magnitude, o bit 1 indica '-' e 0101_2 = 5 -> -5_10."
+    "prompt": "Selecione todas as igualdades de conversão entre bases numéricas que estão numericamente corretas:",
+    "options": [
+      ["42_10 = 101010_2 = 52_8 = 2A_16", true],
+      ["511_10 = 111111111_2 (nove bits iguais a 1)", true],
+      ["2046_10 = 11111111110_2 (dez bits 1 seguidos de um bit 0)", true],
+      ["10000001_2 = 129_10", true]
+    ],
+    "answer": [
+      "42_10 = 101010_2 = 52_8 = 2A_16",
+      "511_10 = 111111111_2 (nove bits iguais a 1)",
+      "2046_10 = 11111111110_2 (dez bits 1 seguidos de um bit 0)",
+      "10000001_2 = 129_10"
+    ],
+    "explanation": "32+8+2 = 42_10 = 101 010_2 (52_8) = 0010 1010_2 (2A_16); 511 = 2^9 - 1 = 111111111_2; 2047 = 2^11 - 1 (onze 1s), logo 2046 = 11111111110_2; e 2^7 + 2^0 = 128 + 1 = 129_10."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
+    ],
+    "related_content_labels": [
+      "complemento_de_2",
+      "interpretacao_binaria"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Interpretação de Sequências Binárias com e sem Sinal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "casos_adicao_c2",
-        "complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
-        "location": "Slides 6 a 10"
-      },
-      "prompt": "Na Aula 3 (Slides 6 a 10), são analisados os quatro casos de adição em Complemento de 2 com palavras de 5 bits (1 bit de sinal + 4 bits de magnitude). Selecione todas as afirmações corretas sobre esses exemplos:",
-      "options": [
-        "A: Caso 1 (+6 com +3): 00110_2 + 00011_2 = 01001_2 (+9_10), sem transporte além do bit de sinal.",
-        "B: Caso 2 (+9 com -4): 01001_2 + 11100_2 = (1)00101_2 (+5_10), onde o carry de saída 1 é desconsiderado.",
-        "C: Caso 3 (-9 com +4): 10111_2 + 00100_2 = 11011_2 (-5_10), onde o bit de sinal resulta em 1 (negativo) sem carry de saída.",
-        "D: Caso 4 (-9 com -4): 10111_2 + 11100_2 = (1)10011_2 (-13_10), onde o carry de saída 1 é desconsiderado e o resultado permanece negativo dentro da gama [-16, +15]."
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "explanation": "Todos os 4 casos reproduzem exatamente os exemplos dos Slides 7 a 10 da Aula 3 em 5 bits (gama de -16 a +15), demonstrando que a adição em C2 funciona uniformemente descartando o carry de saída."
+    "prompt": "Considere a sequência de dígitos binários 10101. Quais das seguintes interpretações estão corretas?",
+    "options": [
+      ["Se representar um número inteiro sem sinal em base 2, o seu valor é +21_10.", true],
+      ["Se representar um número inteiro com 6 bits em Complemento de 2 (010101_2), o seu valor é +21_10.", true],
+      ["Se representar um número inteiro com 5 bits em Complemento de 2 (10101_2), o seu valor é -11_10.", true],
+      ["Se representar um número inteiro com 5 bits em Sinal-Magnitude (10101_2), o seu valor é -5_10.", true]
+    ],
+    "answer": [
+      "Se representar um número inteiro sem sinal em base 2, o seu valor é +21_10.",
+      "Se representar um número inteiro com 6 bits em Complemento de 2 (010101_2), o seu valor é +21_10.",
+      "Se representar um número inteiro com 5 bits em Complemento de 2 (10101_2), o seu valor é -11_10.",
+      "Se representar um número inteiro com 5 bits em Sinal-Magnitude (10101_2), o seu valor é -5_10."
+    ],
+    "explanation": "Sem sinal: 16 + 4 + 1 = 21_10. Com 6 bits (010101_2), o MSB é 0 (positivo), logo vale +21_10. Com 5 bits em C2 (10101_2), o MSB é 1 (negativo) e o simétrico é 01010_2 + 1 = 01011_2 = 11 -> -11_10. Com 5 bits em Sinal-Magnitude, o bit 1 indica '-' e 0101_2 = 5 -> -5_10."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "casos_adicao_c2",
+      "complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Casos de Adição em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "overflow",
-        "adicao_sem_sinal_vs_c2"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "correccoes-exames_SD.pdf",
-        "location": "2ª chamada 5/Jul/2000 Q1b"
-      },
-      "prompt": "Adicionando os números binários de 4 bits X = 0101_2 e Y = 1111_2 obtém-se na saída de 4 bits o resultado 0100_2 (com carry-out = 1). Quais das seguintes conclusões sobre esta operação estão corretas? (Selecione todas as corretas)",
-      "options": [
-        "A: Se X e Y representarem inteiros sem sinal de 4 bits (5 + 15 = 20), ocorre overflow porque foi gerado um carry-out = 1 e 20 excede o máximo representável (15).",
-        "B: Se X e Y representarem inteiros em Complemento de 2 de 4 bits (+5 + (-1) = +4), NÃO ocorre overflow e 0100_2 (+4) é o resultado exato.",
-        "C: Em Complemento de 2 não pode ocorrer overflow nesta soma porque X é positivo (MSB=0) e Y é negativo (MSB=1).",
-        "D: Ocorre overflow tanto em sem sinal como em Complemento de 2."
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "explanation": "Resolução oficial do Exame 5/Jul/2000 (Q1b): em sem sinal ocorre overflow (carry-out = 1, 20 > 15); em Complemento de 2 não ocorre overflow porque os operandos têm sinais contrários (+5 e -1), dando +4 (0100_2)."
+    "prompt": "Considerando a adição em Complemento de 2 com palavras de 5 bits (gama de -16 a +15), selecione todas as operações cujo resultado e interpretação estão corretos:",
+    "options": [
+      ["(+6) + (+3): 00110_2 + 00011_2 = 01001_2 (+9_10), sem transporte além do bit de sinal.", true],
+      ["(+9) + (-4): 01001_2 + 11100_2 = (1)00101_2 (+5_10), onde o carry de saída 1 é descartado.", true],
+      ["(-9) + (+4): 10111_2 + 00100_2 = 11011_2 (-5_10), onde o bit de sinal resulta em 1 (negativo) sem carry de saída.", true],
+      ["(-9) + (-4): 10111_2 + 11100_2 = (1)10011_2 (-13_10), onde o carry de saída 1 é descartado e o resultado permanece negativo dentro da gama [-16, +15].", true]
+    ],
+    "answer": [
+      "(+6) + (+3): 00110_2 + 00011_2 = 01001_2 (+9_10), sem transporte além do bit de sinal.",
+      "(+9) + (-4): 01001_2 + 11100_2 = (1)00101_2 (+5_10), onde o carry de saída 1 é descartado.",
+      "(-9) + (+4): 10111_2 + 00100_2 = 11011_2 (-5_10), onde o bit de sinal resulta em 1 (negativo) sem carry de saída.",
+      "(-9) + (-4): 10111_2 + 11100_2 = (1)10011_2 (-13_10), onde o carry de saída 1 é descartado e o resultado permanece negativo dentro da gama [-16, +15]."
+    ],
+    "explanation": "Os quatro casos demonstram que a adição em Complemento de 2 funciona de forma uniforme para qualquer combinação de sinais, descartando sempre o transporte de saída além do MSB."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "overflow",
+      "adicao_sem_sinal_vs_c2"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Comparação entre Sem Sinal e Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "bcd_8421",
-        "vantagens_desvantagens_bcd"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Importante.pdf",
-        "location": "Questão 38 & 4 - Representações Avançadas em Binárioe códigos.pptx Slides 16 e 17"
-      },
-      "prompt": "Quais das seguintes afirmações caracterizam corretamente as vantagens e desvantagens do código BCD 8421 face ao binário puro? (Selecione todas as corretas)",
-      "options": [
-        "A: Facilita a conversão direta dígito a dígito para mostradores decimais (como displays de 7 segmentos em calculadoras e relógios digitais).",
-        "B: É menos eficiente no uso de memória do que o binário puro, desperdiçando 6 das 16 combinações possíveis em cada grupo de 4 bits (cerca de 20% mais bits que o binário puro).",
-        "C: Requer circuitos aritméticos mais complexos do que a adição em binário puro.",
-        "D: Permite representar números maiores do que o binário puro usando o mesmo número total de bits."
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "explanation": "Com 8 bits, o BCD 8421 só representa de 00 a 99 (100 valores), enquanto o binário puro representa de 0 a 255 (256 valores), logo D é falsa e A, B e C são verdadeiras."
+    "prompt": "Adicionando os números binários de 4 bits X = 0101_2 e Y = 1111_2 obtém-se na saída de 4 bits o resultado 0100_2 (com carry-out = 1). Quais das seguintes conclusões sobre esta operação estão corretas?",
+    "options": [
+      ["Se X e Y representarem inteiros sem sinal de 4 bits (5 + 15 = 20), ocorre overflow porque foi gerado um carry-out = 1 e 20 excede o máximo representável (15).", true],
+      ["Se X e Y representarem inteiros em Complemento de 2 de 4 bits (+5 + (-1) = +4), NÃO ocorre overflow e 0100_2 (+4) é o resultado exato.", true],
+      ["Em Complemento de 2 não pode ocorrer overflow nesta soma porque X é positivo (MSB=0) e Y é negativo (MSB=1).", true],
+      ["Ocorre overflow tanto na interpretação sem sinal como em Complemento de 2.", false]
+    ],
+    "answer": [
+      "Se X e Y representarem inteiros sem sinal de 4 bits (5 + 15 = 20), ocorre overflow porque foi gerado um carry-out = 1 e 20 excede o máximo representável (15).",
+      "Se X e Y representarem inteiros em Complemento de 2 de 4 bits (+5 + (-1) = +4), NÃO ocorre overflow e 0100_2 (+4) é o resultado exato.",
+      "Em Complemento de 2 não pode ocorrer overflow nesta soma porque X é positivo (MSB=0) e Y é negativo (MSB=1)."
+    ],
+    "explanation": "Em inteiros sem sinal ocorre overflow (carry-out = 1, pois 20 > 15); em Complemento de 2 não ocorre overflow porque os operandos têm sinais contrários (+5 e -1), resultando em +4 (0100_2)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "bcd_8421",
+      "vantagens_desvantagens_bcd"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Características do Código BCD 8421"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "codigo_ascii",
-        "codigos_alfanumericos"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
-        "location": "Slides 21 e 22 & Importante.pdf Questões 26h e 40"
-      },
-      "prompt": "Sobre a tabela de codificação alfanumérica ASCII apresentada na Aula 4 (Slides 21 e 22), selecione todas as afirmações corretas:",
-      "options": [
-        "A: A tabela ASCII padrão (7 bits) codifica 128 caracteres numerados de 0 a 127 (incluindo caracteres de controlo de 0 a 31 e caracteres imprimíveis como espaço=32, '0'=48, 'A'=65 e 'a'=97).",
-        "B: A tabela ASCII estendida (8 bits) adiciona os códigos de 128 a 255, incluindo caracteres acentuados (como 'ç') e símbolos gráficos/matemáticos.",
-        "C: Como as letras maiúsculas ('A'=65=01000001_2) e minúsculas ('a'=97=01100001_2) têm códigos distintos, diferem entre si em exatamente 32 unidades (1 bit na posição 2^5).",
-        "D: O código ASCII serve apenas para representar letras maiúsculas, não possuindo códigos para os algarismos '0' a '9'."
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "explanation": "No Slide 21 da Aula 4, os algarismos '0' a '9' ocupam as posições decimais 48 a 57, as maiúsculas 'A' a 'Z' ocupam 65 a 90, e as minúsculas 'a' a 'z' ocupam 97 a 122; o Slide 22 mostra a extensão de 128 a 255."
+    "prompt": "Quais das seguintes afirmações caracterizam corretamente as vantagens e desvantagens do código BCD 8421 face ao binário puro?",
+    "options": [
+      ["Facilita a conversão direta dígito a dígito para mostradores decimais (como displays de 7 segmentos em calculadoras e relógios digitais).", true],
+      ["É menos eficiente no uso de memória do que o binário puro, desperdiçando 6 das 16 combinações possíveis em cada grupo de 4 bits.", true],
+      ["Requer circuitos aritméticos mais complexos do que a adição em binário puro.", true],
+      ["Permite representar números maiores do que o binário puro usando o mesmo número total de bits.", false]
+    ],
+    "answer": [
+      "Facilita a conversão direta dígito a dígito para mostradores decimais (como displays de 7 segmentos em calculadoras e relógios digitais).",
+      "É menos eficiente no uso de memória do que o binário puro, desperdiçando 6 das 16 combinações possíveis em cada grupo de 4 bits.",
+      "Requer circuitos aritméticos mais complexos do que a adição em binário puro."
+    ],
+    "explanation": "Com 8 bits, o BCD 8421 só representa de 00 a 99 (100 valores), enquanto o binário puro representa de 0 a 255 (256 valores), sendo o BCD menos denso mas muito conveniente para interfaces decimais humanas."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "codigo_ascii",
+      "codigos_alfanumericos"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Código ASCII Padrão e Estendido"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
-      ],
-      "related_content_labels": [
-        "hexadecimal_com_sinal",
-        "complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "correccoes-exames_SD.pdf",
-        "location": "2ª chamada 11/Julho/2001 Q1a"
-      },
-      "prompt": "Dado o número hexadecimal 1A0_16 (cuja representação em 12 bits é 0001 1010 0000_2), selecione todas as afirmações verdadeiras sobre a sua interpretação em Complemento de 2:",
-      "options": [
-        "A: Se representar um inteiro em Complemento de 2 com 9 bits (110100000_2), o número é negativo e vale -96_10.",
-        "B: Se representar um inteiro em Complemento de 2 com 10 bits (0110100000_2), o número é positivo e vale +416_10.",
-        "C: Adicionando -27_10 (111100101_2 em 9 bits C2) ao valor de 9 bits (-96_10), obtém-se 110000101_2 (-123_10) sem overflow.",
-        "D: Com 9 bits em Complemento de 2, o valor -123_10 provoca overflow porque excede -128_10."
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "explanation": "Resolução do Exame 11/Julho/2001 (Q1a,b): em 9 bits (110100000_2), o simétrico é 001100000_2 = 64+32 = 96 -> -96_10; em 10 bits (0110100000_2), MSB=0 -> 256+128+32 = +416_10; em 9 bits C2 a gama vai de -256 a +255, logo -96 + (-27) = -123_10 não provoca overflow."
+    "prompt": "Sobre a tabela de codificação alfanumérica ASCII, selecione todas as afirmações corretas:",
+    "options": [
+      ["A tabela ASCII padrão (7 bits) codifica 128 caracteres numerados de 0 a 127 (incluindo caracteres de controlo de 0 a 31 e caracteres imprimíveis como espaço=32, '0'=48, 'A'=65 e 'a'=97).", true],
+      ["A tabela ASCII estendida (8 bits) adiciona os códigos de 128 a 255, incluindo caracteres acentuados e símbolos gráficos/matemáticos.", true],
+      ["Como as letras maiúsculas ('A'=65=01000001_2) e minúsculas ('a'=97=01100001_2) têm códigos distintos, diferem entre si em exatamente 32 unidades (1 bit na posição 2^5).", true],
+      ["O código ASCII serve apenas para representar letras maiúsculas, não possuindo códigos para os algarismos '0' a '9'.", false]
+    ],
+    "answer": [
+      "A tabela ASCII padrão (7 bits) codifica 128 caracteres numerados de 0 a 127 (incluindo caracteres de controlo de 0 a 31 e caracteres imprimíveis como espaço=32, '0'=48, 'A'=65 e 'a'=97).",
+      "A tabela ASCII estendida (8 bits) adiciona os códigos de 128 a 255, incluindo caracteres acentuados e símbolos gráficos/matemáticos.",
+      "Como as letras maiúsculas ('A'=65=01000001_2) e minúsculas ('a'=97=01100001_2) têm códigos distintos, diferem entre si em exatamente 32 unidades (1 bit na posição 2^5)."
+    ],
+    "explanation": "Na tabela ASCII, os algarismos '0' a '9' ocupam os códigos decimais 48 a 57, as maiúsculas 'A' a 'Z' ocupam 65 a 90, as minúsculas 'a' a 'z' ocupam 97 a 122, e a versão estendida de 8 bits cobre de 128 a 255."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2"
+    ],
+    "related_content_labels": [
+      "hexadecimal_com_sinal",
+      "complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Complemento de 2 em Diferentes Tamanhos de Palavra"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "msb_lsb",
-        "conversao_binario_decimal"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha Prática SD Nº2.pdf",
-        "location": "Grupo de Exercícios 4 (alíneas d, e)"
-      },
-      "prompt": "Indique o valor e o peso posicional do MSB e do LSB e converta para decimal os seguintes números binários da Ficha Prática Nº 2 (Grupo 4): (a) 1011,101_2 e (b) 1101110,101_2.",
-      "options": null,
-      "answer": "(a) 1011,101_2: MSB = 1 (peso 2^3 = 8), LSB = 1 (peso 2^-3 = 0,125), valor = 11,625_10 | (b) 1101110,101_2: MSB = 1 (peso 2^6 = 64), LSB = 1 (peso 2^-3 = 0,125), valor = 110,625_10.",
-      "explanation": "(a) Parte inteira: 8 + 2 + 1 = 11; parte fracionária: 0,5 + 0,125 = 0,625 -> 11,625_10.\n(b) Parte inteira: 64 + 32 + 8 + 4 + 2 = 110; parte fracionária: 0,5 + 0,125 = 0,625 -> 110,625_10."
+    "prompt": "Dado o número hexadecimal 1A0_16 (cuja representação em 12 bits é 0001 1010 0000_2), selecione todas as afirmações verdadeiras sobre a sua interpretação em Complemento de 2:",
+    "options": [
+      ["Se representar um inteiro em Complemento de 2 com 9 bits (110100000_2), o número é negativo e vale -96_10.", true],
+      ["Se representar um inteiro em Complemento de 2 com 10 bits (0110100000_2), o número é positivo e vale +416_10.", true],
+      ["Adicionando -27_10 (111100101_2 em 9 bits C2) ao valor de 9 bits (-96_10), obtém-se 110000101_2 (-123_10) sem overflow.", true],
+      ["Com 9 bits em Complemento de 2, o valor -123_10 provoca overflow porque excede -128_10.", false]
+    ],
+    "answer": [
+      "Se representar um inteiro em Complemento de 2 com 9 bits (110100000_2), o número é negativo e vale -96_10.",
+      "Se representar um inteiro em Complemento de 2 com 10 bits (0110100000_2), o número é positivo e vale +416_10.",
+      "Adicionando -27_10 (111100101_2 em 9 bits C2) ao valor de 9 bits (-96_10), obtém-se 110000101_2 (-123_10) sem overflow."
+    ],
+    "explanation": "Em 9 bits (110100000_2), o simétrico é 001100000_2 = 64+32 = 96 -> -96_10; em 10 bits (0110100000_2), MSB=0 -> 256+128+32 = +416_10; em 9 bits C2 a gama vai de -256 a +255, logo -96 + (-27) = -123_10 não provoca overflow."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "msb_lsb",
+      "conversao_binario_decimal"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Pesos Posicionais do MSB e LSB em Números Fracionários"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "hexadecimal_para_binario",
-        "hexadecimal_para_octal"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha prática SD nº1.pdf",
-        "location": "Questão 3"
-      },
-      "prompt": "Complete o quadro de conversão da Questão 3 da Ficha Prática Nº 1:\n(a) Converta F0FA_16 para Base 2 e Base 8.\n(b) Converta 1011101011001010_2 para Base 8 e Base 16.",
-      "options": null,
-      "answer": "(a) F0FA_16 = 1111000011111010_2 = 170372_8 | (b) 1011101011001010_2 = 135312_8 = BACA_16.",
-      "explanation": "(a) F=1111, 0=0000, F=1111, A=1010 -> 1111000011111010_2. Agrupando de 3 em 3 bits da direita para a esquerda: 001 111 000 011 111 010_2 = 170372_8.\n(b) Agrupando em 4 bits: 1011(B) 1010(A) 1100(C) 1010(A) = BACA_16. Agrupando em 3 bits: 001 011 101 011 001 010_2 = 135312_8."
+    "prompt": "Indique o valor e o peso posicional do MSB e do LSB e converta para decimal os seguintes números binários fracionários: (a) 1011,101_2 e (b) 1101110,101_2.",
+    "options": null,
+    "answer": "(a) 1011,101_2: MSB = 1 (peso 2^3 = 8), LSB = 1 (peso 2^-3 = 0,125), valor = 11,625_10 | (b) 1101110,101_2: MSB = 1 (peso 2^6 = 64), LSB = 1 (peso 2^-3 = 0,125), valor = 110,625_10.",
+    "explanation": "(a) Parte inteira: 8 + 2 + 1 = 11; parte fracionária: 0,5 + 0,125 = 0,625 -> 11,625_10.\n(b) Parte inteira: 64 + 32 + 8 + 4 + 2 = 110; parte fracionária: 0,5 + 0,125 = 0,625 -> 110,625_10."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "hexadecimal_para_binario",
+      "hexadecimal_para_octal"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Conversão Direta entre Binário, Octal e Hexadecimal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
-      ],
-      "related_content_labels": [
-        "adicao_binaria",
-        "multiplicacao_binaria"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha prática SD nº1.pdf",
-        "location": "Questão 2"
-      },
-      "prompt": "Resolva a Questão 2 da Ficha Prática Nº 1:\n(a) Calcule a soma binária 01010100_2 + 10011100_2 + 01011000_2 e apresente o resultado em decimal.\n(b) Calcule o produto binário 01011000_2 * 1110_2 e apresente o resultado em hexadecimal.",
-      "options": null,
-      "answer": "(a) Soma = 101001000_2 = 328_10 | (b) Produto = 010011010000_2 = 4D0_16.",
-      "explanation": "(a) 01010100_2 (84_10) + 10011100_2 (156_10) + 01011000_2 (88_10) = 101001000_2 = 256 + 64 + 8 = 328_10.\n(b) 01011000_2 (88_10 = 58_16) * 1110_2 (14_10 = E_16) = 1232_10. Em binário: 0100 1101 0000_2 = 4D0_16."
+    "prompt": "Efetue as seguintes conversões diretas por agrupamento de bits:\n(a) Converta F0FA_16 para Base 2 e Base 8.\n(b) Converta 1011101011001010_2 para Base 8 e Base 16.",
+    "options": null,
+    "answer": "(a) F0FA_16 = 1111000011111010_2 = 170372_8 | (b) 1011101011001010_2 = 135312_8 = BACA_16.",
+    "explanation": "(a) F=1111, 0=0000, F=1111, A=1010 -> 1111000011111010_2. Agrupando de 3 em 3 bits da direita para a esquerda: 001 111 000 011 111 010_2 = 170372_8.\n(b) Agrupando em 4 bits: 1011(B) 1010(A) 1100(C) 1010(A) = BACA_16. Agrupando em 3 bits: 001 011 101 011 001 010_2 = 135312_8."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
+    ],
+    "related_content_labels": [
+      "adicao_binaria",
+      "multiplicacao_binaria"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Adição e Multiplicação Binária"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
-      ],
-      "related_content_labels": [
-        "divisao_binaria",
-        "multiplicacao_fracionaria"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Lista de Exercicio1.docx.pdf",
-        "location": "Questão 9 (alíneas d, e)"
-      },
-      "prompt": "Efetue as seguintes operações em binário (Lista de Exercícios 1, Q9d e Q9e):\n(a) Multiplicação com vírgula: 111,10_2 * 1,00101_2\n(b) Divisão inteira: 10010101_2 / 1001_2 (indicando o quociente e o resto em binário).",
-      "options": null,
-      "answer": "(a) 1000,1010110_2 (ou 1000,101011_2 = 8,671875_10) | (b) Quociente = 10000_2 (16_10) e Resto = 0101_2 (5_10).",
-      "explanation": "(a) 111,1_2 (7,5_10) * 1,00101_2 (1,15625_10) = 8,671875_10 = 1000,101011_2.\n(b) Dividindo 10010101_2 (149_10) por 1001_2 (9_10): 149 = 9 * 16 + 5 -> Quociente = 10000_2 (16_10) e Resto = 101_2 (5_10), ou 10000,100011..._2 se continuada na parte fracionária."
+    "prompt": "Efetue as seguintes operações aritméticas em binário sem sinal:\n(a) Calcule a soma binária 01010100_2 + 10011100_2 + 01011000_2 e apresente o resultado em decimal.\n(b) Calcule o produto binário 01011000_2 * 1110_2 e apresente o resultado em hexadecimal.",
+    "options": null,
+    "answer": "(a) Soma = 101001000_2 = 328_10 | (b) Produto = 010011010000_2 = 4D0_16.",
+    "explanation": "(a) 01010100_2 (84_10) + 10011100_2 (156_10) + 01011000_2 (88_10) = 101001000_2 = 256 + 64 + 8 = 328_10.\n(b) 01011000_2 (88_10 = 58_16) * 1110_2 (14_10 = E_16) = 1232_10. Em binário: 0100 1101 0000_2 = 4D0_16."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
+    ],
+    "related_content_labels": [
+      "divisao_binaria",
+      "multiplicacao_fracionaria"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Multiplicação e Divisão em Binário"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "complemento_de_2",
-        "extensao_de_sinal"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "correccoes-exames_SD.pdf",
-        "location": "1ª chamada 14/Jun/2000 Q1b & 8/Jan/2001 Q1b"
-      },
-      "prompt": "Determine o número X com 6 bits em Complemento de 2 que, adicionado ao número Y = 10101_2 (representado em Complemento de 2 com 5 bits), produz o resultado -2_10. Apresente a operação em binário.",
-      "options": null,
-      "answer": "X = 001001_2 (+9_10).",
-      "explanation": "Estendendo o sinal de Y = 10101_2 (-11_10 em 5 bits) para 6 bits, obtemos Y = 110101_2. Em 6 bits C2, -2_10 escreve-se 111110_2. Como X + Y = -2 => X = -2 - Y = 111110_2 - 110101_2 = 001001_2 (+9_10). Verificação: +9 + (-11) = -2."
+    "prompt": "Efetue as seguintes operações em binário:\n(a) Multiplicação com parte fracionária: 111,10_2 * 1,00101_2\n(b) Divisão inteira: 10010101_2 / 1001_2 (indicando o quociente e o resto em binário).",
+    "options": null,
+    "answer": "(a) 1000,1010110_2 (ou 1000,101011_2 = 8,671875_10) | (b) Quociente = 10000_2 (16_10) e Resto = 0101_2 (5_10).",
+    "explanation": "(a) 111,1_2 (7,5_10) * 1,00101_2 (1,15625_10) = 8,671875_10 = 1000,101011_2.\n(b) Dividindo 10010101_2 (149_10) por 1001_2 (9_10): 149 = 9 * 16 + 5 -> Quociente = 10000_2 (16_10) e Resto = 101_2 (5_10)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "complemento_de_2",
+      "extensao_de_sinal"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Extensão de Sinal e Aritmética em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "bcd_8421",
-        "excesso_de_3"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2º Teste SD 2022_2023.pdf",
-        "location": "Grupo II, Questão 2 (2.1 e 2.2)"
-      },
-      "prompt": "Resolva a Questão 2 do 2º Teste (2022/2023): codifique os números decimais 36594 e 42871 em (a) Código BCD 8421 e (b) Código Excesso de 3.",
-      "options": null,
-      "answer": "(a) BCD 8421: 36594 = 0011 0110 0101 1001 0100 | 42871 = 0100 0010 1000 0111 0001 || (b) Excesso de 3: 36594 = 0110 1001 1000 1100 0111 | 42871 = 0111 0101 1011 1010 0100.",
-      "explanation": "Em BCD 8421 converte-se cada dígito decimal para 4 bits (3=0011, 6=0110, 5=0101, 9=1001, 4=0100; e 4=0100, 2=0010, 8=1000, 7=0111, 1=0001). Em Excesso de 3, soma-se 0011_2 (+3) a cada nibble BCD (3->6=0110, 6->9=1001, 5->8=1000, 9->12=1100, 4->7=0111; e 4->7=0111, 2->5=0101, 8->11=1011, 7->10=1010, 1->4=0100)."
+    "prompt": "Determine o número X com 6 bits em Complemento de 2 que, adicionado ao número Y = 10101_2 (representado em Complemento de 2 com 5 bits), produz o resultado -2_10. Apresente a operação em binário.",
+    "options": null,
+    "answer": "X = 001001_2 (+9_10).",
+    "explanation": "Estendendo o sinal de Y = 10101_2 (-11_10 em 5 bits) para 6 bits, obtemos Y = 110101_2. Em 6 bits C2, -2_10 escreve-se 111110_2. Como X + Y = -2 => X = -2 - Y = 111110_2 - 110101_2 = 001001_2 (+9_10). Verificação: +9 + (-11) = -2."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "bcd_8421",
+      "excesso_de_3"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Codificação BCD 8421 e Excesso de 3"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "adicao_sinalizada",
-        "overflow_complemento_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Lista de Exercicio1.docx.pdf",
-        "location": "Questão 10"
-      },
-      "prompt": "Na Questão 10 da Lista de Exercícios 1, pede-se para somar os quatro números sinalizados de 8 bits: 01000100_2, 00011011_2, 00001110_2 e 00010010_2. Calcule a soma total em binário e em decimal e indique se ocorre overflow em Complemento de 2 com 8 bits.",
-      "options": null,
-      "answer": "Soma = 01111111_2 = +127_10. Não ocorre overflow (atinge exatamente o limite máximo positivo de 8 bits em Complemento de 2).",
-      "explanation": "Convertendo as parcelas: 01000100_2 = +68; 00011011_2 = +27; 00001110_2 = +14; 00010010_2 = +18. Somando tudo: 68 + 27 + 14 + 18 = +127_10 = 01111111_2. Como a gama de 8 bits em C2 vai de -128 a +127, o resultado cabe sem overflow."
+    "prompt": "Codifique os números decimais 36594 e 42871 em: (a) Código BCD 8421 e (b) Código Excesso de 3.",
+    "options": null,
+    "answer": "(a) BCD 8421: 36594 = 0011 0110 0101 1001 0100 | 42871 = 0100 0010 1000 0111 0001 || (b) Excesso de 3: 36594 = 0110 1001 1000 1100 0111 | 42871 = 0111 0101 1011 1010 0100.",
+    "explanation": "Em BCD 8421 converte-se cada dígito decimal para 4 bits (3=0011, 6=0110, 5=0101, 9=1001, 4=0100; e 4=0100, 2=0010, 8=1000, 7=0111, 1=0001). Em Excesso de 3, soma-se 0011_2 (+3) a cada nibble BCD (3->6=0110, 6->9=1001, 5->8=1000, 9->12=1100, 4->7=0111; e 4->7=0111, 2->5=0101, 8->11=1011, 7->10=1010, 1->4=0100)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "adicao_sinalizada",
+      "overflow_complemento_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Adição de Números Sinalizados de 8 Bits"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "open_ended",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "sensor_pressao",
-        "dimensionamento_de_bits",
-        "subtracao_complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 4,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Lista de Exercicio1.docx.pdf",
-        "location": "Questão 19 & correccoes-exames_SD.pdf 26/Junho/2001 Q1"
-      },
-      "prompt": "Num sistema eletrónico de previsão meteorológica (Lista 1, Q19 / Exame 26/Jun/2001, Q1), um sensor mede a pressão atmosférica atual Pa (sempre positiva, até ao máximo de 1100_10 mBar), uma memória guarda a pressão de há 6 horas (P6h) e um subtrator calcula a variação Vp = Pa - P6h (que nunca excede 40 mBar em valor absoluto, variando em [-40, +40]).\n(a) Justifique qual é o número mínimo de bits necessário para representar Pa (sem sinal) e Vp (em Complemento de 2).\n(b) Sabendo que Pa = 923 mBar (1110011011_2) e P6h = 957 mBar (1110111101_2), efetue a subtração binária Pa - P6h e indique os bits que compõem a saída Vp.",
-      "options": null,
-      "answer": "(a) Pa requer 11 bits sem sinal (2^11 - 1 = 2047 >= 1100); Vp requer 7 bits em Complemento de 2 (gama [-64, +63] cobre [-40, +40]). | (b) Em 10 bits: 1110011011_2 - 1110111101_2 = 1111011110_2; tomando os 7 bits menos significativos obtém-se Vp = 1011110_2 (-34 mBar).",
-      "explanation": "(a) Para Pa em [0, 1100]: 2^10 - 1 = 1023 < 1100 <= 2^11 - 1 = 2047 -> 11 bits. Para Vp em [-40, +40]: com 6 bits C2 temos [-32, +31] (insuficiente); com 7 bits C2 temos [-64, +63] -> 7 bits.\n(b) Calculando o C2 de 957 em 10 bits (0001000011_2) e somando a 923 (1110011011_2), obtém-se 1111011110_2 (-34_10). Os 7 bits menos significativos fornecem Vp = 1011110_2 (-64 + 16 + 8 + 4 + 2 = -34 mBar)."
+    "prompt": "Some os quatro números sinalizados de 8 bits representados em Complemento de 2: 01000100_2, 00011011_2, 00001110_2 e 00010010_2. Apresente a soma total em binário e em decimal e indique se ocorre overflow em 8 bits.",
+    "options": null,
+    "answer": "Soma = 01111111_2 = +127_10. Não ocorre overflow (atinge exatamente o limite máximo positivo de 8 bits em Complemento de 2).",
+    "explanation": "Convertendo as parcelas: 01000100_2 = +68; 00011011_2 = +27; 00001110_2 = +14; 00010010_2 = +18. Somando tudo: 68 + 27 + 14 + 18 = +127_10 = 01111111_2. Como a gama de 8 bits em C2 vai de -128 a +127, o resultado cabe sem overflow."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "open_ended",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "sensor_pressao",
+      "dimensionamento_de_bits",
+      "subtracao_complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 4,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Dimensionamento de Palavra e Subtração em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "open_ended",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "coordenadas_geograficas",
-        "overflow_subtracao",
-        "complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 4,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Lista de Exercicio1.docx.pdf",
-        "location": "Questão 17 & correccoes-exames_SD.pdf 7/Jan/2002 Q1"
-      },
-      "prompt": "Pretende-se codificar coordenadas geográficas em Complemento de 2: a latitude varia entre -90° (Sul) e +90° (Norte) e a longitude entre -180° (Oeste) e +180° (Este) (Lista 1, Q17 / Exame 7/Jan/2002, Q1).\n(a) Qual o número mínimo de bits para codificar a latitude e a longitude?\n(b) Codificando a latitude com 8 bits e a longitude com 10 bits, represente as coordenadas de Melbourne: 38° Sul (-38) e 145° Este (+145).\n(c) Calcule em binário (8 bits) a diferença de latitudes entre Spitzbergen (+78° = 4E_16) e Falkland (-52° = CC_16) e comente o resultado.",
-      "options": null,
-      "answer": "(a) Latitude: 8 bits ([-128, +127]); Longitude: 9 bits ([-256, +255]). | (b) -38 em 8 bits C2 = 11011010_2; +145 em 10 bits C2 = 0010010001_2. | (c) 01001110_2 - 11001100_2 = 01001110_2 + 00110100_2 = 10000010_2. Ocorre overflow porque +78 - (-52) = +130, que excede o máximo positivo de 8 bits (+127), resultando num número com bit de sinal 1 (negativo).",
-      "explanation": "Resolução completa do Exame 7/Jan/2002 (Q1): na alínea c), como se somam dois valores positivos (+78 e +52) em 8 bits C2 e o resultado (+130) ultrapassa +127, o bit de sinal passa a 1 (10000010_2 = -126_10), evidenciando overflow."
+    "prompt": "Num sistema eletrónico de previsão meteorológica, um sensor mede a pressão atmosférica atual Pa (sempre positiva, até ao máximo de 1100_10 mBar), uma memória guarda a pressão de há 6 horas (P6h) e um subtrator calcula a variação Vp = Pa - P6h (que nunca excede 40 mBar em valor absoluto, variando em [-40, +40]).\n(a) Justifique qual é o número mínimo de bits necessário para representar Pa (sem sinal) e Vp (em Complemento de 2).\n(b) Sabendo que Pa = 923 mBar (1110011011_2) e P6h = 957 mBar (1110111101_2), efetue a subtração binária Pa - P6h e indique os bits que compõem a saída Vp.",
+    "options": null,
+    "answer": "(a) Pa requer 11 bits sem sinal (2^11 - 1 = 2047 >= 1100); Vp requer 7 bits em Complemento de 2 (gama [-64, +63] cobre [-40, +40]). | (b) Em 10 bits: 1110011011_2 - 1110111101_2 = 1111011110_2; tomando os 7 bits menos significativos obtém-se Vp = 1011110_2 (-34 mBar).",
+    "explanation": "(a) Para Pa em [0, 1100]: 2^10 - 1 = 1023 < 1100 <= 2^11 - 1 = 2047 -> 11 bits. Para Vp em [-40, +40]: com 6 bits C2 temos [-32, +31] (insuficiente); com 7 bits C2 temos [-64, +63] -> 7 bits.\n(b) Calculando o C2 de 957 em 10 bits (0001000011_2) e somando a 923 (1110011011_2), obtém-se 1111011110_2 (-34_10). Os 7 bits menos significativos fornecem Vp = 1011110_2 (-64 + 16 + 8 + 4 + 2 = -34 mBar)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "open_ended",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "coordenadas_geograficas",
+      "overflow_subtracao",
+      "complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 4,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Representação e Overflow em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "open_ended",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "sistema_navegacao_barco",
-        "resolucao_minima",
-        "overflow_subtracao"
-      ],
-      "relevancy": "core",
-      "difficulty": 5,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Lista de Exercicio1.docx.pdf",
-        "location": "Questão 20 & correccoes-exames_SD.pdf 26/Jun/2002 Q1"
-      },
-      "prompt": "Num barco à vela (Lista 1, Q20 / Exame 26/Jun/2002, Q1), uma bússola (Db) e um catavento (Dv) indicam ângulos entre -180° e +180° codificados com 9 bits em Complemento de 2.\n(a) Qual é a resolução mínima (em graus) se for utilizada toda a gama permitida pelos 9 bits?\n(b) Para Db = -90°, qual é a palavra binária de 9 bits considerando resolução de 1° e qual seria se fosse usada toda a gama dos 9 bits?\n(c) Calcule em binário de 9 bits a direção real do vento (Db - Dv) quando Db = -180° e Dv = +170°, comentando o resultado.",
-      "options": null,
-      "answer": "(a) Gama de 9 bits C2 = [-256, +255] (511 intervalos para 360°), logo resolução = 360° / 511 ≈ 0,70°. | (b) Com resolução de 1°: -90_10 = 110100110_2; usando toda a gama (-180° -> -256): -90° corresponde a -128_10 = 110000000_2. | (c) Db = -180 = 101001100_2 e -Dv = -170 = 101010110_2; Db + (-Dv) = (1)010100010_2. Ocorre overflow porque -180 - 170 = -350°, que excede o limite -256 de 9 bits C2 (dois operandos negativos deram resultado positivo 010100010_2).",
-      "explanation": "Resolução oficial do Exame 26/Jun/2002 (Q1) e Questão 20 da Lista de Exercícios 1."
+    "prompt": "Pretende-se codificar coordenadas geográficas em Complemento de 2: a latitude varia entre -90° (Sul) e +90° (Norte) e a longitude entre -180° (Oeste) e +180° (Este).\n(a) Qual o número mínimo de bits para codificar a latitude e a longitude?\n(b) Codificando a latitude com 8 bits e a longitude com 10 bits, represente as coordenadas 38° Sul (-38) e 145° Este (+145).\n(c) Calcule em binário (8 bits) a diferença de latitudes entre +78° (4E_16) e -52° (CC_16) e comente o resultado.",
+    "options": null,
+    "answer": "(a) Latitude: 8 bits ([-128, +127]); Longitude: 9 bits ([-256, +255]). | (b) -38 em 8 bits C2 = 11011010_2; +145 em 10 bits C2 = 0010010001_2. | (c) 01001110_2 - 11001100_2 = 01001110_2 + 00110100_2 = 10000010_2. Ocorre overflow porque +78 - (-52) = +130, que excede o máximo positivo de 8 bits (+127), resultando num número com bit de sinal 1 (negativo).",
+    "explanation": "Na alínea (c), como se somam dois valores positivos (+78 e +52) em 8 bits C2 e o resultado (+130) ultrapassa +127, o bit de sinal passa a 1 (10000010_2 = -126_10), evidenciando overflow."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "open_ended",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "sistema_navegacao_barco",
+      "resolucao_minima",
+      "overflow_subtracao"
+    ],
+    "relevancy": "core",
+    "difficulty": 5,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Resolução e Overflow em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "open_ended",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "precisao_binaria",
-        "dizima_periodica_binaria"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Lista de Exercicio1.docx.pdf",
-        "location": "Questões 14 e 15 & Importante.pdf Questões 33 e 34"
-      },
-      "prompt": "(a) Deduza a relação matemática que determina o número mínimo de bits (m) necessário para representar em binário qualquer inteiro decimal de n dígitos.\n(b) Explique por que razão um ciclo de programa que faz `soma = 0` e soma repetidamente `0,1` até `soma == 1,0` pode nunca terminar num computador digital.",
-      "options": null,
-      "answer": "(a) Para cobrir até 10^n - 1, impõe-se 2^m - 1 >= 10^n - 1 => 2^m >= 10^n => m >= n / log10(2) ≈ 3,3219 * n bits. | (b) Porque 0,1_10 = 1/10 é uma dízima periódica infinita na base 2 (0,0001100110011..._2); como o registo tem um número finito de bits, armazena um valor truncado/aproximado e a soma de 10 parcelas não resulta exatamente em 1,0.",
-      "explanation": "Resolução das Questões 14 e 15 da Lista de Exercícios 1 (e Questões 33 e 34 de Importante.pdf)."
+    "prompt": "Num sistema de navegação marítima, uma bússola (Db) e um catavento (Dv) indicam ângulos entre -180° e +180° codificados com 9 bits em Complemento de 2.\n(a) Qual é a resolução mínima (em graus) se for utilizada toda a gama permitida pelos 9 bits?\n(b) Para Db = -90°, qual é a palavra binária de 9 bits considerando resolução de 1° e qual seria se fosse usada toda a gama dos 9 bits?\n(c) Calcule em binário de 9 bits a direção real do vento (Db - Dv) quando Db = -180° e Dv = +170°, comentando o resultado.",
+    "options": null,
+    "answer": "(a) Gama de 9 bits C2 = [-256, +255] (511 intervalos para 360°), logo resolução = 360° / 511 ≈ 0,70°. | (b) Com resolução de 1°: -90_10 = 110100110_2; usando toda a gama (-180° -> -256): -90° corresponde a -128_10 = 110000000_2. | (c) Db = -180 = 101001100_2 e -Dv = -170 = 101010110_2; Db + (-Dv) = (1)010100010_2. Ocorre overflow porque -180 - 170 = -350°, que excede o limite -256 de 9 bits C2 (dois operandos negativos deram resultado positivo 010100010_2).",
+    "explanation": "Quando se subtraem ângulos de sinais opostos cujo módulo combinado (350°) ultrapassa a capacidade da representação de 9 bits (-256), a soma de dois números negativos produz um bit de sinal 0 (positivo), sinalizando overflow."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "open_ended",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "precisao_binaria",
+      "dizima_periodica_binaria"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Representação de Números Reais e Precisão Binária"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "open_ended",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2",
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "interpretacao_registrador",
-        "complemento_de_2",
-        "sinal_magnitude",
-        "bcd_8421"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha Prática SD Nº2.pdf",
-        "location": "Exercício 11 & Lista de Exercicio1.docx.pdf Questão 13"
-      },
-      "prompt": "Seja 11010010_2 o conteúdo de um registador de 8 bits (Ficha Prática Nº 2, Ex. 11 / Lista 1, Q13). Determine e justifique o que este padrão binário representa se for interpretado como:\n(a) inteiro binário sem sinal;\n(b) inteiro em sinal e magnitude;\n(c) inteiro em Complemento de 2;\n(d) código hexadecimal;\n(e) código octal;\n(f) código BCD 8421.",
-      "options": null,
-      "answer": "(a) Sem sinal: 210_10 | (b) Sinal-magnitude: -82_10 | (c) Complemento de 2: -46_10 | (d) Hexadecimal: D2_16 | (e) Octal: 322_8 | (f) BCD 8421: Código inválido (1101_2 = 13 > 9).",
-      "explanation": "(a) 128 + 64 + 16 + 2 = 210_10.\n(b) Sinal = 1 (-), magnitude 1010010_2 = 64 + 16 + 2 = 82 -> -82_10.\n(c) Sinal = 1 (-), C2 de 11010010_2 = 00101101_2 + 1 = 00101110_2 = 32 + 8 + 4 + 2 = 46 -> -46_10.\n(d) 1101_2 = D, 0010_2 = 2 -> D2_16.\n(e) 011 010 010_2 = 322_8.\n(f) Não existe dígito BCD para o nibble 1101_2."
+    "prompt": "(a) Deduza a relação matemática que determina o número mínimo de bits (m) necessário para representar em binário qualquer inteiro decimal de n dígitos.\n(b) Explique por que razão um ciclo de programa que faz `soma = 0` e soma repetidamente `0,1` até `soma == 1,0` pode nunca terminar num computador digital.",
+    "options": null,
+    "answer": "(a) Para cobrir até 10^n - 1, impõe-se 2^m - 1 >= 10^n - 1 => 2^m >= 10^n => m >= n / log10(2) ≈ 3,3219 * n bits. | (b) Porque 0,1_10 = 1/10 é uma dízima periódica infinita na base 2 (0,0001100110011..._2); como o registo tem um número finito de bits, armazena um valor truncado/aproximado e a soma de 10 parcelas não resulta exatamente em 1,0.",
+    "explanation": "Qualquer fração cujo denominador reduzido contenha fatores primos diferentes de 2 (como 10 = 2 * 5) gera uma dízima periódica infinita em binário."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "open_ended",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2",
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "interpretacao_registrador",
+      "complemento_de_2",
+      "sinal_magnitude",
+      "bcd_8421"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Interpretação Múltipla de Padrões Binários de 8 Bits"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "calculation",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos",
-        "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
-      ],
-      "related_content_labels": [
-        "conversao_hexadecimal",
-        "adicao_binaria",
-        "subtracao_binaria"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Exame de Sistemas digitais.pdf",
-        "location": "Grupo II, Questões 6 e 9 & 1º Teste 2025_2026 Q6 e Q8"
-      },
-      "prompt": "Resolva as duas questões numéricas do Exame de Sistemas Digitais (Fevereiro de 2025, Q6 e Q9):\n(a) Converta o número hexadecimal F0DA_16 para as bases binária, octal e decimal.\n(b) Efetue em binário a subtração 00100101_2 - 00010001_2 (representando o resultado em Octal) e a adição 00100101_2 + 00010001_2 (representando o resultado em Decimal).",
-      "options": null,
-      "answer": "(a) Binária: 1111000011011010_2 | Octal: 170332_8 | Decimal: 61658_10 || (b) Subtração: 00010100_2 = 24_8 | Adição: 00110110_2 = 54_10.",
-      "explanation": "(a) F=1111, 0=0000, D=1101, A=1010 -> 1111000011011010_2. Em octal (grupos de 3 da direita): 001 111 000 011 011 010_2 = 170332_8. Em decimal: 15*4096 + 0*256 + 13*16 + 10 = 61440 + 208 + 10 = 61658_10.\n(b) 00100101_2 (37_10) - 00010001_2 (17_10) = 00010100_2 (20_10) = 00 010 100_2 = 24_8. Na adição: 00100101_2 + 00010001_2 = 00110110_2 = 32 + 16 + 4 + 2 = 54_10."
+    "prompt": "Seja 11010010_2 o conteúdo de um registador de 8 bits. Determine e justifique o que este padrão binário representa se for interpretado como:\n(a) inteiro binário sem sinal;\n(b) inteiro em sinal e magnitude;\n(c) inteiro em Complemento de 2;\n(d) código hexadecimal;\n(e) código octal;\n(f) código BCD 8421.",
+    "options": null,
+    "answer": "(a) Sem sinal: 210_10 | (b) Sinal-magnitude: -82_10 | (c) Complemento de 2: -46_10 | (d) Hexadecimal: D2_16 | (e) Octal: 322_8 | (f) BCD 8421: Código inválido (1101_2 = 13 > 9).",
+    "explanation": "(a) 128 + 64 + 16 + 2 = 210_10.\n(b) Sinal = 1 (-), magnitude 1010010_2 = 64 + 16 + 2 = 82 -> -82_10.\n(c) Sinal = 1 (-), C2 de 11010010_2 = 00101101_2 + 1 = 00101110_2 = 32 + 8 + 4 + 2 = 46 -> -46_10.\n(d) 1101_2 = D, 0010_2 = 2 -> D2_16.\n(e) 011 010 010_2 = 322_8.\n(f) Não existe dígito BCD para o nibble 1101_2."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "calculation",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos",
+      "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
+    ],
+    "related_content_labels": [
+      "conversao_hexadecimal",
+      "adicao_binaria",
+      "subtracao_binaria"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Conversões de Base e Aritmética Binária"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "calculation",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
-      ],
-      "related_content_labels": [
-        "conversao_hexadecimal",
-        "2_teste_2022_2023"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "2º Teste SD 2022_2023.pdf",
-        "location": "Grupo II, Questão 4"
-      },
-      "prompt": "Converta o número hexadecimal F0BADA0_16 (Questão 4 do 2º Teste 2022/2023) para as bases: (a) binária, (b) octal e (c) decimal.",
-      "options": null,
-      "answer": "(a) Binária: 1111000010111010110110100000_2 | (b) Octal: 1702726640_8 | (c) Decimal: 252423584_10.",
-      "explanation": "(a) Convertendo cada dígito hex em 4 bits: F(1111) 0(0000) B(1011) A(1010) D(1101) A(1010) 0(0000) -> 1111000010111010110110100000_2.\n(b) Agrupando os 28 bits de 3 em 3 da direita para a esquerda: 001 111 000 010 111 010 110 110 100 000_2 = 1702726640_8.\n(c) Em decimal: 15*16^6 + 11*16^4 + 10*16^3 + 13*16^2 + 10*16^1 = 251658240 + 720896 + 40960 + 3328 + 160 = 252423584_10."
+    "prompt": "Resolva as duas questões numéricas seguintes:\n(a) Converta o número hexadecimal F0DA_16 para as bases binária, octal e decimal.\n(b) Efetue em binário a subtração 00100101_2 - 00010001_2 (representando o resultado em Octal) e a adição 00100101_2 + 00010001_2 (representando o resultado em Decimal).",
+    "options": null,
+    "answer": "(a) Binária: 1111000011011010_2 | Octal: 170332_8 | Decimal: 61658_10 || (b) Subtração: 00010100_2 = 24_8 | Adição: 00110110_2 = 54_10.",
+    "explanation": "(a) F=1111, 0=0000, D=1101, A=1010 -> 1111000011011010_2. Em octal (grupos de 3 da direita): 001 111 000 011 011 010_2 = 170332_8. Em decimal: 15*4096 + 0*256 + 13*16 + 10 = 61440 + 208 + 10 = 61658_10.\n(b) 00100101_2 (37_10) - 00010001_2 (17_10) = 00010100_2 (20_10) = 00 010 100_2 = 24_8. Na adição: 00100101_2 + 00010001_2 = 00110110_2 = 32 + 16 + 4 + 2 = 54_10."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "calculation",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos"
+    ],
+    "related_content_labels": [
+      "conversao_hexadecimal",
+      "conversao_de_bases"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "2 - Sistemas Numéricos Posicionais.pdf",
+      "location": "Conversão de Hexadecimal para Binário, Octal e Decimal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "calculation",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos",
-        "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
-      ],
-      "related_content_labels": [
-        "conversao_fracionaria",
-        "bcd_8421"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha Prática SD Nº2.pdf",
-        "location": "Exercícios 5 e 6 & 1º teste 24_25 Q9"
-      },
-      "prompt": "Efetue as seguintes conversões de números fracionários:\n1) Converta 647,75_10 e 123,625_10 para binário, octal e hexadecimal.\n2) Converta 1111001010,01_2 para decimal, octal, hexadecimal e BCD 8421.",
-      "options": null,
-      "answer": "1) 647,75_10 = 1010000111,11_2 = 1207,6_8 = 287,C_16; 123,625_10 = 1111011,101_2 = 173,5_8 = 7B,A_16 || 2) 1111001010,01_2 = 970,25_10 = 1712,2_8 = 3CA,4_16 = 1001 0111 0000 , 0010 0101_BCD.",
-      "explanation": "1) 647 = 512+128+4+2+1 = 1010000111_2 e 0,75 = 0,5+0,25 = 0,11_2. 123 = 64+32+16+8+2+1 = 1111011_2 e 0,625 = 0,5+0,125 = 0,101_2.\n2) 1111001010_2 = 512+256+128+64+8+2 = 970 e 0,01_2 = 0,25 -> 970,25_10. Em BCD codifica-se cada dígito de 970,25: 9(1001) 7(0111) 0(0000) , 2(0010) 5(0101)."
+    "prompt": "Converta o número hexadecimal F0BADA0_16 para as bases: (a) binária, (b) octal e (c) decimal.",
+    "options": null,
+    "answer": "(a) Binária: 1111000010111010110110100000_2 | (b) Octal: 1702726640_8 | (c) Decimal: 252423584_10.",
+    "explanation": "(a) Convertendo cada dígito hex em 4 bits: F(1111) 0(0000) B(1011) A(1010) D(1101) A(1010) 0(0000) -> 1111000010111010110110100000_2.\n(b) Agrupando os 28 bits de 3 em 3 da direita para a esquerda: 001 111 000 010 111 010 110 110 100 000_2 = 1702726640_8.\n(c) Em decimal: 15*16^6 + 11*16^4 + 10*16^3 + 13*16^2 + 10*16^1 = 251658240 + 720896 + 40960 + 3328 + 160 = 252423584_10."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "calculation",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Conversão entre Sistemas > Inteiros, Fracionários, Bit, Byte e Múltiplos",
+      "Sistemas de Numeração, Operações e Códigos > Códigos Numéricos e Alfanuméricos > BCD 8421, Excesso de 3, Gray (Refletido), Johnson e ASCII"
+    ],
+    "related_content_labels": [
+      "conversao_fracionaria",
+      "bcd_8421"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Conversão de Números Reais Fracionários e BCD"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "calculation",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2",
-        "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
-      ],
-      "related_content_labels": [
-        "sinal_magnitude",
-        "complemento_de_1",
-        "complemento_de_2",
-        "subtracao_binaria"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Ficha Prática SD Nº2.pdf",
-        "location": "Exercício 9 & 1º teste 24_25 Q7 e Q8"
-      },
-      "prompt": "(a) Expresse o número decimal -39_10 como um número de 8 bits nas formas Sinal-Magnitude, Complemento de 1 e Complemento de 2.\n(b) Considere os números de 8 bits A = 00010111_2 e B = 00101111_2 (1º Teste 2024/2025, Q8). Efetue a subtração A - B em binário e indique o valor decimal do resultado em Complemento de 2.",
-      "options": null,
-      "answer": "(a) +39 = 00100111_2 -> Sinal-Magnitude: 10100111_2 | Complemento de 1: 11011000_2 | Complemento de 2: 11011001_2 || (b) A - B = 11101000_2 (-24_10).",
-      "explanation": "(a) +39_10 = 32 + 4 + 2 + 1 = 00100111_2. Em Sinal-Magnitude muda-se o MSB para 1 (10100111_2); em C1 invertem-se todos os bits (11011000_2); em C2 soma-se 1 ao C1 (11011001_2).\n(b) A = +23_10 e B = +47_10. O Complemento de 2 de B é 11010000_2 + 1 = 11010001_2 (-47_10). Somando A + (-B) = 00010111_2 + 11010001_2 = 11101000_2 (-24_10)."
+    "prompt": "Efetue as seguintes conversões de números fracionários:\n1) Converta 647,75_10 e 123,625_10 para binário, octal e hexadecimal.\n2) Converta 1111001010,01_2 para decimal, octal, hexadecimal e BCD 8421.",
+    "options": null,
+    "answer": "1) 647,75_10 = 1010000111,11_2 = 1207,6_8 = 287,C_16; 123,625_10 = 1111011,101_2 = 173,5_8 = 7B,A_16 || 2) 1111001010,01_2 = 970,25_10 = 1712,2_8 = 3CA,4_16 = 1001 0111 0000 , 0010 0101_BCD.",
+    "explanation": "1) 647 = 512+128+4+2+1 = 1010000111_2 e 0,75 = 0,5+0,25 = 0,11_2. 123 = 64+32+16+8+2+1 = 1111011_2 e 0,625 = 0,5+0,125 = 0,101_2.\n2) 1111001010_2 = 512+256+128+64+8+2 = 970 e 0,01_2 = 0,25 -> 970,25_10. Em BCD codifica-se cada dígito de 970,25: 9(1001) 7(0111) 0(0000) , 2(0010) 5(0101)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "calculation",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Números com Sinal > Sinal e Valor Absoluto, Complemento de 1 e Complemento de 2",
+      "Sistemas de Numeração, Operações e Códigos > Aritmética com Sinal > Adição, Subtração, Extensão de Sinal e Overflow"
+    ],
+    "related_content_labels": [
+      "sinal_magnitude",
+      "complemento_de_1",
+      "complemento_de_2",
+      "subtracao_binaria"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "4 - Representações Avançadas em Binárioe códigos.pptx",
+      "location": "Representações com Sinal e Subtração em Complemento de 2"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "calculation",
-      "subject_tags": [
-        "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
-      ],
-      "related_content_labels": [
-        "aritmetica_hexadecimal",
-        "subtracao_complemento_de_2"
-      ],
-      "relevancy": "core",
-      "difficulty": 3,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
-        "location": "Slide 16 & Lista de Exercicio1.docx.pdf Questão 9 (a, b, c)"
-      },
-      "prompt": "Resolva as seguintes operações aritméticas:\n1) Em binário (Lista 1, Q9b,c): (i) 10101_2 - 01110_2 e (ii) 1011001_2 - 1100011_2 (em Complemento de 2 com 8 bits).\n2) Diretamente em hexadecimal (Aula 3, Slide 16): (i) A0A0_16 + 1BB2_16 e (ii) A0A0_16 - 0CC1_16.",
-      "options": null,
-      "answer": "1) (i) 00111_2 (+7_10); (ii) 11110110_2 (-10_10) || 2) (i) BC52_16; (ii) 93DF_16.",
-      "explanation": "1) (i) 21 - 14 = 7 (00111_2). (ii) Em 8 bits: 01011001_2 (+89_10) - 01100011_2 (+99_10) = 01011001_2 + 10011101_2 = 11110110_2 (-10_10).\n2) (i) A0A0_16 + 1BB2_16 = BC52_16. (ii) A0A0_16 - 0CC1_16 = 93DF_16."
-    }
-  ]
+    "prompt": "(a) Expresse o número decimal -39_10 como um número de 8 bits nas formas Sinal-Magnitude, Complemento de 1 e Complemento de 2.\n(b) Considere os números de 8 bits A = 00010111_2 e B = 00101111_2. Efetue a subtração A - B em binário e indique o valor decimal do resultado em Complemento de 2.",
+    "options": null,
+    "answer": "(a) +39 = 00100111_2 -> Sinal-Magnitude: 10100111_2 | Complemento de 1: 11011000_2 | Complemento de 2: 11011001_2 || (b) A - B = 11101000_2 (-24_10).",
+    "explanation": "(a) +39_10 = 32 + 4 + 2 + 1 = 00100111_2. Em Sinal-Magnitude muda-se o MSB para 1 (10100111_2); em C1 invertem-se todos os bits (11011000_2); em C2 soma-se 1 ao C1 (11011001_2).\n(b) A = +23_10 e B = +47_10. O Complemento de 2 de B é 11010000_2 + 1 = 11010001_2 (-47_10). Somando A + (-B) = 00010111_2 + 11010001_2 = 11101000_2 (-24_10)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "calculation",
+    "subject_tags": [
+      "Sistemas de Numeração, Operações e Códigos > Aritmética Binária e Hexadecimal > Adição, Subtração, Multiplicação e Divisão sem Sinal"
+    ],
+    "related_content_labels": [
+      "aritmetica_hexadecimal",
+      "subtracao_complemento_de_2"
+    ],
+    "relevancy": "core",
+    "difficulty": 3,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "SD_aula03_Operações Aritméticas em Binário.pdf",
+      "location": "Subtração Binária e Aritmética Hexadecimal"
+    },
+    "prompt": "Resolva as seguintes operações aritméticas:\n1) Em binário: (i) 10101_2 - 01110_2 e (ii) 1011001_2 - 1100011_2 (em Complemento de 2 com 8 bits).\n2) Diretamente em hexadecimal: (i) A0A0_16 + 1BB2_16 e (ii) A0A0_16 - 0CC1_16.",
+    "options": null,
+    "answer": "1) (i) 00111_2 (+7_10); (ii) 11110110_2 (-10_10) || 2) (i) BC52_16; (ii) 93DF_16.",
+    "explanation": "1) (i) 21 - 14 = 7 (00111_2). (ii) Em 8 bits: 01011001_2 (+89_10) - 01100011_2 (+99_10) = 01011001_2 + 10011101_2 = 11110110_2 (-10_10).\n2) (i) A0A0_16 + 1BB2_16 = BC52_16. (ii) A0A0_16 - 0CC1_16 = 93DF_16."
+  }
+]

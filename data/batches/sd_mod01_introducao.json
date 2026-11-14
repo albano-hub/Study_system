@@ -1,610 +1,610 @@
 [
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
-      ],
-      "related_content_labels": [
-        "representacao_analogica",
-        "representacao_digital",
-        "grandezas_continuas_discretas",
-        "erro_de_paralaxe"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slides 1 a 6"
-      },
-      "prompt": "Representação Analógica vs. Representação Digital:\n1. Representação Analógica (Contínua): Uma grandeza é representada por uma tensão, corrente ou medida de movimento diretamente proporcional ao valor físico em questão, podendo assumir infinitos valores ao longo de uma faixa contínua (ex.: velocímetro de ponteiro, termómetro de mercúrio, sinal elétrico de um microfone, saída para um altifalante).\n2. Representação Digital (Discreta): As quantidades não são representadas por grandezas proporcionais contínuas, mas sim por símbolos denominados dígitos, variando em degraus ou saltos discretos passo a passo (ex.: relógio digital, multímetro digital).\n3. Precisão de Leitura: Na leitura digital não há ambiguidade de interpretação, enquanto os instrumentos analógicos estão sujeitos a erros de leitura humana, como o erro de paralaxe (variação do valor lido consoante o ângulo de visão do observador).",
-      "options": null,
-      "answer": null,
-      "explanation": "Resumo fundamental sobre a diferença entre grandezas contínuas (analógicas) e discretas (digitais) e a eliminação de ambiguidade na leitura."
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
+    ],
+    "related_content_labels": [
+      "representacao_analogica",
+      "representacao_digital",
+      "grandezas_continuas_discretas",
+      "erro_de_paralaxe"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Representação Analógica e Digital"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
-      ],
-      "related_content_labels": [
-        "tolerancia_a_ruido",
-        "sinal_binario",
-        "bordas_de_pulso"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 7 & Introdução aos Sistemas Digitais.pptx Slides 17 a 19"
-      },
-      "prompt": "Vantagens dos Sistemas Digitais e Modelação do Sinal Binário:\n1. Imunidade/Tolerância ao Ruído: A vantagem mais importante dos sistemas digitais é a capacidade de operarem corretamente mesmo com sinais elétricos degradados por ruído. Como as saídas são discretas, uma ligeira flutuação na entrada continua a ser interpretada como o mesmo valor lógico; já nos sistemas analógicos, qualquer erro ou ruído na entrada provoca um erro direto na saída.\n2. Sistema Binário: É a forma mais simples de sistema digital, modelando o sinal para assumir apenas dois valores discretos: 0 ou 1, Baixo (LOW) ou Alto (HIGH), Falso ou Verdadeiro.\n3. Transições de Pulso: Num sinal digital no domínio do tempo, a transição do nível baixo (0) para o nível alto (1) denomina-se borda de subida (edge positivo), e a transição do nível alto (1) para o nível baixo (0) denomina-se borda de descida (edge negativo).",
-      "options": null,
-      "answer": null,
-      "explanation": "Síntese sobre imunidade ao ruído, lógica binária de dois estados e transições de sinal (bordas de subida e descida)."
+    "prompt": "Representação Analógica vs. Representação Digital:\n1. Representação Analógica (Contínua): Uma grandeza é representada por uma tensão, corrente ou medida de movimento diretamente proporcional ao valor físico em questão, podendo assumir infinitos valores ao longo de uma faixa contínua (ex.: velocímetro de ponteiro, termómetro de mercúrio, sinal elétrico de um microfone, saída para um altifalante).\n2. Representação Digital (Discreta): As quantidades não são representadas por grandezas proporcionais contínuas, mas sim por símbolos denominados dígitos, variando em degraus ou saltos discretos passo a passo (ex.: relógio digital, multímetro digital).\n3. Precisão de Leitura: Na leitura digital não há ambiguidade de interpretação, enquanto os instrumentos analógicos estão sujeitos a erros de leitura humana, como o erro de paralaxe (variação do valor lido consoante o ângulo de visão do observador).",
+    "options": null,
+    "answer": null,
+    "explanation": "Resumo fundamental sobre a diferença entre grandezas contínuas (analógicas) e discretas (digitais) e a eliminação de ambiguidade na leitura."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
+    ],
+    "related_content_labels": [
+      "tolerancia_a_ruido",
+      "sinal_binario",
+      "bordas_de_pulso"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Vantagens Digitais e Sinal Binário"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Conversão ADC e DAC"
-      ],
-      "related_content_labels": [
-        "conversor_adc",
-        "conversor_dac",
-        "aproximacoes_sucessivas_sar"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 8"
-      },
-      "prompt": "Interação entre Sistemas Digitais e o Mundo Físico (Cadeia ADC -> Processamento -> DAC):\nComo as grandezas do mundo físico (som, temperatura, pressão, velocidade) são naturalmente analógicas, um sistema digital necessita de etapas de conversão nas suas interfaces:\n1. Entrada — ADC (Analog-to-Digital Converter / Conversor Analógico-Digital): Converte o sinal analógico captado por um transdutor de entrada (ex.: microfone) num código binário discreto. Um exemplo clássico de arquitetura interna de ADC é o Registo de Aproximações Sucessivas (SAR), que utiliza um circuito de amostragem e retenção (Sample and Hold), um comparador, lógica de controlo e um DAC interno para testar os bits do mais significativo (MSB) até ao menos significativo (LSB).\n2. Núcleo Digital: Realiza o processamento de sinal e armazenamento sem degradação.\n3. Saída — DAC (Digital-to-Analog Converter / Conversor Digital-Analógico): Converte os dados binários processados novamente num sinal elétrico analógico contínuo para acionar o atuador de saída (ex.: altifalante).",
-      "options": null,
-      "answer": null,
-      "explanation": "Estrutura completa de um sistema digital que interage com sinais analógicos do meio físico."
+    "prompt": "Vantagens dos Sistemas Digitais e Modelação do Sinal Binário:\n1. Imunidade/Tolerância ao Ruído: A vantagem mais importante dos sistemas digitais é a capacidade de operarem corretamente mesmo com sinais elétricos degradados por ruído. Como as saídas são discretas, uma ligeira flutuação na entrada continua a ser interpretada como o mesmo valor lógico; já nos sistemas analógicos, qualquer erro ou ruído na entrada provoca um erro direto na saída.\n2. Sistema Binário: É a forma mais simples de sistema digital, modelando o sinal para assumir apenas dois valores discretos: 0 ou 1, Baixo (LOW) ou Alto (HIGH), Falso ou Verdadeiro.\n3. Transições de Pulso: Num sinal digital no domínio do tempo, a transição do nível baixo (0) para o nível alto (1) denomina-se borda de subida (edge positivo), e a transição do nível alto (1) para o nível baixo (0) denomina-se borda de descida (edge negativo).",
+    "options": null,
+    "answer": null,
+    "explanation": "Síntese sobre imunidade ao ruído, lógica binária de dois estados e transições de sinal (bordas de subida e descida)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Conversão ADC e DAC"
+    ],
+    "related_content_labels": [
+      "conversor_adc",
+      "conversor_dac",
+      "aproximacoes_sucessivas_sar"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Conversão Analógico-Digital e Digital-Analógica"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "content_note",
-      "question_type": null,
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
-      ],
-      "related_content_labels": [
-        "niveis_de_abstracao",
-        "lei_de_ohm",
-        "associacao_de_resistores"
-      ],
-      "relevancy": "supplementary",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Introdução aos Sistemas Digitais.pptx",
-        "location": "Slides 4 a 15"
-      },
-      "prompt": "Processo de Abstração em Sistemas Digitais e Eletrónica Básica:\n1. Hierarquia de Abstração (de baixo para cima): Fenómenos da Natureza -> Leis Físicas (ex.: Lei de Ohm V = R * I, Equações de Maxwell) -> Dispositivos Semicondutores (Transístores MOS/NPN) -> Abstração Digital (Portas Lógicas) -> Circuitos Combinacionais e Sequenciais (Flip-Flops) -> Conjunto de Instruções (Assembly/ISA) -> Arquitetura de Computadores (Memória, Unidade de Controlo, UAL/Acumulador, E/S) -> Linguagens de Alto Nível (ex.: C).\n2. Grandezas Elétricas e Unidades no SI: Tensão elétrica em Volts (V), Corrente elétrica em Amperes (A), Resistência elétrica em Ohms (Ohm), Capacitância em Farads (F), Potência em Watts (W) e Indutância em Henrys (H). (Nota: No Slide 6 da apresentação introdutória os símbolos de Corrente e Resistência aparecem trocados tipograficamente).\n3. Associação de Resistores: Em série, somam-se as resistências (Rs = Ra + Rb); em paralelo, o inverso da resistência equivalente é a soma dos inversos (para dois resistores: Rp = (Ra * Rb) / (Ra + Rb)).\n4. Foco da Disciplina: Resistores, capacitores, díodos, LEDs e transístores são componentes auxiliares; o foco central de Sistemas Digitais reside nas Portas Lógicas e nos Circuitos Integrados (CIs).",
-      "options": null,
-      "answer": null,
-      "explanation": "Resumo dos níveis de abstração computacional e revisão concisa de eletrónica básica."
+    "prompt": "Interação entre Sistemas Digitais e o Mundo Físico (Cadeia ADC -> Processamento -> DAC):\nComo as grandezas do mundo físico (som, temperatura, pressão, velocidade) são naturalmente analógicas, um sistema digital necessita de etapas de conversão nas suas interfaces:\n1. Entrada — ADC (Analog-to-Digital Converter / Conversor Analógico-Digital): Converte o sinal analógico captado por um transdutor de entrada (ex.: microfone) num código binário discreto. Um exemplo clássico de arquitetura interna de ADC é o Registo de Aproximações Sucessivas (SAR), que utiliza um circuito de amostragem e retenção (Sample and Hold), um comparador, lógica de controlo e um DAC interno para testar os bits do mais significativo (MSB) até ao menos significativo (LSB).\n2. Núcleo Digital: Realiza o processamento de sinal e armazenamento sem degradação.\n3. Saída — DAC (Digital-to-Analog Converter / Conversor Digital-Analógico): Converte os dados binários processados novamente num sinal elétrico analógico contínuo para acionar o atuador de saída (ex.: altifalante).",
+    "options": null,
+    "answer": null,
+    "explanation": "Estrutura completa de um sistema digital que interage com sinais analógicos do meio físico."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "content_note",
+    "question_type": null,
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
+    ],
+    "related_content_labels": [
+      "niveis_de_abstracao",
+      "lei_de_ohm",
+      "associacao_de_resistores"
+    ],
+    "relevancy": "supplementary",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Introdução aos Sistemas Digitais.pptx",
+      "location": "Processo de Abstração e Eletrónica Básica"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
-      ],
-      "related_content_labels": [
-        "representacao_analogica",
-        "grandezas_continuas_discretas"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slides 1 e 3"
-      },
-      "prompt": "Numa representação analógica, uma quantidade física é representada por uma tensão, corrente ou medida de movimento proporcional ao valor em questão, podendo variar continuamente ao longo de uma faixa de valores.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "True",
-      "explanation": "Na representação analógica, a grandeza medida varia de forma contínua e proporcional ao fenómeno físico (como a deflexão do ponteiro de um velocímetro ou a coluna de mercúrio num termómetro)."
+    "prompt": "Processo de Abstração em Sistemas Digitais e Eletrónica Básica:\n1. Hierarquia de Abstração (de baixo para cima): Fenómenos da Natureza -> Leis Físicas (ex.: Lei de Ohm V = R * I, Equações de Maxwell) -> Dispositivos Semicondutores (Transístores MOS/NPN) -> Abstração Digital (Portas Lógicas) -> Circuitos Combinacionais e Sequenciais (Flip-Flops) -> Conjunto de Instruções (Assembly/ISA) -> Arquitetura de Computadores (Memória, Unidade de Controlo, UAL/Acumulador, E/S) -> Linguagens de Alto Nível (ex.: C).\n2. Grandezas Elétricas e Unidades no SI: Tensão elétrica em Volts (V), Corrente elétrica em Amperes (A), Resistência elétrica em Ohms (Ohm), Capacitância em Farads (F), Potência em Watts (W) e Indutância em Henrys (H).\n3. Associação de Resistores: Em série, somam-se as resistências (Rs = Ra + Rb); em paralelo, o inverso da resistência equivalente é a soma dos inversos (para dois resistores: Rp = (Ra * Rb) / (Ra + Rb)).\n4. Foco da Disciplina: Resistores, capacitores, díodos, LEDs e transístores são componentes auxiliares; o foco central de Sistemas Digitais reside nas Portas Lógicas e nos Circuitos Integrados (CIs).",
+    "options": null,
+    "answer": null,
+    "explanation": "Resumo dos níveis de abstração computacional e revisão concisa de eletrónica básica."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
+    ],
+    "related_content_labels": [
+      "representacao_analogica",
+      "grandezas_continuas_discretas"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Representação Analógica"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
-      ],
-      "related_content_labels": [
-        "representacao_digital",
-        "grandezas_continuas_discretas"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 3"
-      },
-      "prompt": "Como o tempo é uma grandeza física contínua na natureza, um relógio digital representa o tempo de forma analógica e contínua.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "False",
-      "explanation": "Embora o tempo flua continuamente na natureza, o relógio digital representa-o através de símbolos (dígitos) que mudam em saltos ou degraus passo a passo, tratando-se portanto de uma representação discreta (digital)."
+    "prompt": "Numa representação analógica, uma quantidade física é representada por uma tensão, corrente ou medida de movimento proporcional ao valor em questão, podendo variar continuamente ao longo de uma faixa de valores.",
+    "options": [
+      ["True", true],
+      ["False", false]
+    ],
+    "answer": "True",
+    "explanation": "Na representação analógica, a grandeza medida varia de forma contínua e proporcional ao fenómeno físico, como a deflexão do ponteiro de um velocímetro ou a coluna de mercúrio num termómetro."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
+    ],
+    "related_content_labels": [
+      "representacao_digital",
+      "grandezas_continuas_discretas"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Representação Digital"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
-      ],
-      "related_content_labels": [
-        "tolerancia_a_ruido",
-        "representacao_digital"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 7"
-      },
-      "prompt": "A vantagem mais importante dos sistemas digitais face aos sistemas analógicos é a sua capacidade de operarem sem erro de interpretação mesmo quando os sinais elétricos sofrem ligeiras degradações ou ruído.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "True",
-      "explanation": "Como as saídas digitais assumem apenas valores discretos bem separados, pequenas variações de tensão causadas por ruído continuam a ser interpretadas como o mesmo nível lógico (0 ou 1). Nos circuitos analógicos, qualquer variação na entrada reflete-se como erro na saída."
+    "prompt": "Como o tempo é uma grandeza física contínua na natureza, um relógio digital representa o tempo de forma analógica e contínua.",
+    "options": [
+      ["True", false],
+      ["False", true]
+    ],
+    "answer": "False",
+    "explanation": "Embora o tempo flua continuamente na natureza, o relógio digital representa-o através de símbolos (dígitos) que mudam em saltos ou degraus passo a passo, tratando-se portanto de uma representação discreta (digital)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
+    ],
+    "related_content_labels": [
+      "tolerancia_a_ruido",
+      "representacao_digital"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Imunidade ao Ruído"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
-      ],
-      "related_content_labels": [
-        "sistemas_digitais",
-        "implementacao_fisica"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 5"
-      },
-      "prompt": "Por definição, todos os sistemas digitais são exclusivamente sistemas eletrónicos, sendo impossível construir um sistema digital de natureza mecânica, magnética ou pneumática.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "False",
-      "explanation": "De acordo com a definição apresentada na Aula 1 (Slide 5), embora os sistemas digitais sejam quase sempre eletrónicos na atualidade, também podem ser mecânicos, magnéticos ou pneumáticos, desde que manipulem informações representadas em formato discreto."
+    "prompt": "A vantagem mais importante dos sistemas digitais face aos sistemas analógicos é a sua capacidade de operarem sem erro de interpretação mesmo quando os sinais elétricos sofrem ligeiras degradações ou ruído.",
+    "options": [
+      ["True", true],
+      ["False", false]
+    ],
+    "answer": "True",
+    "explanation": "Como as saídas digitais assumem apenas valores discretos bem separados, pequenas variações de tensão causadas por ruído continuam a ser interpretadas como o mesmo nível lógico (0 ou 1). Nos circuitos analógicos, qualquer variação na entrada reflete-se como erro na saída."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
+    ],
+    "related_content_labels": [
+      "sistemas_digitais",
+      "implementacao_fisica"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Definição de Sistemas Digitais"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "true_false",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Conversão ADC e DAC"
-      ],
-      "related_content_labels": [
-        "conversor_adc",
-        "conversor_dac"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 8"
-      },
-      "prompt": "Num sistema de processamento digital de áudio, o sinal elétrico proveniente de um microfone passa primeiro por um conversor DAC (Digital-to-Analog Converter) antes de ser processado e armazenado digitalmente.",
-      "options": [
-        "True",
-        "False"
-      ],
-      "answer": "False",
-      "explanation": "O sinal captado pelo microfone é analógico; por isso, deve passar primeiro por um conversor ADC (Analog-to-Digital Converter) para ser digitalizado. O conversor DAC é utilizado na etapa final para converter o sinal digital de volta em analógico antes do altifalante."
+    "prompt": "Por definição, todos os sistemas digitais são exclusivamente sistemas eletrónicos, sendo impossível construir um sistema digital de natureza mecânica, magnética ou pneumática.",
+    "options": [
+      ["True", false],
+      ["False", true]
+    ],
+    "answer": "False",
+    "explanation": "Embora os sistemas digitais sejam quase sempre eletrónicos na atualidade, também podem ser mecânicos, magnéticos ou pneumáticos, desde que manipulem informações ou quantidades representadas em formato discreto."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "true_false",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Conversão ADC e DAC"
+    ],
+    "related_content_labels": [
+      "conversor_adc",
+      "conversor_dac"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Conversores ADC e DAC"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
-      ],
-      "related_content_labels": [
-        "representacao_analogica",
-        "representacao_digital"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slides 1 a 5"
-      },
-      "prompt": "Qual dos seguintes conjuntos contém apenas exemplos de dispositivos ou sinais de natureza analógica?",
-      "options": [
-        "A: Termómetro de mercúrio, sinal elétrico de um microfone e velocímetro de ponteiro.",
-        "B: Relógio digital de quartzo, termómetro de mercúrio e contador binário.",
-        "C: Multímetro digital, saída de um amplificador de áudio e microfone.",
-        "D: Registo de aproximações sucessivas (SAR), velocímetro de ponteiro e porta lógica."
-      ],
-      "answer": "A",
-      "explanation": "O termómetro de mercúrio, o sinal elétrico gerado por um microfone e o velocímetro de ponteiro variam continuamente em proporção direta à grandeza física medida, sendo todos exemplos clássicos de sistemas/sinais analógicos (Slides 1, 2 e 5)."
+    "prompt": "Num sistema de processamento digital de áudio, o sinal elétrico proveniente de um microfone passa primeiro por um conversor DAC (Digital-to-Analog Converter) antes de ser processado e armazenado digitalmente.",
+    "options": [
+      ["True", false],
+      ["False", true]
+    ],
+    "answer": "False",
+    "explanation": "O sinal captado pelo microfone é analógico; por isso, deve passar primeiro por um conversor ADC (Analog-to-Digital Converter) para ser digitalizado. O conversor DAC é utilizado na etapa final para converter o sinal digital de volta em analógico antes do altifalante."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
+    ],
+    "related_content_labels": [
+      "representacao_analogica",
+      "representacao_digital"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Exemplos Analógicos e Digitais"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
-      ],
-      "related_content_labels": [
-        "erro_de_paralaxe",
-        "instrumentos_de_medida"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 4"
-      },
-      "prompt": "Qual fenómeno ótico e de interpretação humana causa frequentemente ambiguidade na leitura de instrumentos de medição analógicos (como multímetros de ponteiro ou escalas graduadas), sendo eliminado nos instrumentos digitais?",
-      "options": [
-        "A: Erro de quantização binária.",
-        "B: Erro de paralaxe.",
-        "C: Efeito Joule.",
-        "D: Aproximação sucessiva."
-      ],
-      "answer": "B",
-      "explanation": "O erro de paralaxe ocorre quando o observador olha para um ponteiro ou menisco sobre uma escala graduada a partir de um ângulo oblíquo em vez de perpendicular, gerando leituras diferentes. Nos mostradores digitais, o valor é exibido diretamente em dígitos sem ambiguidade."
+    "prompt": "Qual dos seguintes conjuntos contém apenas exemplos de dispositivos ou sinais de natureza analógica?",
+    "options": [
+      ["Termómetro de mercúrio, sinal elétrico de um microfone e velocímetro de ponteiro.", true],
+      ["Relógio digital de quartzo, termómetro de mercúrio e contador binário.", false],
+      ["Multímetro digital, saída de um amplificador de áudio e microfone.", false],
+      ["Registo de aproximações sucessivas (SAR), velocímetro de ponteiro e porta lógica.", false]
+    ],
+    "answer": "Termómetro de mercúrio, sinal elétrico de um microfone e velocímetro de ponteiro.",
+    "explanation": "O termómetro de mercúrio, o sinal elétrico gerado por um microfone e o velocímetro de ponteiro variam continuamente em proporção direta à grandeza física medida, sendo todos exemplos de sistemas ou sinais analógicos."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
+    ],
+    "related_content_labels": [
+      "erro_de_paralaxe",
+      "instrumentos_de_medida"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Instrumentos Analógicos e Erro de Paralaxe"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Conversão ADC e DAC"
-      ],
-      "related_content_labels": [
-        "conversor_adc",
-        "aproximacoes_sucessivas_sar"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 8"
-      },
-      "prompt": "Num conversor Analógico-Digital (ADC) baseado em Registo de Aproximações Sucessivas (SAR), em que ordem são testados e determinados os bits do código digital de saída?",
-      "options": [
-        "A: Do bit menos significativo (LSB) para o bit mais significativo (MSB).",
-        "B: Do bit mais significativo (MSB) para o bit menos significativo (LSB).",
-        "C: Todos os bits são determinados simultaneamente sem necessidade de relógio ou realimentação.",
-        "D: Apenas os bits pares são testados pelo circuito Sample and Hold."
-      ],
-      "answer": "B",
-      "explanation": "Como ilustrado no gráfico do conversor SAR (Slide 8: Test MSB -> Test MSB-1 -> Test MSB-2 -> Test LSB), a lógica de controlo testa inicialmente o bit de maior peso (MSB = 1/2 FS) e refina sucessivamente a aproximação até ao bit menos significativo (LSB)."
+    "prompt": "Qual fenómeno ótico e de interpretação humana causa frequentemente ambiguidade na leitura de instrumentos de medição analógicos (como multímetros de ponteiro ou escalas graduadas), sendo eliminado nos instrumentos digitais?",
+    "options": [
+      ["Erro de paralaxe.", true],
+      ["Erro de quantização binária.", false],
+      ["Efeito Joule.", false],
+      ["Aproximação sucessiva.", false]
+    ],
+    "answer": "Erro de paralaxe.",
+    "explanation": "O erro de paralaxe ocorre quando o observador olha para um ponteiro ou menisco sobre uma escala graduada a partir de um ângulo oblíquo em vez de perpendicular, gerando leituras diferentes. Nos mostradores digitais, o valor é exibido diretamente em dígitos sem ambiguidade."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Conversão ADC e DAC"
+    ],
+    "related_content_labels": [
+      "conversor_adc",
+      "aproximacoes_sucessivas_sar"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Conversor SAR"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
-      ],
-      "related_content_labels": [
-        "niveis_de_abstracao",
-        "arquitetura_de_computadores"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Introdução aos Sistemas Digitais.pptx",
-        "location": "Slide 4"
-      },
-      "prompt": "No processo de abstração em Sistemas Digitais (desde a física dos semicondutores até ao software), qual nível de abstração se situa imediatamente acima dos dispositivos físicos (transístores) e serve de base direta para os circuitos combinacionais e sequenciais?",
-      "options": [
-        "A: Abstração de Linguagens de Alto Nível (ex.: linguagem C).",
-        "B: Abstração de Conjunto de Instruções (Assembly).",
-        "C: Abstração Digital (Portas Lógicas).",
-        "D: Leis Físicas e Equações de Maxwell."
-      ],
-      "answer": "C",
-      "explanation": "No diagrama do Processo de Abstração em SD (Slide 4), os transístores implementam as Portas Lógicas (Abstração Digital), a partir das quais se constroem os blocos de Abstração Combinacional (ex.: somadores) e Abstração Sequencial (ex.: flip-flops)."
+    "prompt": "Num conversor Analógico-Digital (ADC) baseado em Registo de Aproximações Sucessivas (SAR), em que ordem são testados e determinados os bits do código digital de saída?",
+    "options": [
+      ["Do bit mais significativo (MSB) para o bit menos significativo (LSB).", true],
+      ["Do bit menos significativo (LSB) para o bit mais significativo (MSB).", false],
+      ["Todos os bits são determinados simultaneamente num único instante sem realimentação.", false],
+      ["Apenas os bits de índice par são testados pelo circuito Sample and Hold.", false]
+    ],
+    "answer": "Do bit mais significativo (MSB) para o bit menos significativo (LSB).",
+    "explanation": "Num conversor de aproximações sucessivas (SAR), a lógica de controlo testa inicialmente o bit de maior peso (MSB, metade da escala completa) e refina sucessivamente a aproximação passo a passo até ao bit menos significativo (LSB)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
+    ],
+    "related_content_labels": [
+      "niveis_de_abstracao",
+      "arquitetura_de_computadores"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Introdução aos Sistemas Digitais.pptx",
+      "location": "Hierarquia de Abstração"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "single_choice",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
-      ],
-      "related_content_labels": [
-        "lei_de_ohm",
-        "grandezas_eletricas"
-      ],
-      "relevancy": "supplementary",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Introdução aos Sistemas Digitais.pptx",
-        "location": "Slides 6 e 9"
-      },
-      "prompt": "Segundo a Lei de Ohm, para um condutor mantido a temperatura constante, a razão entre a tensão elétrica (V) entre dois pontos e a corrente elétrica (I) é constante. Como se denomina essa constante e qual é a sua unidade no Sistema Internacional?",
-      "options": [
-        "A: Capacitância elétrica, medida em Farad (F).",
-        "B: Resistência elétrica, medida em Ohm (Ω).",
-        "C: Potência elétrica, medida em Watt (W).",
-        "D: Indutância elétrica, medida em Ampere (A)."
-      ],
-      "answer": "B",
-      "explanation": "Pela Lei de Ohm (Slide 9), R = V / I define a resistência elétrica, cuja unidade padrão é o Ohm (Ω), enquanto a corrente I é medida em Amperes (A) e a tensão V em Volts (V)."
+    "prompt": "No processo de abstração em Sistemas Digitais (desde a física dos semicondutores até ao software), qual nível de abstração se situa imediatamente acima dos dispositivos físicos (transístores) e serve de base direta para os circuitos combinacionais e sequenciais?",
+    "options": [
+      ["Abstração Digital (Portas Lógicas).", true],
+      ["Abstração de Linguagens de Alto Nível (ex.: linguagem C).", false],
+      ["Abstração de Conjunto de Instruções (Assembly).", false],
+      ["Leis Físicas e Equações de Maxwell.", false]
+    ],
+    "answer": "Abstração Digital (Portas Lógicas).",
+    "explanation": "Na hierarquia de abstração de sistemas digitais, os transístores implementam fisicamente as Portas Lógicas (Abstração Digital), a partir das quais se constroem os blocos de Abstração Combinacional (ex.: somadores) e Abstração Sequencial (ex.: flip-flops)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "single_choice",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
+    ],
+    "related_content_labels": [
+      "lei_de_ohm",
+      "grandezas_eletricas"
+    ],
+    "relevancy": "supplementary",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Introdução aos Sistemas Digitais.pptx",
+      "location": "Grandezas Elétricas e Lei de Ohm"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
-      ],
-      "related_content_labels": [
-        "sinais_discretos_vs_continuos",
-        "tolerancia_a_ruido"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Introdução aos Sistemas Digitais.pptx",
-        "location": "Slide 18"
-      },
-      "prompt": "Na comparação direta entre Sinais Discretos (Digitais) e Sinais Contínuos (Analógicos), quais das seguintes características pertencem especificamente aos Sinais Discretos? (Selecione todas as corretas)",
-      "options": [
-        "A: Possuem um número finito de possíveis valores, mensuráveis em intervalos específicos.",
-        "B: Possuem infinitos possíveis valores mensuráveis a qualquer momento.",
-        "C: Apresentam elevada tolerância a ruídos elétricos.",
-        "D: São extremamente suscetíveis a ruídos, onde pequenas variações alteram o valor representado."
-      ],
-      "answer": [
-        "A",
-        "C"
-      ],
-      "explanation": "Conforme sistematizado no Slide 18 de 'Introdução aos Sistemas Digitais.pptx', os sinais discretos têm um número finito de valores possíveis, são relativamente simples de processar e possuem elevada tolerância a ruídos (enquanto B e D descrevem os sinais contínuos/analógicos)."
+    "prompt": "Segundo a Lei de Ohm, para um condutor mantido a temperatura constante, a razão entre a tensão elétrica (V) entre dois pontos e a corrente elétrica (I) é constante. Como se denomina essa constante e qual é a sua unidade no Sistema Internacional?",
+    "options": [
+      ["Resistência elétrica, medida em Ohm (Ω).", true],
+      ["Capacitância elétrica, medida em Farad (F).", false],
+      ["Potência elétrica, medida em Watt (W).", false],
+      ["Indutância elétrica, medida em Henry (H).", false]
+    ],
+    "answer": "Resistência elétrica, medida em Ohm (Ω).",
+    "explanation": "Pela Lei de Ohm, R = V / I define a resistência elétrica, cuja unidade no Sistema Internacional é o Ohm (Ω), enquanto a corrente I é medida em Amperes (A) e a tensão V em Volts (V)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
+    ],
+    "related_content_labels": [
+      "sinais_discretos_vs_continuos",
+      "tolerancia_a_ruido"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Introdução aos Sistemas Digitais.pptx",
+      "location": "Sinais Discretos vs Contínuos"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
-      ],
-      "related_content_labels": [
-        "sinal_binario",
-        "niveis_logicos"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 7"
-      },
-      "prompt": "Em Sistemas Digitais, um sinal binário é modelado para assumir apenas dois estados discretos. Quais dos seguintes pares de designações são utilizados na disciplina para representar esses dois estados? (Selecione todas as corretas)",
-      "options": [
-        "A: 0 ou 1",
-        "B: Baixo (LOW) ou Alto (HIGH)",
-        "C: Falso (False) ou Verdadeiro (True)",
-        "D: Contínuo ou Proporcional"
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "explanation": "O Slide 7 ('Sistemas digitais versus sistemas analógicos.pptx') estabelece explicitamente as três convenções equivalentes para um sinal binário: 0 ou 1, Baixo/LOW ou Alto/HIGH, e Falso ou Verdadeiro."
+    "prompt": "Na comparação direta entre Sinais Discretos (Digitais) e Sinais Contínuos (Analógicos), quais das seguintes características pertencem especificamente aos Sinais Discretos?",
+    "options": [
+      ["Possuem um número finito de possíveis valores, mensuráveis em intervalos específicos.", true],
+      ["Apresentam elevada tolerância a ruídos elétricos.", true],
+      ["Possuem infinitos possíveis valores mensuráveis a qualquer momento.", false],
+      ["São extremamente suscetíveis a ruídos, onde pequenas variações alteram diretamente o valor representado.", false]
+    ],
+    "answer": [
+      "Possuem um número finito de possíveis valores, mensuráveis em intervalos específicos.",
+      "Apresentam elevada tolerância a ruídos elétricos."
+    ],
+    "explanation": "Os sinais discretos têm um número finito de valores possíveis, são simples de processar digitalmente e possuem elevada tolerância a ruídos, enquanto os sinais contínuos assumem infinitos valores e são muito suscetíveis a ruídos."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
+    ],
+    "related_content_labels": [
+      "sinal_binario",
+      "niveis_logicos"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Representação Binária"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
-      ],
-      "related_content_labels": [
-        "importancia_sistemas_digitais",
-        "hardware_softening"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Introdução aos Sistemas Digitais.pptx",
-        "location": "Slide 5 & Programa da UC SISITEMAS DIGITAIS.pdf Secção 1"
-      },
-      "prompt": "De acordo com o programa da disciplina e a aula introdutória, quais são razões fundamentais para estudar Sistemas Digitais num curso de Engenharia Informática e de Computadores? (Selecione todas as corretas)",
-      "options": [
-        "A: O computador é um sistema digital e compreender a sua lógica interna auxilia na programação e no trabalho com microprocessadores a baixo nível.",
-        "B: Permite desenvolver soluções em computação ubíqua, sistemas embarcados e sistemas reconfiguráveis ('Hardware Softening').",
-        "C: Fornece as bases para projetar circuitos integrados, dispositivos lógicos programáveis e interfaces com outros sistemas.",
-        "D: Substitui completamente a necessidade de utilizar algoritmos ou linguagens de programação nos computadores modernos."
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "explanation": "Os objetivos gerais e específicos do Programa da UC e o Slide 5 destacam a compreensão da arquitetura lógica do computador, o suporte à programação a baixo nível, o interfaceamento de sistemas, os sistemas embarcados e os dispositivos lógicos reconfiguráveis."
+    "prompt": "Em Sistemas Digitais, um sinal binário é modelado para assumir apenas dois estados discretos. Quais dos seguintes pares de designações são utilizados para representar esses dois estados?",
+    "options": [
+      ["0 ou 1", true],
+      ["Baixo (LOW) ou Alto (HIGH)", true],
+      ["Falso (False) ou Verdadeiro (True)", true],
+      ["Contínuo ou Proporcional", false]
+    ],
+    "answer": [
+      "0 ou 1",
+      "Baixo (LOW) ou Alto (HIGH)",
+      "Falso (False) ou Verdadeiro (True)"
+    ],
+    "explanation": "As três convenções equivalentes utilizadas em lógica digital para um sinal binário são: 0 ou 1, nível Baixo (LOW) ou Alto (HIGH), e valor lógico Falso (False) ou Verdadeiro (True)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
+    ],
+    "related_content_labels": [
+      "importancia_sistemas_digitais",
+      "hardware_softening"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Introdução aos Sistemas Digitais.pptx",
+      "location": "Motivação e Aplicações de Sistemas Digitais"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "multiple_choice",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
-      ],
-      "related_content_labels": [
-        "componentes_eletronicos",
-        "portas_logicas_e_cis"
-      ],
-      "relevancy": "supplementary",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Introdução aos Sistemas Digitais.pptx",
-        "location": "Slides 11, 14 e 15"
-      },
-      "prompt": "Sobre os componentes eletrónicos abordados na introdução aos Sistemas Digitais, selecione todas as afirmações verdadeiras:",
-      "options": [
-        "A: Os resistores impõem oposição ao fluxo de eletrões, convertendo energia elétrica em calor.",
-        "B: Os capacitores funcionam como elementos armazenadores de carga elétrica.",
-        "C: Do ponto de vista de Sistemas Digitais, resistores, potenciómetros, capacitores, díodos e LEDs são considerados componentes auxiliares, pois o foco principal concentra-se em Circuitos Integrados e Portas Lógicas.",
-        "D: Em Sistemas Digitais, nunca se utilizam transístores MOS ou NPN na construção interna de circuitos integrados."
-      ],
-      "answer": [
-        "A",
-        "B",
-        "C"
-      ],
-      "explanation": "A, B e C estão corretas (Slides 11, 14 e 15). D é falsa porque os circuitos integrados e portas lógicas são construídos internamente precisamente a partir de transístores (como MOS e NPN)."
+    "prompt": "Quais das seguintes afirmações constituem razões fundamentais para o domínio de Sistemas Digitais em Engenharia Informática e de Computadores?",
+    "options": [
+      ["O computador é um sistema digital e compreender a sua lógica interna auxilia na programação e no trabalho com microprocessadores a baixo nível.", true],
+      ["Permite desenvolver soluções em computação ubíqua, sistemas embarcados e sistemas lógicos reconfiguráveis ('Hardware Softening').", true],
+      ["Fornece as bases para projetar circuitos integrados, dispositivos lógicos programáveis e interfaces com outros sistemas.", true],
+      ["Substitui completamente a necessidade de utilizar algoritmos ou linguagens de programação nos computadores modernos.", false]
+    ],
+    "answer": [
+      "O computador é um sistema digital e compreender a sua lógica interna auxilia na programação e no trabalho com microprocessadores a baixo nível.",
+      "Permite desenvolver soluções em computação ubíqua, sistemas embarcados e sistemas lógicos reconfiguráveis ('Hardware Softening').",
+      "Fornece as bases para projetar circuitos integrados, dispositivos lógicos programáveis e interfaces com outros sistemas."
+    ],
+    "explanation": "O estudo de Sistemas Digitais fundamenta a compreensão da arquitetura lógica do computador, a programação de baixo nível, o interfaceamento de hardware, os sistemas embarcados e a lógica reconfigurável."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "multiple_choice",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
+    ],
+    "related_content_labels": [
+      "componentes_eletronicos",
+      "portas_logicas_e_cis"
+    ],
+    "relevancy": "supplementary",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Introdução aos Sistemas Digitais.pptx",
+      "location": "Componentes Eletrónicos e Circuitos Integrados"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
-      ],
-      "related_content_labels": [
-        "definicao_sistema_digital",
-        "definicao_sistema_analogico"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 5"
-      },
-      "prompt": "Defina sucintamente o que é um 'Sistema Digital' e o que o distingue de um 'Sistema Analógico' quanto às quantidades que manipula.",
-      "options": null,
-      "answer": "Um sistema digital é uma combinação de dispositivos projetados para manipular informações ou quantidades físicas representadas no formato digital (que assumem apenas valores discretos), enquanto um sistema analógico manipula quantidades físicas representadas de forma contínua.",
-      "explanation": "Definição textual do Slide 5 de 'Sistemas digitais versus sistemas analógicos.pptx'."
+    "prompt": "Sobre os componentes eletrónicos utilizados em circuitos digitais, selecione todas as afirmações verdadeiras:",
+    "options": [
+      ["Os resistores impõem oposição ao fluxo de eletrões, convertendo energia elétrica em calor.", true],
+      ["Os capacitores funcionam como elementos armazenadores de carga elétrica.", true],
+      ["Do ponto de vista de Sistemas Digitais, resistores, potenciómetros, capacitores, díodos e LEDs são considerados componentes auxiliares, pois o foco principal concentra-se em Circuitos Integrados e Portas Lógicas.", true],
+      ["Em Sistemas Digitais, nunca existem transístores MOS ou NPN na construção interna dos circuitos integrados.", false]
+    ],
+    "answer": [
+      "Os resistores impõem oposição ao fluxo de eletrões, convertendo energia elétrica em calor.",
+      "Os capacitores funcionam como elementos armazenadores de carga elétrica.",
+      "Do ponto de vista de Sistemas Digitais, resistores, potenciómetros, capacitores, díodos e LEDs são considerados componentes auxiliares, pois o foco principal concentra-se em Circuitos Integrados e Portas Lógicas."
+    ],
+    "explanation": "Resistores e capacitores desempenham funções elétricas fundamentais mas auxiliares no projeto lógico, cujo foco são as portas lógicas e os circuitos integrados (os quais são internamente fabricados com transístores MOS ou bipolares)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Representação Contínua e Discreta"
+    ],
+    "related_content_labels": [
+      "definicao_sistema_digital",
+      "definicao_sistema_analogico"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Sistemas Digitais e Analógicos"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Conversão ADC e DAC"
-      ],
-      "related_content_labels": [
-        "conversor_adc",
-        "conversor_dac"
-      ],
-      "relevancy": "core",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
-        "location": "Slide 8"
-      },
-      "prompt": "Por que razão os sistemas digitais necessitam frequentemente de conversores ADC e DAC, e qual é a função de cada um?",
-      "options": null,
-      "answer": "Porque os sinais do mundo físico são naturalmente analógicos. O ADC converte sinais analógicos de entrada em sinais digitais para processamento, e o DAC converte os sinais digitais processados de volta em sinais analógicos para atuarem no meio físico.",
-      "explanation": "Qualquer interação entre um processador digital e grandezas físicas reais exige a conversão Analógico-Digital (ADC) na entrada e Digital-Analógico (DAC) na saída."
+    "prompt": "Defina sucintamente o que é um 'Sistema Digital' e o que o distingue de um 'Sistema Analógico' quanto às quantidades que manipula.",
+    "options": null,
+    "answer": "Um sistema digital é uma combinação de dispositivos projetados para manipular informações ou quantidades físicas representadas no formato digital (que assumem apenas valores discretos), enquanto um sistema analógico manipula quantidades físicas representadas de forma contínua.",
+    "explanation": "A distinção essencial reside na natureza discreta (digital) versus contínua (analógica) das grandezas representadas e processadas."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Conversão ADC e DAC"
+    ],
+    "related_content_labels": [
+      "conversor_adc",
+      "conversor_dac"
+    ],
+    "relevancy": "core",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Sistemas digitais versus sistemas analógicos.pptx",
+      "location": "Interfaces Analógico-Digitais"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
-      ],
-      "related_content_labels": [
-        "bordas_de_pulso",
-        "sinal_de_clock"
-      ],
-      "relevancy": "core",
-      "difficulty": 1,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Introdução aos Sistemas Digitais.pptx",
-        "location": "Slide 17"
-      },
-      "prompt": "Num sinal digital binário ao longo do tempo, o que significam os termos 'edge positivo' (borda de subida) e 'edge negativo' (borda de descida)?",
-      "options": null,
-      "answer": "Edge positivo (borda de subida) é o instante de transição do nível lógico baixo (0) para o nível lógico alto (1); edge negativo (borda de descida) é o instante de transição do nível lógico alto (1) para o nível lógico baixo (0).",
-      "explanation": "Estes conceitos introduzidos no Slide 17 da Aula 1 são a base para compreender diagramas de tempo e o disparo de Flip-Flops por borda de clock no Módulo 6."
+    "prompt": "Por que razão os sistemas digitais necessitam frequentemente de conversores ADC e DAC, e qual é a função de cada um?",
+    "options": null,
+    "answer": "Porque as grandezas do mundo físico são naturalmente analógicas. O ADC converte sinais analógicos de entrada em sinais digitais para processamento, e o DAC converte os sinais digitais processados de volta em sinais analógicos para atuarem no meio físico.",
+    "explanation": "Qualquer interação entre um processador digital e grandezas físicas reais exige a conversão Analógico-Digital (ADC) na entrada e Digital-Analógico (DAC) na saída."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Sistemas Analógicos vs Digitais > Imunidade ao Ruído e Sinal Binário"
+    ],
+    "related_content_labels": [
+      "bordas_de_pulso",
+      "sinal_de_clock"
+    ],
+    "relevancy": "core",
+    "difficulty": 1,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Introdução aos Sistemas Digitais.pptx",
+      "location": "Transições e Bordas de Sinal"
     },
-    {
-      "major": "Computer Engineering",
-      "subject": "Digital Systems",
-      "item_type": "question",
-      "question_type": "short_answer",
-      "subject_tags": [
-        "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
-      ],
-      "related_content_labels": [
-        "associacao_de_resistores",
-        "lei_de_ohm"
-      ],
-      "relevancy": "supplementary",
-      "difficulty": 2,
-      "source_reference": {
-        "origin": "provided_material",
-        "source_name": "Introdução aos Sistemas Digitais.pptx",
-        "location": "Slides 9, 12 e 13"
-      },
-      "prompt": "Dados dois resistores $R_a$ e $R_b$ ligados a uma fonte de tensão $V$: (a) indique as fórmulas da resistência equivalente em série ($R_s$) e em paralelo ($R_p$); (b) calcule $R_s$ para $R_1 = 1\\text{ }\\Omega$ e $R_2 = 1\\text{ }\\Omega$ em série, e $R_p$ para $R_3 = 10\\text{ k}\\Omega$ e $R_5 = 10\\text{ k}\\Omega$ em paralelo.",
-      "options": null,
-      "answer": "(a) Série: Rs = Ra + Rb; Paralelo: Rp = (Ra * Rb) / (Ra + Rb). (b) Rs = 1 + 1 = 2 Ohm; Rp = (10 * 10) / (10 + 10) = 5 kOhm.",
-      "explanation": "Aplicação direta das fórmulas do Slide 12 aos dois primeiros circuitos de exemplo do Slide 13 da Aula 1."
-    }
-  ]
+    "prompt": "Num sinal digital binário ao longo do tempo, o que significam os termos 'edge positivo' (borda de subida) e 'edge negativo' (borda de descida)?",
+    "options": null,
+    "answer": "Edge positivo (borda de subida) é o instante de transição do nível lógico baixo (0) para o nível lógico alto (1); edge negativo (borda de descida) é o instante de transição do nível lógico alto (1) para o nível lógico baixo (0).",
+    "explanation": "As bordas de subida e de descida definem os instantes de transição de um sinal digital e são a base para o sincronismo por sinal de relógio (clock)."
+  },
+  {
+    "major": "Computer Engineering",
+    "subject": "Digital Systems",
+    "item_type": "question",
+    "question_type": "short_answer",
+    "subject_tags": [
+      "Introdução aos Sistemas Digitais > Abstração e Eletrónica Básica > Níveis de Abstração e Componentes"
+    ],
+    "related_content_labels": [
+      "associacao_de_resistores",
+      "lei_de_ohm"
+    ],
+    "relevancy": "supplementary",
+    "difficulty": 2,
+    "source_reference": {
+      "origin": "provided_material",
+      "source_name": "Introdução aos Sistemas Digitais.pptx",
+      "location": "Associação de Resistores em Série e Paralelo"
+    },
+    "prompt": "Dados dois resistores $R_a$ e $R_b$ ligados a uma fonte de tensão $V$: (a) indique as fórmulas da resistência equivalente em série ($R_s$) e em paralelo ($R_p$); (b) calcule $R_s$ para $R_1 = 1\\text{ }\\Omega$ e $R_2 = 1\\text{ }\\Omega$ em série, e $R_p$ para $R_3 = 10\\text{ k}\\Omega$ e $R_5 = 10\\text{ k}\\Omega$ em paralelo.",
+    "options": null,
+    "answer": "(a) Série: Rs = Ra + Rb; Paralelo: Rp = (Ra * Rb) / (Ra + Rb). (b) Rs = 1 + 1 = 2 Ohm; Rp = (10 * 10) / (10 + 10) = 5 kOhm.",
+    "explanation": "Na associação em série as resistências somam-se diretamente; na associação em paralelo de dois resistores iguais, a resistência equivalente reduz-se a metade."
+  }
+]
